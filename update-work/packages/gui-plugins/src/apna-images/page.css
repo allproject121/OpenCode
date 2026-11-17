@@ -1,0 +1,422 @@
+/* apna-opencode: the Images page, laid out as the Codex app's own Images page. */
+
+.apna-images {
+  /* Fills the settings content box (made relative for this page), whatever the panel around it does. */
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  color: var(--v2-text-text-base);
+}
+
+.apna-images-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 40px 56px 0;
+}
+
+.apna-images-title {
+  margin: 0 0 22px;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+}
+
+.apna-images-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 22px;
+}
+
+.apna-images-tab {
+  height: 38px;
+  padding: 0 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 560;
+  color: var(--v2-text-text-muted);
+  transition: background-color 120ms, color 120ms;
+}
+
+.apna-images-tab:hover {
+  color: var(--v2-text-text-base);
+}
+
+.apna-images-tab[aria-selected="true"] {
+  color: var(--v2-text-text-base);
+  background: color-mix(in srgb, var(--v2-text-text-base) 10%, transparent);
+}
+
+.apna-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.apna-images-card {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--v2-text-text-base) 6%, transparent);
+  text-align: start;
+  outline-offset: 2px;
+}
+
+.apna-images-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 300ms ease;
+}
+
+.apna-images-card:hover img {
+  transform: scale(1.03);
+}
+
+.apna-images-card[data-selected] {
+  box-shadow: 0 0 0 3px #3b82f6;
+}
+
+.apna-images-card-title {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  padding: 36px 14px 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(to top, rgb(0 0 0 / 0.65), transparent);
+}
+
+.apna-images-making .apna-images-card-title {
+  background: none;
+  color: var(--v2-text-text-muted);
+}
+
+.apna-images-shimmer {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    100deg,
+    color-mix(in srgb, var(--v2-text-text-base) 5%, transparent) 30%,
+    color-mix(in srgb, var(--v2-text-text-base) 14%, transparent) 50%,
+    color-mix(in srgb, var(--v2-text-text-base) 5%, transparent) 70%
+  );
+  background-size: 300% 100%;
+  animation: apna-images-shimmer 1.6s linear infinite;
+}
+
+@keyframes apna-images-shimmer {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.apna-images-hint {
+  margin: 0 0 14px;
+  font-size: 13px;
+  color: var(--v2-text-text-muted);
+}
+
+.apna-images-mine-folder,
+.apna-images-grid + .apna-images-hint {
+  margin-top: 14px;
+}
+
+.apna-images-problem {
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: var(--v2-text-text-danger);
+}
+
+.apna-images-empty {
+  padding: 60px 0;
+  text-align: center;
+  color: var(--v2-text-text-muted);
+}
+
+.apna-images-empty-title {
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--v2-text-text-base);
+}
+
+/* Room under the grid, so the last row is not hidden under the floating composer. */
+.apna-images-spacer {
+  height: 140px;
+}
+
+.apna-images-composer-dock {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 18px;
+  display: flex;
+  justify-content: center;
+  padding: 0 24px;
+  pointer-events: none;
+}
+
+.apna-images-composer {
+  width: min(920px, 100%);
+  padding: 8px 8px 8px 10px;
+  border-radius: 28px;
+  border: 1px solid color-mix(in srgb, var(--v2-text-text-base) 12%, transparent);
+  /* Nearly solid: the composer floats over pictures and its words must stay readable. */
+  background: color-mix(in srgb, #1d1d1f 96%, transparent);
+  box-shadow: 0 10px 40px rgb(0 0 0 / 0.35);
+  backdrop-filter: blur(18px);
+  pointer-events: auto;
+}
+
+.apna-images-composer-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.apna-images-input {
+  flex: 1;
+  min-width: 0;
+  max-height: 120px;
+  resize: none;
+  padding: 8px 4px;
+  font-size: 15px;
+  line-height: 1.4;
+  background: transparent;
+  color: var(--v2-text-text-base);
+  outline: none;
+}
+
+.apna-images-input::placeholder {
+  color: var(--v2-text-text-muted);
+}
+
+.apna-images-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  color: var(--v2-text-text-muted);
+}
+
+.apna-images-icon:hover {
+  color: var(--v2-text-text-base);
+  background: color-mix(in srgb, var(--v2-text-text-base) 8%, transparent);
+}
+
+.apna-images-select {
+  flex-shrink: 0;
+  max-width: 150px;
+  height: 34px;
+  padding: 0 8px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 520;
+  color: var(--v2-text-text-muted);
+  background: transparent;
+  cursor: pointer;
+}
+
+.apna-images-select:hover {
+  color: var(--v2-text-text-base);
+  background: color-mix(in srgb, var(--v2-text-text-base) 8%, transparent);
+}
+
+.apna-images-select option {
+  color: #111;
+}
+
+.apna-images-send {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  color: #fff;
+  background: #2f6fed;
+}
+
+.apna-images-send:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.apna-images-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 2px 4px 8px;
+}
+
+.apna-images-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 6px 0 8px;
+  border-radius: 999px;
+  font-size: 13px;
+  background: color-mix(in srgb, var(--v2-text-text-base) 10%, transparent);
+}
+
+.apna-images-chip img {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.apna-images-chip button {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  font-size: 11px;
+  color: var(--v2-text-text-muted);
+}
+
+.apna-images-chip button:hover {
+  color: var(--v2-text-text-base);
+}
+
+/* Preview: the picture big, its prompt and actions beside it. */
+.apna-images-preview {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background: rgb(0 0 0 / 0.78);
+}
+
+.apna-images-preview-body {
+  display: flex;
+  gap: 20px;
+  width: min(1200px, 100%);
+  height: min(820px, 100%);
+}
+
+.apna-images-preview-picture {
+  position: relative;
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.apna-images-preview-picture img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.apna-images-nav {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  border-radius: 999px;
+  font-size: 26px;
+  line-height: 1;
+  color: #fff;
+  background: rgb(0 0 0 / 0.45);
+}
+
+.apna-images-nav[data-side="left"] {
+  left: 8px;
+}
+
+.apna-images-nav[data-side="right"] {
+  right: 8px;
+}
+
+.apna-images-preview-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 48px 20px 20px;
+  border-radius: 16px;
+  color: #eee;
+  background: #1b1b1b;
+}
+
+.apna-images-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  color: #bbb;
+}
+
+.apna-images-close:hover {
+  color: #fff;
+  background: rgb(255 255 255 / 0.08);
+}
+
+.apna-images-preview-label {
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #999;
+}
+
+.apna-images-preview-prompt {
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.apna-images-preview-meta {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #999;
+}
+
+.apna-images-preview-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.apna-images-preview-actions button {
+  height: 36px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 520;
+  background: rgb(255 255 255 / 0.08);
+}
+
+.apna-images-preview-actions button:hover {
+  background: rgb(255 255 255 / 0.14);
+}
+
+.apna-images-preview-actions button[data-danger] {
+  color: #f87171;
+}
+
+.apna-images-placeholder {
+  width: 100%;
+  height: 100%;
+}

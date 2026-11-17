@@ -1,0 +1,160 @@
+/* apna-opencode: the glass look.
+
+   On the desktop app the window itself is clear and the system blurs what is behind it (packages/desktop
+   windows/defaults.ts, `windowGlass`). Here the app's surfaces become panes of glass over that, in four weights:
+
+     shell   the window's own tint, painted once on the page; everything that used the window colour is clear on it
+     pane    a raised panel: the chat, a new chat, a Settings page
+     field   the composer, a pane floating over the chat
+     float   menus, dialogs, popovers, lists that drop over content: the thickest, so text reads over anything
+
+   How it reaches every screen: the app paints its surfaces with two theme variables (the window colour and the
+   panel colour), in about a hundred places. Instead of restyling each place, the variables themselves change:
+
+     - the window colour is clear everywhere;
+     - the panel colour is `float` by default, so anything unknown that pops up is thick, readable glass;
+     - inside a pane the panel colour is clear, so headers, fades and bands that sit on the pane add nothing and
+       glass never stacks into darker stripes;
+     - anything that pops up from inside a pane gets `float` back.
+
+   Text colours are the theme's and are not touched. The weights are chosen so that the theme's text keeps its
+   contrast even with a bright window behind the app.
+
+   Turn it off for one window with `document.documentElement.dataset.apnaGlass = "off"`. */
+
+html:not([data-apna-glass="off"])[data-color-scheme="dark"] {
+  --apna-glass-shell: rgba(18, 18, 22, 0.8);
+  --apna-glass-pane: rgba(30, 30, 35, 0.72);
+  --apna-glass-field: rgba(58, 58, 66, 0.7);
+  --apna-glass-float: rgba(38, 38, 44, 0.94);
+  --apna-glass-raised: rgba(255, 255, 255, 0.07);
+  --apna-glass-raised-strong: rgba(255, 255, 255, 0.115);
+  --apna-glass-edge: rgba(255, 255, 255, 0.13);
+  --apna-glass-shine: rgba(255, 255, 255, 0.2);
+  --apna-glass-shadow: rgba(0, 0, 0, 0.36);
+  --apna-glass-tint-a: rgba(64, 132, 255, 0.18);
+  --apna-glass-tint-b: rgba(178, 96, 255, 0.14);
+  --apna-glass-tint-c: rgba(255, 138, 76, 0.1);
+  --apna-glass-on-accent: #101014;
+}
+
+html:not([data-apna-glass="off"])[data-color-scheme="light"] {
+  --apna-glass-shell: rgba(238, 241, 247, 0.8);
+  --apna-glass-pane: rgba(255, 255, 255, 0.76);
+  --apna-glass-field: rgba(255, 255, 255, 0.8);
+  --apna-glass-float: rgba(255, 255, 255, 0.95);
+  --apna-glass-raised: rgba(0, 0, 0, 0.045);
+  --apna-glass-raised-strong: rgba(0, 0, 0, 0.08);
+  --apna-glass-edge: rgba(255, 255, 255, 0.9);
+  --apna-glass-shine: rgba(255, 255, 255, 1);
+  --apna-glass-shadow: rgba(30, 40, 70, 0.16);
+  --apna-glass-tint-a: rgba(64, 132, 255, 0.18);
+  --apna-glass-tint-b: rgba(178, 96, 255, 0.12);
+  --apna-glass-tint-c: rgba(255, 150, 90, 0.14);
+  --apna-glass-on-accent: #ffffff;
+}
+
+/* ---- the two variables ---- */
+
+html:not([data-apna-glass="off"]) {
+  --v2-background-bg-deep: transparent !important;
+  --v2-background-bg-base: var(--apna-glass-float) !important;
+  background: transparent !important;
+}
+
+/* The only text that used the window colour: the found word in a chat search. It keeps a solid colour. */
+html:not([data-apna-glass="off"])::highlight(timeline-search-hit-active),
+html:not([data-apna-glass="off"]) ::highlight(timeline-search-hit-active) {
+  color: var(--apna-glass-on-accent);
+}
+
+/* ---- shell: one tint for the whole window, with a wash of colour so the panes have something to bend ---- */
+
+html:not([data-apna-glass="off"]) body {
+  background:
+    radial-gradient(60% 55% at 10% 6%, var(--apna-glass-tint-a), transparent 70%),
+    radial-gradient(55% 50% at 94% 14%, var(--apna-glass-tint-b), transparent 70%),
+    radial-gradient(60% 55% at 60% 104%, var(--apna-glass-tint-c), transparent 70%),
+    var(--apna-glass-shell) !important;
+}
+
+/* ---- pane: the raised panels; inside them the panel colour is clear ---- */
+
+html:not([data-apna-glass="off"]) [class*="bg-v2-background-bg-base"][class*="elevation-raised"],
+html:not([data-apna-glass="off"]) .settings-screen > .settings > .settings-content {
+  --v2-background-bg-base: transparent !important;
+  background-color: var(--apna-glass-pane) !important;
+  -webkit-backdrop-filter: blur(26px) saturate(170%);
+  backdrop-filter: blur(26px) saturate(170%);
+  box-shadow:
+    inset 0 1px 0 var(--apna-glass-shine),
+    inset 0 0 0 1px var(--apna-glass-edge),
+    0 14px 44px var(--apna-glass-shadow) !important;
+}
+
+/* Bars that stay put while content passes under them blur it instead of covering it. */
+html:not([data-apna-glass="off"]) [data-session-title] > div,
+html:not([data-apna-glass="off"]) .settings-tab-header {
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  backdrop-filter: blur(18px) saturate(160%);
+}
+
+/* ---- float: whatever pops up, from a pane or from the shell ---- */
+
+html:not([data-apna-glass="off"]) [role="dialog"],
+html:not([data-apna-glass="off"]) [role="menu"],
+html:not([data-apna-glass="off"]) [role="listbox"],
+html:not([data-apna-glass="off"]) [role="tooltip"],
+html:not([data-apna-glass="off"]) [data-popper-positioner],
+html:not([data-apna-glass="off"]) [data-component="composer-suggestions"],
+html:not([data-apna-glass="off"]) [data-component="toast-v2"],
+html:not([data-apna-glass="off"]) [class*="elevation-floating"] {
+  --v2-background-bg-base: var(--apna-glass-float) !important;
+}
+
+html:not([data-apna-glass="off"]) [data-component="menu-v2-content"],
+html:not([data-apna-glass="off"]) [data-component="context-menu-content"],
+html:not([data-apna-glass="off"]) [data-component="context-menu-sub-content"],
+html:not([data-apna-glass="off"]) [data-component="popover-content"],
+html:not([data-apna-glass="off"]) [data-component="hover-card-content"],
+html:not([data-apna-glass="off"]) [data-component="dialog-v2"] [data-slot="dialog-container"],
+html:not([data-apna-glass="off"]) [data-component="composer-suggestions"],
+html:not([data-apna-glass="off"]) [data-component="toast-v2"],
+html:not([data-apna-glass="off"]) [data-peek] [data-slot="vertical-tabs-peek-surface"] {
+  background-color: var(--apna-glass-float) !important;
+  -webkit-backdrop-filter: blur(30px) saturate(170%);
+  backdrop-filter: blur(30px) saturate(170%);
+  box-shadow:
+    inset 0 1px 0 var(--apna-glass-shine),
+    inset 0 0 0 1px var(--apna-glass-edge),
+    0 18px 48px var(--apna-glass-shadow);
+}
+
+/* ---- raised: cards, rows and chips on a pane ---- */
+
+html:not([data-apna-glass="off"]) [class*="bg-v2-background-bg-layer-01"] {
+  background-color: var(--apna-glass-raised) !important;
+}
+
+html:not([data-apna-glass="off"]) [class*="bg-v2-background-bg-layer-02"] {
+  background-color: var(--apna-glass-raised-strong) !important;
+}
+
+/* ---- field: the composer floats over the chat ---- */
+
+html:not([data-apna-glass="off"]) [data-component="composer"] {
+  background-color: var(--apna-glass-field) !important;
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+  backdrop-filter: blur(30px) saturate(180%);
+  box-shadow:
+    inset 0 1px 0 var(--apna-glass-shine),
+    inset 0 0 0 1px var(--apna-glass-edge),
+    0 10px 34px var(--apna-glass-shadow);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  html:not([data-apna-glass="off"]) * {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+}

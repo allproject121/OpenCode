@@ -1,0 +1,146 @@
+/*
+ * apna-opencode: the search boxes ("Search chats" and the command list) in a calmer, Codex-like look: one solid,
+ * rounded panel, a roomy search field with a hairline under it, taller rows with a soft highlight, and the chat's
+ * project and age in quieter text. Only looks change; what the boxes do is untouched.
+ * `html` in front of each selector makes these win over the palette's own rules without !important.
+ */
+
+/* The panel: solid enough to read over any background, rounded, with a soft shadow. */
+html [data-component="dialog-v2"] [data-slot="dialog-container"]:has(> .command-palette-compact) {
+  width: min(640px, calc(100vw - 32px));
+  overflow: hidden;
+  border: 1px solid light-dark(rgb(0 0 0 / 0.08), rgb(255 255 255 / 0.09));
+  border-radius: 16px;
+  /* !important: the glass look (apna-glass.css) gives every dialog a see-through background with !important. */
+  background: light-dark(rgb(255 255 255 / 0.97), rgb(28 28 32 / 0.97)) !important;
+  box-shadow:
+    0 28px 70px -18px rgb(0 0 0 / 0.55),
+    0 2px 8px rgb(0 0 0 / 0.18);
+  backdrop-filter: blur(24px) saturate(1.15);
+}
+
+/* The search field. */
+html .command-palette-compact [data-slot="search-list-search"] {
+  gap: 0;
+  padding: 8px 10px 0;
+
+  &::after {
+    height: 1px;
+    margin: 8px -10px 0;
+    background: light-dark(rgb(0 0 0 / 0.07), rgb(255 255 255 / 0.08));
+    transform: none;
+  }
+
+  [data-component="text-input-v2"] {
+    height: 40px;
+    padding-inline-end: 8px;
+    border-radius: 10px;
+  }
+
+  [data-slot="text-input-v2-value"] {
+    gap: 10px;
+  }
+
+  [data-slot="text-input-v2-leading-icon"] {
+    padding-inline-start: 8px;
+    color: var(--v2-icon-icon-muted);
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  [data-slot="text-input-v2-input"] {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+  }
+
+  [data-slot="text-input-v2-input"]::placeholder {
+    color: var(--v2-text-text-muted);
+    opacity: 0.8;
+  }
+}
+
+/* The list. */
+html .command-palette-compact [data-slot="search-list-results"] {
+  max-height: min(60vh, 480px);
+  padding: 8px 8px 10px;
+}
+
+html .command-palette-compact.command-palette-bare [data-slot="search-list-results"] {
+  padding-top: 8px;
+}
+
+html .command-palette-compact.command-palette [data-slot="search-list-header"] {
+  padding-block: 10px 4px;
+  padding-inline: 10px;
+  color: var(--v2-text-text-muted);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+/* Rows: taller, rounded, with a soft highlight. */
+html .command-palette-compact.command-palette [data-slot="search-list-row"],
+html .command-palette-compact.command-palette [data-slot="search-list-row"][data-size="compact"] {
+  height: 40px;
+  padding-inline: 10px 12px;
+  border-radius: 10px;
+  transition: background-color 90ms ease-out;
+
+  &:is([data-active], :focus-visible) {
+    background: light-dark(rgb(0 0 0 / 0.05), rgb(255 255 255 / 0.07));
+  }
+}
+
+html .command-palette-compact .command-palette-row-main {
+  gap: 10px;
+}
+
+html .command-palette-compact .command-palette-title {
+  color: var(--v2-text-text-base);
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 18px;
+}
+
+/* "Search chats" names its list ("Recent") even when it has one section, as Codex does. */
+html
+  .command-palette-bare
+  [data-slot="search-list-results"]:not(:has(> [data-slot="search-list-section"] ~ [data-slot="search-list-section"]))
+  [data-slot="search-list-header"] {
+  display: flex;
+}
+
+/* The chat's project, after a quiet dot. */
+html .command-palette-compact .command-palette-description {
+  color: var(--v2-text-text-muted);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+html .command-palette-compact.command-palette-bare .command-palette-description::before {
+  margin-inline-end: 6px;
+  content: "·";
+  opacity: 0.7;
+}
+
+/* The age ("2m ago") and shortcuts: small and faint. */
+html .command-palette-compact .command-palette-meta {
+  color: var(--v2-text-text-faint);
+  font-size: 12px;
+}
+
+/* The project's letter badge: smaller and softer, so the chat titles lead. */
+html .command-palette-compact [data-component="project-avatar-v2"] {
+  opacity: 0.8;
+  transform: scale(0.88);
+}
+
+html .command-palette-compact .command-palette-state {
+  min-height: 96px;
+  font-size: 14px;
+}

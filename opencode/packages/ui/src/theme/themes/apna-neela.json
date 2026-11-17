@@ -1,0 +1,53 @@
+{
+  "$schema": "https://opencode.ai/desktop-theme.json",
+  "name": "Apna neela",
+  "id": "apna-neela",
+  "light": {
+    "palette": {
+      "neutral": "#f7f9fc",
+      "ink": "#12233b",
+      "primary": "#d9730d",
+      "accent": "#1d4ed8",
+      "success": "#15803d",
+      "warning": "#b45309",
+      "error": "#b91c1c",
+      "info": "#1d4ed8",
+      "diffAdd": "#15803d",
+      "diffDelete": "#b91c1c"
+    },
+    "overrides": {
+      "text-weak": "#52627a",
+      "syntax-comment": "#6b7a90",
+      "syntax-keyword": "#1d4ed8",
+      "syntax-string": "#15803d",
+      "syntax-primitive": "#b45309",
+      "syntax-constant": "#9d174d",
+      "markdown-heading": "#d9730d",
+      "markdown-link": "#1d4ed8"
+    }
+  },
+  "dark": {
+    "palette": {
+      "neutral": "#0f1b2d",
+      "ink": "#e8eef7",
+      "primary": "#ff9933",
+      "accent": "#6aa8ff",
+      "success": "#4ade80",
+      "warning": "#fbbf24",
+      "error": "#f87171",
+      "info": "#6aa8ff",
+      "diffAdd": "#4ade80",
+      "diffDelete": "#f87171"
+    },
+    "overrides": {
+      "text-weak": "#9fb0c8",
+      "syntax-comment": "#7285a0",
+      "syntax-keyword": "#6aa8ff",
+      "syntax-string": "#86efac",
+      "syntax-primitive": "#fbbf24",
+      "syntax-constant": "#f9a8d4",
+      "markdown-heading": "#ff9933",
+      "markdown-link": "#6aa8ff"
+    }
+  }
+}
