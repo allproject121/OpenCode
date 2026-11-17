@@ -1,0 +1,42 @@
+auto/best-fast                             math:right  hinglish:right  tool:right    4s served:gemini-3-flash-preview,gemini-3.1-flash-lite,gemini-3.1-flash-lite
+auto/best-reasoning                        math:right  hinglish:right  tool:right    4s served:gemini-3-flash-preview,gemini-3.1-flash-lite,gemini-3.1-flash-lite
+auto/best-chat                             math:right  hinglish:right  tool:right    4s served:gemini-3-flash-preview,gemini-3.1-flash-lite,gemini-3.1-flash-lite
+auto/pro-chat                              math:right  hinglish:fail   tool:fail     2s served:gemini-3-flash-preview,,
+auto/pro-reasoning                         math:right  hinglish:right  tool:right    6s served:gemini-3-flash-preview,gemini-3.1-flash-lite,gemini-3.1-flash-lite
+auto/best-coding-fast                      math:right  hinglish:right  tool:right    6s served:gemini-3-flash-preview,gemini-3.1-flash-lite,gemini-3.1-flash-lite
+auto/pro-fast                              math:right  hinglish:right  tool:fail     4s served:gemini-3.1-flash-lite,gemini-3.1-flash-lite,
+auto/best-chaos                            math:fail   hinglish:fail   tool:fail     2s served:,,  ERR 502 {"error":{"message":"All chaos panel models failed — gemini/gemini-3.1-flash-lite: upstream 429: {\"error\":{\"messa
+auto/chaos                                 math:fail   hinglish:fail   tool:fail     1s served:,,  ERR 502 {"error":{"message":"All chaos panel models failed — gemini/gemini-3-flash-preview: upstream 429: {\"error\":{\"mess
+auto/chat                                  math:right  hinglish:right  tool:fail     5s served:gemini-3.1-flash-lite,gemini-3.1-flash-lite,
+auto/pro-coding                            math:right  hinglish:right  tool:fail     10s served:gemini-3-flash-preview,gemini-3.1-flash-lite,
+auto/thrifty                               math:right  hinglish:fail   tool:fail     16s served:gemini-3.1-flash-lite,,
+auto/cheap                                 math:fail   hinglish:fail   tool:fail     17s served:,,  ERR 401 {"error":{"message":"unc/turboderp/Qwen3.8-27B-exl3: auth — [401]: The public beta is closed for now. This endpoint 
+auto/coding:free                           math:fail   hinglish:fail   tool:fail     15s served:,,  ERR 503 {"error":{"message":"cfp/deepseek-ai/deepseek-v4-pro-0813: provider — [503]: Cloudflare Playground needs Playwright 
+auto/coding:fast                           math:fail   hinglish:fail   tool:fail     15s served:,,  ERR 503 {"error":{"message":"cfp/deepseek-ai/deepseek-v4-pro-0813: provider — [503]: Cloudflare Playground needs Playwright 
+auto/coding:reliable                       math:fail   hinglish:fail   tool:fail     14s served:,,  ERR 503 {"error":{"message":"cfp/deepseek-ai/deepseek-v4-pro-0813: provider — [503]: Cloudflare Playground needs Playwright 
+auto/gemini                                math:fail   hinglish:fail   tool:fail     2s served:,,  ERR 502 {"error":{"message":"aug/gemini-3.1-pro-preview: provider — [502]: Auggie CLI not found: auggie. Install it and run 
+auto/glm                                   math:fail   hinglish:fail   tool:fail     5s served:,,  ERR 502 {"error":{"message":"zc/glm-5.1: provider — [502]: spawn zcode ENOENT (HTTP 502); cfp/zai-org/glm-4.7-flash: provide
+auto/kimi                                  math:fail   hinglish:fail   tool:fail     2s served:,,  ERR 502 {"error":{"message":"aug/kimi-k2.6: provider — [502]: Auggie CLI not found: auggie. Install it and run \"auggie logi
+auto/coding:pro                            math:fail   hinglish:right  tool:fail     21s served:,gemini-3.1-flash-lite,  ERR 429 {"error":{"message":"[429]: You exceeded your current quota, please check your plan and billing details. For more in
+auto/gpt                                   math:fail   hinglish:fail   tool:fail     2s served:,,  ERR 503 {"error":{"message":"cxa/gpt-6-sol-high: provider — [503]: Codex app-server transport is not configured (missing url
+auto                                       math:right  hinglish:right  tool:right    6s served:gemini-3-flash-preview,gemini-3.1-flash-lite,gemini-3.1-flash-lite
+auto/lkgp                                  math:right  hinglish:right  tool:right    5s served:gemini-3.1-flash-lite,gemini-3.1-flash-lite,gemini-3.1-flash-lite
+auto/gemma                                 math:fail   hinglish:fail   tool:fail     22s served:,,  ERR 502 {"error":{"message":"cfp/google/gemma-4-26b-a4b-it: provider — [503]: Cloudflare Playground needs Playwright and its
+auto/deepseek                              math:fail   hinglish:fail   tool:fail     18s served:,,  ERR 503 {"error":{"message":"cfp/deepseek-ai/deepseek-v4-flash-0731: provider — [503]: Cloudflare Playground needs Playwrigh
+auto/qwen                                  math:fail   hinglish:fail   tool:fail     18s served:,,  ERR 503 {"error":{"message":"cfp/qwen/qwen2.5-coder-32b-instruct: provider — [503]: Cloudflare Playground needs Playwright a
+auto/llama                                 math:fail   hinglish:fail   tool:fail     22s served:,,  ERR 503 {"error":{"message":"cfp/meta-llama/llama-3.3-70b-instruct-fp8-fast: provider — [503]: Cloudflare Playground needs P
+ddgw/tinfoil/gpt-oss-120b                  math:fail   hinglish:fail   tool:fail     0s served:,,  ERR 429 {"error":{"message":"[429]: DuckDuckGo AI Chat error: ERR_RATE_LIMIT","type":"rate_limit_error","code":"rate_limit_e
+ddgw/mistral-small-2603                    math:fail   hinglish:fail   tool:fail     0s served:,,  ERR 429 {"error":{"message":"[429]: DuckDuckGo AI Chat error: ERR_RATE_LIMIT","type":"rate_limit_error","code":"rate_limit_e
+gemini/gemini-3.8-flash                    math:fail   hinglish:fail   tool:fail     0s served:,,  ERR 429 {"error":{"message":"All credentials for model gemini-3.8-flash are cooling down","type":"rate_limit_error","code":"
+gemini/gemini-3.7-flash                    math:fail   hinglish:fail   tool:fail     0s served:,,  ERR 429 {"error":{"message":"All credentials for model gemini-3.7-flash are cooling down","type":"rate_limit_error","code":"
+ddgw/tinfoil/gemma4-31b                    math:fail   hinglish:fail   tool:fail     0s served:,,  ERR 429 {"error":{"message":"[429]: Failed to acquire VQD token: [REDACTED] rate limited","type":"rate_limit_error","code":"
+gemini/gemini-3-flash-preview              math:fail   hinglish:fail   tool:fail     0s served:,,  ERR 429 {"error":{"message":"All credentials for model gemini-3-flash-preview are cooling down","type":"rate_limit_error","c
+gemini/gemini-2.5-pro                      math:fail   hinglish:fail   tool:fail     0s served:,,  ERR 401 {"error":{"message":"No active credentials for provider: gemini.","type":"authentication_error","code":"provider_not
+ddgw/gpt-5.6-luna                          math:right  hinglish:fail   tool:fail     1s served:gpt-5.6-luna,,
+eco-heavy                                  math:right  hinglish:right  tool:right    5s served:gemini-3.1-flash-lite,gemini-3.1-flash-lite,gemini-3.1-flash-lite
+apna-coding                                math:right  hinglish:right  tool:right    5s served:gemini-3.1-flash-lite,gemini-3.1-flash-lite,gemini-3.1-flash-lite
+gemini/gemini-3.1-flash-lite               math:right  hinglish:fail   tool:fail     5s served:gemini-3.1-flash-lite,,
+auto/reasoning                             math:fail   hinglish:fail   tool:fail     31s served:,,  ERR 503 {"error":{"message":"cfp/deepseek-ai/deepseek-v4-flash-0731: provider — [503]: Cloudflare Playground needs Playwrigh
+auto/coding                                math:right  hinglish:fail   tool:fail     6s served:gemini-3.1-flash-lite,,
+eco-light                                  math:right  hinglish:right  tool:right    10s served:gemini-3.1-flash-lite,gemini-3.1-flash-lite,gemini-3.1-flash-lite
+auto/offline                               math:fail   hinglish:fail   tool:fail     3s served:,,  ERR 503 {"error":{"message":"cfp/zai-org/glm-4.7-flash: provider — [503]: Cloudflare Playground needs Playwright and its Chr

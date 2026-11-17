@@ -1,0 +1,5 @@
+$ bun run --cwd packages/cli src/index.ts serve --port "4199"
+server listening on http://127.0.0.1:4199
+server password Kys5MlQZOjPp8qhMSUefxSfg-kfqx6B4QuXI9doCo10
+error: script "dev" exited with code 143
+ipt "dev" exited with code 143

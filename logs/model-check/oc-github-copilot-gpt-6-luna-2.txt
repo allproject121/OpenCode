@@ -1,0 +1,2 @@
+[91m[1mError: [0mModel unavailable: github-copilot/gpt-6-luna
+exit=1 secs=67

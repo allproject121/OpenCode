@@ -1,0 +1,38 @@
+saved C:\Users\Roshan\Downloads\Programming\logs\41-same.png
+File
+Edit
+View
+Help
+RT
+Apna OpenCode
+New chat
+Projects
+Default Project
+Recents
+D
+Greeting
+New chat
+D
+Default Project
+Greeting
+12k
+hiii
+Plan
+·
+qwen2.5-coder:7b
+
+Hello! How can I assist you today?
+
+Plan
+·
+qwen2.5-coder:7b
+·
+54s
+·
+0.4 tok/s
+Do anything
+Plan
+Ask first
+Ollama
+/
+qwen2.5-coder:7b

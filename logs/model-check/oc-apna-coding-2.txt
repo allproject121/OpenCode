@@ -1,0 +1,11 @@
+[0m
+> build · apna-coding
+[0m← [0mWrite model-test/apna-coding.js
+Created file successfully: model-test/apna-coding.js
+> build · apna-coding
+[0m→ [0mRead model-test/apna-coding.js 
+> build · apna-coding
+Haan, `model-test/apna-coding.js` file ban gayi hai aur usme `jodo` function sahi se add ho gaya hai.
+
+Ab batao, aur kya karna hai?
+exit=0 secs=48

@@ -1,0 +1,10 @@
+[0m
+> build · eco-heavy
+[0m→ [0mRead . 
+> build · eco-heavy
+[0m→ [0mRead index.html 
+> build · eco-heavy
+Is project folder mein ek `index.html` file aur ek `model-test` folder hai.
+
+Page ka title **"Jaanch Site"** hai aur h1 heading mein **"Namaste"** likha hai.
+exit=0 secs=22

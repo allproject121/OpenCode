@@ -1,0 +1,11 @@
+[0m
+> build · auto/coding
+[93m[1m! [0mretrying (attempt 2): cfp/openai/gpt-oss-20b: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute browser-enabled deployment. (HTTP 503)
+[0m→ [0mRead . 
+> build · auto/coding
+[0m→ [0mRead index.html 
+> build · auto/coding
+Is project folder mein `index.html` file aur `model-test` naam ka folder hai.
+
+Page ka title "Jaanch Site" hai aur `<h1>` heading mein "Namaste" likha hai.
+exit=0 secs=38

@@ -1,0 +1,7 @@
+Is folder me React (Vite) project ka dhancha, SPEC.md aur tasks/plan.md pehle se hain, aur npm install ho chuka hai. Ab Hostel Life website poori banao:
+1) src/pages me Home.jsx (hostel ka intro aur features), Rooms.jsx (3 room cards: naam, price, facilities), Videos.jsx (file input accept="video/*", chune video ka <video> preview, 50 MB se bada ho to error dikhe, uploaded naamon ki list localStorage key 'hostel-videos' me save ho aur dikhe), Contact.jsx (naam, email, message; khaali ya galat email par error).
+2) src/App.jsx me react-router-dom se in chaar pages ka menu; achha design, mobile par bhi theek.
+3) src/pages/Videos.test.jsx: 50 MB se bade video par error aur localStorage me naam save hone ka test (Vitest + Testing Library, jsdom).
+4) npm run build aur npx vitest run chalao (watch mode nahi); fail ho to theek karke dobara chalao jab tak dono pass na hon.
+5) docs/kaam/PROGRESS.md sach-sach update karo.
+Mujhse kuch mat poochho, seedha karo. Aakhir me batao kya bana aur commands ka nateeja.

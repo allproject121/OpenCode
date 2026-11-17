@@ -1,0 +1,83 @@
+// Apna OpenCode ki settings. Plugins wala panna is file ko khud badalta hai.
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugins": [
+    "../opencode/packages/plugins/workflow",
+    "C:\\Users\\Roshan\\Downloads\\Programming\\opencode\\packages\\plugins\\figma"
+  ],
+  "model": "omniroute/apna-coding",
+  "mcp": {
+    "servers": {
+      "context7": {
+        "type": "remote",
+        "url": "https://mcp.context7.com/mcp"
+      },
+      "playwright": {
+        "type": "local",
+        "command": [
+          "cmd",
+          "/c",
+          "npx",
+          "-y",
+          "@playwright/mcp@latest"
+        ]
+      },
+      "chrome-devtools": {
+        "type": "local",
+        "command": [
+          "cmd",
+          "/c",
+          "npx",
+          "-y",
+          "chrome-devtools-mcp@latest"
+        ]
+      },
+      "sequential-thinking": {
+        "type": "local",
+        "command": [
+          "cmd",
+          "/c",
+          "npx",
+          "-y",
+          "@modelcontextprotocol/server-sequential-thinking"
+        ]
+      },
+      "figma": {
+        "type": "remote",
+        "url": "https://mcp.figma.com/mcp"
+      },
+      "memory": {
+        "type": "local",
+        "command": [
+          "cmd",
+          "/c",
+          "npx",
+          "-y",
+          "@modelcontextprotocol/server-memory"
+        ],
+        "environment": {
+          "MEMORY_FILE_PATH": "C:\\Users\\Roshan\\Downloads\\Programming\\config\\memory.jsonl"
+        }
+      },
+      "github": {
+        "type": "remote",
+        "url": "https://api.githubcopilot.com/mcp/",
+        "oauth": false,
+        "headers": {
+          "Authorization": "Bearer {user-env:GITHUB_PERSONAL_ACCESS_TOKEN}"
+        }
+      },
+      "deepwiki": {
+        "type": "remote",
+        "url": "https://mcp.deepwiki.com/mcp"
+      },
+      "exa": {
+        "type": "remote",
+        "url": "https://mcp.exa.ai/mcp"
+      }
+    }
+  },
+  "skills": [
+    "C:\\Users\\Roshan\\Downloads\\Programming\\config\\packs\\superpowers\\skills"
+  ]
+}

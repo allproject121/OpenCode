@@ -1,0 +1,26 @@
+File
+Edit
+View
+Help
+RT
+Apna OpenCode
+New chat
+Projects
+Default Project
+Recents
+Greeting
+New chat
+New chat
+New chat
+New chat
+New chat
+What should we work on in Default Project?
+D
+Default Project
+C:\Users\Roshan\Documents\Default Project
+Do anything
+Build
+Ask first
+OmniRoute
+/
+auto/coding

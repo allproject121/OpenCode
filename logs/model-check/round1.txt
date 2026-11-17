@@ -1,0 +1,49 @@
+auto/coding                                math:right  hinglish:right  tool:right    4s
+apna-coding                                math:right  hinglish:right  tool:right    5s
+dva/claude-sonnet-5-low                    math:fail   hinglish:fail   tool:fail     0s  ERR 503 {"error":{"message":"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path insid
+dva/claude-opus-5-low-fast                 math:fail   hinglish:fail   tool:fail     0s  ERR 503 {"error":{"message":"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path insid
+auto/fast                                  math:right  hinglish:right  tool:right    5s
+dva/claude-fable-5-1-low                   math:fail   hinglish:fail   tool:fail     0s  ERR 503 {"error":{"message":"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path insid
+dva/gpt-5-6-sol-low                        math:fail   hinglish:fail   tool:fail     0s  ERR 503 {"error":{"message":"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path insid
+dva/gpt-5-6-luna-low                       math:fail   hinglish:fail   tool:fail     0s  ERR 503 {"error":{"message":"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path insid
+dva/kimi-k3-low                            math:fail   hinglish:fail   tool:fail     0s  ERR 503 {"error":{"message":"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path insid
+dva/glm-5-3-flash-low                      math:fail   hinglish:fail   tool:fail     0s  ERR 503 {"error":{"message":"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path insid
+dva/swe-1-7-lightning                      math:fail   hinglish:fail   tool:fail     0s  ERR 503 {"error":{"message":"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path insid
+dva/grok-4-6-low                           math:fail   hinglish:fail   tool:fail     0s  ERR 503 {"error":{"message":"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path insid
+dva/deepseek-v4-flash-low                  math:fail   hinglish:fail   tool:fail     0s  ERR 503 {"error":{"message":"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path insid
+dva/gemini-3-7-flash-low                   math:fail   hinglish:fail   tool:fail     0s  ERR 503 {"error":{"message":"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path insid
+dva/nemotron-3-ultra-none                  math:fail   hinglish:fail   tool:fail     0s  ERR 503 {"error":{"message":"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path insid
+dva/inkling-low                            math:fail   hinglish:fail   tool:fail     0s  ERR 503 {"error":{"message":"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path insid
+dva/adaptive                               math:fail   hinglish:fail   tool:fail     0s  ERR 503 {"error":{"message":"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path insid
+auto/offline                               math:right  hinglish:right  tool:right    6s
+auto/best-free                             math:right  hinglish:right  tool:right    7s
+auto/smart                                 math:right  hinglish:right  tool:right    4s
+cfp/zai-org/glm-5.2                        math:fail   hinglish:fail   tool:fail     2s  ERR 503 {"error":{"message":"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser run
+cfp/moonshotai/kimi-k2.7-code              math:fail   hinglish:fail   tool:fail     3s  ERR 503 {"error":{"message":"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser run
+cfp/deepseek-ai/deepseek-v4-flash-0731     math:fail   hinglish:fail   tool:fail     3s  ERR 503 {"error":{"message":"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser run
+cfp/openai/gpt-oss-120b                    math:fail   hinglish:fail   tool:fail     3s  ERR 503 {"error":{"message":"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser run
+cfp/qwen/qwen2.5-coder-32b-instruct        math:fail   hinglish:fail   tool:fail     3s  ERR 503 {"error":{"message":"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser run
+cfp/meta-llama/llama-3.3-70b-instruct-fp8-fast math:fail   hinglish:fail   tool:fail     3s  ERR 503 {"error":{"message":"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser run
+cfp/qwen/qwen3-30b-a3b-fp8                 math:fail   hinglish:fail   tool:fail     2s  ERR 503 {"error":{"message":"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser run
+aug/haiku4.5                               math:fail   hinglish:fail   tool:fail     3s  ERR 502 {"error":{"message":"[502]: Auggie CLI not found: auggie. Install it and run \"auggie login\", or set AUGGIE_BIN to 
+auto/best-coding                           math:right  hinglish:right  tool:right    12s
+aug/sonnet5-high                           math:fail   hinglish:fail   tool:fail     3s  ERR 502 {"error":{"message":"[502]: Auggie CLI not found: auggie. Install it and run \"auggie login\", or set AUGGIE_BIN to 
+aug/fable-5                                math:fail   hinglish:fail   tool:fail     3s  ERR 502 {"error":{"message":"[502]: Auggie CLI not found: auggie. Install it and run \"auggie login\", or set AUGGIE_BIN to 
+aug/glm-5.2                                math:fail   hinglish:fail   tool:fail     3s  ERR 502 {"error":{"message":"[502]: Auggie CLI not found: auggie. Install it and run \"auggie login\", or set AUGGIE_BIN to 
+aug/gpt5.4-mini                            math:fail   hinglish:fail   tool:fail     3s  ERR 502 {"error":{"message":"[502]: Auggie CLI not found: auggie. Install it and run \"auggie login\", or set AUGGIE_BIN to 
+aug/kimi-k2.7                              math:fail   hinglish:fail   tool:fail     3s  ERR 502 {"error":{"message":"[502]: Auggie CLI not found: auggie. Install it and run \"auggie login\", or set AUGGIE_BIN to 
+zc/glm-5.3-flash                           math:fail   hinglish:fail   tool:fail     3s  ERR 502 {"error":{"message":"[502]: spawn zcode ENOENT","type":"server_error","code":"bad_gateway"}}
+zc/glm-5.3                                 math:fail   hinglish:fail   tool:fail     3s  ERR 502 {"error":{"message":"[502]: spawn zcode ENOENT","type":"server_error","code":"bad_gateway"}}
+gemini/gemini-3.8-flash                    math:fail   hinglish:fail   tool:fail     0s  ERR 429 {"error":{"message":"All credentials for model gemini-3.8-flash are cooling down","type":"rate_limit_error","code":"
+gemini/gemini-3.7-flash                    math:fail   hinglish:fail   tool:fail     0s  ERR 429 {"error":{"message":"All credentials for model gemini-3.7-flash are cooling down","type":"rate_limit_error","code":"
+gemini/gemini-3.1-flash-lite               math:fail   hinglish:fail   tool:fail     0s  ERR 429 {"error":{"message":"All credentials for model gemini-3.1-flash-lite are cooling down","type":"rate_limit_error","co
+gemini/gemini-2.5-flash                    math:fail   hinglish:fail   tool:fail     0s  ERR 401 {"error":{"message":"No active credentials for provider: gemini.","type":"authentication_error","code":"provider_not
+gemini/gemini-3.1-pro-preview              math:fail   hinglish:fail   tool:fail     0s  ERR 429 {"error":{"message":"All credentials for model gemini-3.1-pro-preview are cooling down","type":"rate_limit_error","c
+gemini/gemini-4-argon                      math:fail   hinglish:fail   tool:fail     0s  ERR 429 {"error":{"message":"All credentials for model gemini-4-argon are cooling down","type":"rate_limit_error","code":"mo
+zc/glm-4.7-flash                           math:fail   hinglish:fail   tool:fail     3s  ERR 502 {"error":{"message":"[502]: spawn zcode ENOENT","type":"server_error","code":"bad_gateway"}}
+cxa/gpt-6-sol-low                          math:fail   hinglish:fail   tool:fail     3s  ERR 503 {"error":{"message":"[503]: Codex app-server transport is not configured (missing url or token)","type":"server_erro
+cxa/gpt-6-luna-low                         math:fail   hinglish:fail   tool:fail     3s  ERR 503 {"error":{"message":"[503]: Codex app-server transport is not configured (missing url or token)","type":"server_erro
+cxa/gpt-5.6-luna-low                       math:fail   hinglish:fail   tool:fail     2s  ERR 503 {"error":{"message":"[503]: Codex app-server transport is not configured (missing url or token)","type":"server_erro
+unc/turboderp/Qwen3.8-27B-exl3             math:fail   hinglish:fail   tool:fail     2s  ERR 401 {"error":{"message":"[401]: The public beta is closed for now. This endpoint needs an API key, and key registration 
+ddgw/claude-haiku-4-5                      math:right  hinglish:right  tool:right    2s
+ddgw/gpt-5.4-mini                          math:right  hinglish:right  tool:right    2s

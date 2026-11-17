@@ -1,0 +1,34 @@
+saved C:\Users\Roshan\Downloads\Programming\logs\08-slash.png
+Session
+Session
+/init
+guided AGENTS.md setup
+/review
+review changes [commit|branch|pr], defaults to uncommitted
+/goal
+keep working until an objective is met [pause|resume|clear]
+/automation
+create an automation, or list, pause, resume and delete this project's automations
+/banao
+Kuch naya banao: samjho -> plan -> banao -> jaancho -> suraksha -> taiyaar
+/jaanch
+Test chalao, galtiyan dhundo, theek karo, dobara jaancho
+/suraksha
+Security jaanch (OWASP) aur kamiyan theek karo
+/model
+Select a different model
+Ctrl+'
+/connect
+Sign in to OpenCode Go, OpenCode Console, or another model provider
+/reload
+Reload agents, commands, skills, MCP servers and plugins from your config
+/agent
+Switch to the next agent
+Ctrl+.
+/
+Build
+Hy4 flash Free
+Default
+D
+Default Project
+C:\Users\Roshan\Documents\Default Project
