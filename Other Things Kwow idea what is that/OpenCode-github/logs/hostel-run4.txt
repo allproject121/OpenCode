@@ -1,0 +1,2 @@
+timestamp=2026-11-17T16:26:02.025Z level=INFO run=1df4820a message="cli starting" version=local channel=local local=true args="[\"serve\",\"--stdio\",\"--port\",\"0\"]" role=cli
+exit 1

@@ -1,0 +1,785 @@
+$ bun --cwd packages/desktop dev
+$ bun run script/dev.ts
+Copied dev icons from ./icons/dev to resources/icons
+[36mvite v8.2.4 [32mbuilding ssr environment for development...[36m[39m
+transforming...
+✓ 2375 modules transformed.
+rendering chunks...
+out/main/rpc-CxBu5GwB.js                   0.08 kB
+out/main/main-CB8YQW_j.js                  0.24 kB
+out/main/rolldown-runtime-8H4AJuhK.js      0.38 kB
+out/main/rpc-Cgr1icHg.js                   0.54 kB
+out/main/zh-CUZkDTDj.js                    1.03 kB
+out/main/zht-DOpXDenF.js                   1.05 kB
+out/main/da-C_eg23aw.js                    1.11 kB
+out/main/fi-BycSDomD.js                    1.12 kB
+out/main/no-BLZCF40t.js                    1.12 kB
+out/main/id-BqXecrWb.js                    1.13 kB
+out/main/et-BkVtQy_t.js                    1.14 kB
+out/main/ms-D-x-cdWn.js                    1.14 kB
+out/main/fo-5pBcbmZ8.js                    1.15 kB
+out/main/sv-uxx24Mvc.js                    1.16 kB
+out/main/is-CFbltIj5.js                    1.17 kB
+out/main/tr-B4WrFAtT.js                    1.18 kB
+out/main/sq-DzA1R267.js                    1.21 kB
+out/main/nl-BhmqNsib.js                    1.21 kB
+out/main/tk-yVk3r1qU.js                    1.22 kB
+out/main/uz-XB5LlUoi.js                    1.23 kB
+out/main/de-DRGuBgka.js                    1.23 kB
+out/main/az-BhUqZOne.js                    1.24 kB
+out/main/zh-CbfuUi_6.js                    1.25 kB
+out/main/ms-DSiz19HQ.js                    1.26 kB
+out/main/id-bMP1hFwl.js                    1.26 kB
+out/main/lv-DXaMQzq4.js                    1.27 kB
+out/main/zh-DLFtsMem.js                    1.27 kB
+out/main/hu-C-nNhZC5.js                    1.28 kB
+out/main/vi-Dyd8wFgV.js                    1.29 kB
+out/main/zht-D5s2IYpN.js                   1.29 kB
+out/main/fo-M_BtFkIm.js                    1.30 kB
+out/main/ko-Cc7vT6yF.js                    1.31 kB
+out/main/es-DIpzThAt.js                    1.31 kB
+out/main/bs-Cn2bvfrl.js                    1.31 kB
+out/main/is-i1vNZb7c.js                    1.31 kB
+out/main/hr-oGvfPCND.js                    1.32 kB
+out/main/br-CpBsG1jY.js                    1.32 kB
+out/main/no-CP_gF2Oj.js                    1.33 kB
+out/main/da-JUxYhpGh.js                    1.33 kB
+out/main/et-ChBI2VZm.js                    1.33 kB
+out/main/sv-CXGh7_uz.js                    1.34 kB
+out/main/nl-Beg49b4L.js                    1.34 kB
+out/main/it-Cnv2YUEz.js                    1.34 kB
+out/main/sl-Bq_mhmJ_.js                    1.34 kB
+out/main/bs-BZVF6qQE.js                    1.35 kB
+out/main/ro-BCog7_-m.js                    1.35 kB
+out/main/es-aWRhJ1Kq.js                    1.35 kB
+out/main/ca-BjaaBZIi.js                    1.36 kB
+out/main/ca-CUxTMZ3E.js                    1.36 kB
+out/main/de-BO0Sb_Bp.js                    1.36 kB
+out/main/tk-DhF4Lk4k.js                    1.36 kB
+out/main/ja-DLaWiM2Y.js                    1.36 kB
+out/main/uz--hLh9W81.js                    1.36 kB
+out/main/hr-B76qsPO2.js                    1.37 kB
+out/main/fi-DEKzq7cB.js                    1.37 kB
+out/main/zht-Bzdub8h0.js                   1.37 kB
+out/main/cs-D57jM-ZW.js                    1.37 kB
+out/main/sk-BucD4LT_.js                    1.37 kB
+out/main/br-DP5UvJq_.js                    1.38 kB
+out/main/id-DJQCRyWa.js                    1.38 kB
+out/main/ko-DfWwq7s5.js                    1.38 kB
+out/main/az-dp51U5dC.js                    1.38 kB
+out/main/ro-BE7T7hDR.js                    1.38 kB
+out/main/tr-BTCk5z9S.js                    1.39 kB
+out/main/pl-CwnFe1g-.js                    1.39 kB
+out/main/lv-B2lRc7-Y.js                    1.39 kB
+out/main/lt-bvgx652h.js                    1.40 kB
+out/main/sk-mhBAsVhq.js                    1.40 kB
+out/main/sq-BpQSFO0c.js                    1.40 kB
+out/main/it-C_JCHaBT.js                    1.40 kB
+out/main/ms-BSHD6XH5.js                    1.40 kB
+out/main/pl-ChYN_TgC.js                    1.41 kB
+out/main/da-BHtXHNBQ.js                    1.41 kB
+out/main/nl-xQNKLgnA.js                    1.41 kB
+out/main/uz-Ao1SrOIt.js                    1.42 kB
+out/main/lt-DuT7c8uU.js                    1.42 kB
+out/main/fr-CHAR0r8e.js                    1.42 kB
+out/main/sl-uwmfmAac.js                    1.43 kB
+out/main/no-lVYERLCS.js                    1.43 kB
+out/main/cs-CcoimJL-.js                    1.43 kB
+out/main/sl-tP5AN591.js                    1.43 kB
+out/main/fr-63Ab12un.js                    1.43 kB
+out/main/vi-BTaweqxn.js                    1.43 kB
+out/main/tk-ClewVQAJ.js                    1.44 kB
+out/main/fo-l5qiRGMS.js                    1.44 kB
+out/main/et-BbY-gKdb.js                    1.44 kB
+out/main/bs-CAsE8sd9.js                    1.44 kB
+out/main/lt-ikmSf4oo.js                    1.45 kB
+out/main/local-Dkm_S8Bb.js                 1.46 kB
+out/main/sk-i8TtuPPh.js                    1.46 kB
+out/main/tr-Bk7BPVD8.js                    1.46 kB
+out/main/hu-DaiPJgUh.js                    1.46 kB
+out/main/he-BurNC6Cx.js                    1.46 kB
+out/main/hr-DbASehKE.js                    1.46 kB
+out/main/lv-eF356ODo.js                    1.46 kB
+out/main/br-DPSpThs2.js                    1.47 kB
+out/main/cs-CP9UoYQ9.js                    1.47 kB
+out/main/sv-CDloG7MA.js                    1.47 kB
+out/main/es-BE9C7LG3.js                    1.47 kB
+out/main/pl-CmNy4yQs.js                    1.48 kB
+out/main/ro-CXeMOnno.js                    1.48 kB
+out/main/az-DSI-j2R-.js                    1.49 kB
+out/main/fi-CtAN8fmB.js                    1.49 kB
+out/main/it-CUi-rlrT.js                    1.49 kB
+out/main/sq-CcvjsY6s.js                    1.49 kB
+out/main/ca-DAheNrN8.js                    1.49 kB
+out/main/is-5KHz4Uic.js                    1.49 kB
+out/main/fa-BxkuzrGO.js                    1.50 kB
+out/main/fr-BDPOt3aR.js                    1.50 kB
+out/main/pa-Dg5KVU_i.js                    1.50 kB
+out/main/am-BeYzUk6o.js                    1.51 kB
+out/main/de-_recn2BT.js                    1.51 kB
+out/main/he-BlRm3uEk.js                    1.53 kB
+out/main/hu-B2wVYMUg.js                    1.53 kB
+out/main/vi-CorhGdp5.js                    1.55 kB
+out/main/he-C0MDA4Fm.js                    1.56 kB
+out/main/fa-ie2Kh6ZW.js                    1.57 kB
+out/main/pa-9fxr3JGT.js                    1.57 kB
+out/main/mn-B2g-mkOx.js                    1.61 kB
+out/main/tg-D1cbpvD_.js                    1.61 kB
+out/main/bg-D03sxNM7.js                    1.61 kB
+out/main/hy-dFeI_jDP.js                    1.62 kB
+out/main/mk-iM-vzBmQ.js                    1.63 kB
+out/main/ur-BmxNHE1r.js                    1.63 kB
+out/main/ko-DwJd1nrS.js                    1.64 kB
+out/main/ja-R3c2XUx8.js                    1.64 kB
+out/main/ar-DbP6KvsZ.js                    1.65 kB
+out/main/ur-DBTGMDPZ.js                    1.67 kB
+out/main/el-B_tdLHCN.js                    1.71 kB
+out/main/sr-BsEU5OSx.js                    1.73 kB
+out/main/am-B_ReSs8g.js                    1.74 kB
+out/main/sr-CACrTiq3.js                    1.78 kB
+out/main/tg-C57VT23h.js                    1.79 kB
+out/main/mn-CxOyBTv4.js                    1.79 kB
+out/main/dv-CeSj_5i0.js                    1.81 kB
+out/main/pa-CIlqHC6Z.js                    1.82 kB
+out/main/bg-DMg3ZvYW.js                    1.84 kB
+out/main/mk-DBt7nrFt.js                    1.84 kB
+out/main/ja-DcuPZ6eb.js                    1.85 kB
+out/main/uk-BN2-QrF2.js                    1.85 kB
+out/main/uk-ComhhEnD.js                    1.86 kB
+out/main/ru-CJjDj2_g.js                    1.86 kB
+out/main/ur-BaRbtUvr.js                    1.87 kB
+out/main/ru-HoU8OfBJ.js                    1.90 kB
+out/main/am-aeD-2QqB.js                    1.90 kB
+out/main/el-C48XfqwY.js                    1.91 kB
+out/main/hy-B7aEQyEN.js                    1.91 kB
+out/main/lo-DYFotnqY.js                    1.93 kB
+out/main/fa-B9SSTUjw.js                    1.95 kB
+out/main/hi-D1KPI23f.js                    1.95 kB
+out/main/ar-Dn9G_BQ8.js                    1.97 kB
+out/main/dv-Tk4TjLSi.js                    1.98 kB
+out/main/si-V-NFB0jD.js                    1.99 kB
+out/main/th-DqQ2lh53.js                    2.00 kB
+out/main/lo-C2qQxM68.js                    2.01 kB
+out/main/uk-PlaTM0yB.js                    2.02 kB
+out/main/km-BCqU0vJ6.js                    2.02 kB
+out/main/si-D2aksbeh.js                    2.02 kB
+out/main/bn-BypMsfcI.js                    2.03 kB
+out/main/tg-BIQepzeS.js                    2.03 kB
+out/main/hi-Cki1DSKg.js                    2.03 kB
+out/main/zh-Bbl-C2wA.js                    2.04 kB
+out/main/mn-DU9V2k1u.js                    2.05 kB
+out/main/sr-C5U7yD56.js                    2.05 kB
+out/main/zh-D68TNHxL.js                    2.05 kB
+out/main/ru-CRVVY9na.js                    2.05 kB
+out/main/zht-BsrDJiZ0.js                   2.06 kB
+out/main/ar-BjlPaZf7.js                    2.06 kB
+out/main/zht-a5bUiMMC.js                   2.06 kB
+out/main/hy-BSULYeTY.js                    2.06 kB
+out/main/ne-BbC9D5Wz.js                    2.07 kB
+out/main/mk-DlZmlhVe.js                    2.10 kB
+out/main/bg-uqYAJOcl.js                    2.10 kB
+out/main/bn-9_isROt5.js                    2.10 kB
+out/main/th-DWMerEfJ.js                    2.12 kB
+out/main/id-CJnWe8KO.js                    2.15 kB
+out/main/dv-D460jvZX.js                    2.15 kB
+out/main/da-Cbai-fMv.js                    2.16 kB
+out/main/ms-CuwJ4MoO.js                    2.17 kB
+out/main/ka-CcQQdIS5.js                    2.18 kB
+out/main/fo-DifPj46O.js                    2.19 kB
+out/main/et-CzE_F-RS.js                    2.21 kB
+out/main/ne-Bj9zg4iX.js                    2.21 kB
+out/main/nl-BNLev-qW.js                    2.22 kB
+out/main/et-4mKCMKUu.js                    2.22 kB
+out/main/zh-CAPf3S1W.js                    2.22 kB
+out/main/sl-DPA_6JE0.js                    2.23 kB
+out/main/id-DkIQ5t4B.js                    2.23 kB
+out/main/ms-CjvJ6jxi.js                    2.23 kB
+out/main/zht-C5ZTxAQG.js                   2.24 kB
+out/main/fi-BBpj2sBo.js                    2.24 kB
+out/main/is-OI49Y3q6.js                    2.24 kB
+out/main/bs-K-ZIluF_.js                    2.24 kB
+out/main/is-9e_x4_kF.js                    2.24 kB
+out/main/km-9GtIBlsO.js                    2.24 kB
+out/main/sl-B2GydA68.js                    2.24 kB
+out/main/br-BjcDHiOb.js                    2.25 kB
+out/main/it-DcWnhsMV.js                    2.25 kB
+out/main/sv-DitO6i7a.js                    2.25 kB
+out/main/tk-ByzcFc1W.js                    2.25 kB
+out/main/no-ChNdSMLe.js                    2.25 kB
+out/main/no-B3yWS_xX.js                    2.26 kB
+out/main/cs-BCCVscYv.js                    2.26 kB
+out/main/ms-BA5HU3fS.js                    2.27 kB
+out/main/tk-B7gMQr-I.js                    2.27 kB
+out/main/es-qKuaky7H.js                    2.27 kB
+out/main/lv-DpSm_ocL.js                    2.27 kB
+out/main/bs-Cyft-UCG.js                    2.27 kB
+out/main/sv-B5gW-b-0.js                    2.27 kB
+out/main/hr-wWTZbM5b.js                    2.28 kB
+out/main/da-CAfevHmc.js                    2.28 kB
+out/main/de-DakL9-vO.js                    2.28 kB
+out/main/fo-CQcTzoX7.js                    2.28 kB
+out/main/id-CnXahreR.js                    2.28 kB
+out/main/no-CUEM2D4t.js                    2.28 kB
+out/main/da-TnkOXUEr.js                    2.29 kB
+out/main/ro-ChAdjUOH.js                    2.29 kB
+out/main/el-BgY_-2Zi.js                    2.29 kB
+out/main/pl-pGE7Nz-o.js                    2.29 kB
+out/main/tr-Cl4qeVNl.js                    2.30 kB
+out/main/et-CgmK7wVd.js                    2.30 kB
+out/main/sk-BXFSXGmq.js                    2.30 kB
+out/main/fi-BgF-LIVZ.js                    2.30 kB
+out/main/fo-C_QAKjtm.js                    2.31 kB
+out/main/sv-CtG9QYd0.js                    2.31 kB
+out/main/nl-CZyUiMqD.js                    2.32 kB
+out/main/sq-DPOtdNxn.js                    2.32 kB
+out/main/sq-_tgURw1P.js                    2.32 kB
+out/main/is-BlY9hOU0.js                    2.33 kB
+out/main/tr-CcSk9un1.js                    2.33 kB
+out/main/ka-DIq6DWt1.js                    2.33 kB
+out/main/pl-C0sIA7tn.js                    2.33 kB
+out/main/uz-B9PA7oHw.js                    2.34 kB
+out/main/uz-D3EWuRzU.js                    2.34 kB
+out/main/it-DcVE0txp.js                    2.34 kB
+out/main/lt-Bayoqdy4.js                    2.35 kB
+out/main/es-BC0ki1R4.js                    2.35 kB
+out/main/tr-oHd4IgfO.js                    2.35 kB
+out/main/br-B1EwepLy.js                    2.36 kB
+out/main/zh-B0V7LVQ8.js                    2.36 kB
+out/main/sq-npzkkIQX.js                    2.36 kB
+out/main/az-BmmcYu7u.js                    2.37 kB
+out/main/tk-CV9TG_Wt.js                    2.37 kB
+out/main/sk-Ccp8GzRT.js                    2.37 kB
+out/main/hu-DrsFBPNc.js                    2.37 kB
+out/main/ca-C6Fvra25.js                    2.38 kB
+out/main/az-D53VnICu.js                    2.38 kB
+out/main/uz-BzuyKt8p.js                    2.38 kB
+out/main/cs-CzLzpEwK.js                    2.39 kB
+out/main/nl-CdzXSuzf.js                    2.39 kB
+out/main/de-CJ92rGyL.js                    2.40 kB
+out/main/lo-ClXFtLQb.js                    2.40 kB
+out/main/lt-CmOWQ4Sv.js                    2.40 kB
+out/main/fr-Ck8ub3Pw.js                    2.40 kB
+out/main/fi-CVL6nvBY.js                    2.41 kB
+out/main/my-DUYViz5Y.js                    2.41 kB
+out/main/ko-B6DFlpa_.js                    2.41 kB
+out/main/hr-DWe97jyg.js                    2.41 kB
+out/main/hu-C3MPW8uC.js                    2.43 kB
+out/main/az-2g7RyfLx.js                    2.43 kB
+out/main/ko-D-609r4S.js                    2.43 kB
+out/main/fr-vDifkc-B.js                    2.43 kB
+out/main/hi--UawVR5m.js                    2.44 kB
+out/main/it-DgFaMMAs.js                    2.44 kB
+out/main/zht-C-zudQbp.js                   2.44 kB
+out/main/ca-HlWI5gYR.js                    2.45 kB
+out/main/ko-QJRS9rmc.js                    2.45 kB
+out/main/bs-WPm8va_n.js                    2.45 kB
+out/main/ro-D72_p2fw.js                    2.45 kB
+out/main/es-C2B2XPGI.js                    2.47 kB
+out/main/hr-BjFZ7_9E.js                    2.47 kB
+out/main/lv-CFg-coUu.js                    2.47 kB
+out/main/ca-BcXiLnSP.js                    2.47 kB
+out/main/he-QBOEZLKn.js                    2.47 kB
+out/main/lv-a4iF0hqS.js                    2.48 kB
+out/main/vi-Byr2wnqG.js                    2.48 kB
+out/main/br-d5m2DXpD.js                    2.49 kB
+out/main/no-DfiQ4RZY.js                    2.50 kB
+out/main/id-CAQrT6Mp.js                    2.51 kB
+out/main/ms-CsTPJU8A.js                    2.51 kB
+out/main/hu-B3sQ6iNg.js                    2.52 kB
+out/main/nl-DcbIJiBx.js                    2.52 kB
+out/main/fr-Dcww3wgs.js                    2.53 kB
+out/main/sl-BXgyzTQs.js                    2.53 kB
+out/main/de-BsuT0Q8u.js                    2.55 kB
+out/main/pl-CB8vE0HV.js                    2.55 kB
+out/main/vi-D0-sph5j.js                    2.56 kB
+out/main/ro-MPFqjn7y.js                    2.56 kB
+out/main/fo-1iRablit.js                    2.56 kB
+out/main/da-PZQjFPHx.js                    2.56 kB
+out/main/my-CGMvM-wC.js                    2.56 kB
+out/main/et-CE8EcnXz.js                    2.56 kB
+out/main/lt-B-vVyUyI.js                    2.58 kB
+out/main/core-sLvezBSn.js                  2.58 kB
+out/main/cs-zDJo4IoF.js                    2.58 kB
+out/main/dz-D7Sh0MYi.js                    2.58 kB
+out/main/ne-C5Xrdlbx.js                    2.58 kB
+out/main/sv-D3eSsRjs.js                    2.59 kB
+out/main/vi-CzFdVZM7.js                    2.60 kB
+out/main/km-DCrmiqMD.js                    2.60 kB
+out/main/si-BPR_N4YE.js                    2.61 kB
+out/main/sk-DM5-d5Tq.js                    2.61 kB
+out/main/is-5wVdnPsQ.js                    2.62 kB
+out/main/dz-CfJtKDGD.js                    2.63 kB
+out/main/he-JA_EyKGC.js                    2.64 kB
+out/main/cs-DMjeEtdR.js                    2.64 kB
+out/main/sk-DsP1o6Jj.js                    2.64 kB
+out/main/sl-DlW7cgTr.js                    2.65 kB
+out/main/ja-Dv9C9T_U.js                    2.66 kB
+out/main/ar-DgpfTolb.js                    2.66 kB
+out/main/uz-CU3fMNWc.js                    2.66 kB
+out/main/bn-B3LvQz3p.js                    2.66 kB
+out/main/tr-By4eqPu_.js                    2.67 kB
+out/main/th-BYmkSJS1.js                    2.67 kB
+out/main/hr-D-qVV3M0.js                    2.67 kB
+out/main/he-RgG2XIpM.js                    2.68 kB
+out/main/my-CH09vNDB.js                    2.68 kB
+out/main/tk-BLdeZMAv.js                    2.68 kB
+out/main/pl-D5zv5aM6.js                    2.69 kB
+out/main/ja-pDiqKLiy.js                    2.69 kB
+out/main/de-CFTo5uAQ.js                    2.70 kB
+out/main/bs-DaZUHOmJ.js                    2.71 kB
+out/main/am-EAt3dPfP.js                    2.72 kB
+out/main/it-2zfKU_Sv.js                    2.73 kB
+out/main/br-GpGmZ_zv.js                    2.76 kB
+out/main/ar-BjrrQs5l.js                    2.76 kB
+out/main/ka-Bf1XyHOr.js                    2.76 kB
+out/main/fi-DV-_4JtG.js                    2.77 kB
+out/main/lt-CHVa6MFu.js                    2.78 kB
+out/main/pa-DsWJ29WZ.js                    2.78 kB
+out/main/lighthouse-vg_B9Ahh.js            2.78 kB
+out/main/sq-BxLuGR0h.js                    2.78 kB
+out/main/ro-CT4P_j0M.js                    2.79 kB
+out/main/lv-Dcehnaox.js                    2.79 kB
+out/main/az-Bw6a4ybi.js                    2.80 kB
+out/main/ko-V6Ew7-a_.js                    2.80 kB
+out/main/am-DUfCVdfq.js                    2.80 kB
+out/main/ca-BqL00exY.js                    2.81 kB
+out/main/hu-JakSsdJb.js                    2.83 kB
+out/main/fa-COe7LmaA.js                    2.83 kB
+out/main/es-Ci60HUtE.js                    2.83 kB
+out/main/mn-D0uytCrL.js                    2.85 kB
+out/main/pa-C3h2lLh2.js                    2.86 kB
+out/main/ja-CsW_I2ds.js                    2.86 kB
+out/main/fr-CE1HnnKf.js                    2.86 kB
+out/main/hy-DQJBWBVx.js                    2.87 kB
+out/main/tg-B12x-jBq.js                    2.92 kB
+out/main/vi-KgJVDecl.js                    2.94 kB
+out/main/bg-BLn6t3Ms.js                    2.96 kB
+out/main/fa-ChmLPgpo.js                    2.97 kB
+out/main/pa-DsLwu1RN.js                    2.97 kB
+out/main/ur-BtxkVeV2.js                    2.97 kB
+out/main/dz-BD-zJBzg.js                    2.98 kB
+out/main/fa-B9DV-CXP.js                    2.98 kB
+out/main/ur-C2aRXSrO.js                    2.98 kB
+out/main/hy-D9TrK5lX.js                    3.01 kB
+out/main/sr-DNWaH89g.js                    3.02 kB
+out/main/mk-BprcVsK-.js                    3.03 kB
+out/main/sr-DtnIfJKG.js                    3.05 kB
+out/main/ru-CdRmgc-_.js                    3.06 kB
+out/main/ur-CACoceVO.js                    3.07 kB
+out/main/ar-DdvWPem9.js                    3.07 kB
+out/main/tg-B4MazjGx.js                    3.08 kB
+out/main/uk-BE9ChZ7e.js                    3.12 kB
+out/main/mk-B9GKIj_X.js                    3.13 kB
+out/main/am-Circ_-Do.js                    3.14 kB
+out/main/el-DHJYPnrl.js                    3.14 kB
+out/main/lo-DGmnV1jp.js                    3.15 kB
+out/main/ru-DaK9qJZV.js                    3.16 kB
+out/main/zh-C4uXQc-E.js                    3.18 kB
+out/main/uk-zVqcy0mj.js                    3.18 kB
+out/main/dv-DpHo_RyL.js                    3.19 kB
+out/main/ja-JCUawHy8.js                    3.20 kB
+out/main/mn-_jVQ7PSH.js                    3.20 kB
+out/main/zht-BCpXy_ys.js                   3.20 kB
+out/main/he-DJZ0WNis.js                    3.21 kB
+out/main/sr-NGC3ZLP2.js                    3.21 kB
+out/main/th-CaplLhhg.js                    3.22 kB
+out/main/uk-qEMmKWQ8.js                    3.22 kB
+out/main/zh-B5zKp5lA.js                    3.23 kB
+out/main/bg-DpoPqTX8.js                    3.23 kB
+out/main/mn-Dwj7vzDb.js                    3.24 kB
+out/main/dv-BtxNMTyP.js                    3.25 kB
+out/main/bn-C1dnCK6v.js                    3.27 kB
+out/main/el-CKcd6Qsn.js                    3.28 kB
+out/main/zh-nGxFp_eJ.js                    3.28 kB
+out/main/ar-B7T7IRpJ.js                    3.28 kB
+out/main/hy-C0zYDSw0.js                    3.30 kB
+out/main/zht-C3s_7RUq.js                   3.30 kB
+out/main/et-BitX0p14.js                    3.31 kB
+out/main/id-C29YOdJf.js                    3.32 kB
+out/main/da-XZkLEH9o.js                    3.34 kB
+out/main/ru-CeRonUTh.js                    3.35 kB
+out/main/zht-DDaokEi4.js                   3.36 kB
+out/main/ms-Oi2pj1m_.js                    3.36 kB
+out/main/hi-BaZBnwPu.js                    3.37 kB
+out/main/mk-Tt7gaSfb.js                    3.41 kB
+out/main/si-D7sBPplp.js                    3.41 kB
+out/main/no-CObkqTJ9.js                    3.42 kB
+out/main/upgrade-CltUOwPT.js               3.43 kB
+out/main/ur-DAi4G67a.js                    3.44 kB
+out/main/km-Db_IRkGu.js                    3.44 kB
+out/main/lo-BaoITAAL.js                    3.44 kB
+out/main/pa-aCqV6mBY.js                    3.44 kB
+out/main/tk-BaGhvutM.js                    3.46 kB
+out/main/tg-BMHa00Qc.js                    3.46 kB
+out/main/id-B8JeRi8e.js                    3.47 kB
+out/main/fo-aWFmW11f.js                    3.47 kB
+out/main/bg-Bo-XG111.js                    3.48 kB
+out/main/sv-BlZmw0z0.js                    3.49 kB
+out/main/ms-CBTLSJHW.js                    3.49 kB
+out/main/fa-CF_Z7kd7.js                    3.49 kB
+out/main/fi-C3JvwrER.js                    3.49 kB
+out/main/nl-DQBH77NY.js                    3.53 kB
+out/main/sl-DURgKdw6.js                    3.54 kB
+out/main/is-BlCDOpg4.js                    3.55 kB
+out/main/et-3Ip3xqNQ.js                    3.56 kB
+out/main/ne-DpaXLgEu.js                    3.57 kB
+out/main/bs-B2vJ0IV_.js                    3.57 kB
+out/main/tr-DJXmP6m6.js                    3.58 kB
+out/main/id-BfBeXGyI.js                    3.58 kB
+out/main/tk-SDu_FrnM.js                    3.59 kB
+out/main/uz-c7jpMkg5.js                    3.59 kB
+out/main/is-DrCbA8Rx.js                    3.60 kB
+out/main/my-DzFDwlr2.js                    3.60 kB
+out/main/fo-Di2oHjsS.js                    3.61 kB
+out/main/ka-JGT0TmzW.js                    3.61 kB
+out/main/no-v2ofTD_t.js                    3.61 kB
+out/main/sl-iT6SMP0z.js                    3.61 kB
+out/main/et-TpCgT5D0.js                    3.62 kB
+out/main/cs-CODFA4iW.js                    3.62 kB
+out/main/az-DgcsloUI.js                    3.63 kB
+out/main/lv-Chifo70z.js                    3.63 kB
+out/main/da-DYA4TsiT.js                    3.63 kB
+out/main/hr-CGNbK6uS.js                    3.63 kB
+out/main/lt-DsCGT0Oz.js                    3.63 kB
+out/main/tr-C-UItICX.js                    3.63 kB
+out/main/uz-BIx8WbnR.js                    3.64 kB
+out/main/ro-Dsgk91Pd.js                    3.64 kB
+out/main/sq-BpqgQirP.js                    3.65 kB
+out/main/no-D_y8EdOT.js                    3.65 kB
+out/main/de-D-7smScF.js                    3.65 kB
+out/main/da-CK75J-ol.js                    3.65 kB
+out/main/sq-BNZYWfDc.js                    3.66 kB
+out/main/ms-s4QVhAty.js                    3.67 kB
+out/main/nl-qPd-QX4K.js                    3.67 kB
+out/main/th-BKsx1GMh.js                    3.67 kB
+out/main/bs-C4Sl9OWB.js                    3.67 kB
+out/main/sl-BQey_fge.js                    3.67 kB
+out/main/bs-BgK3HmJN.js                    3.68 kB
+out/main/is-CgrhsLfq.js                    3.68 kB
+out/main/nl-BIWFqbng.js                    3.68 kB
+out/main/it-Bmzzr7jD.js                    3.68 kB
+out/main/fi-B6K1RDyz.js                    3.68 kB
+out/main/br-Bx-0IwU8.js                    3.69 kB
+out/main/sv-Q4PolVQX.js                    3.69 kB
+out/main/fi-Cq-1I2vU.js                    3.69 kB
+out/main/sk-COkB4WO9.js                    3.70 kB
+out/main/lv-Ov5ZRvk5.js                    3.70 kB
+out/main/tk-D7a7tewY.js                    3.72 kB
+out/main/sq-Dmb1Qe6m.js                    3.72 kB
+out/main/hr-DZlx0BRy.js                    3.73 kB
+out/main/fo-SQ55dkF_.js                    3.73 kB
+out/main/lt-CUy7L0Hq.js                    3.73 kB
+out/main/ro-nF5UbHB8.js                    3.73 kB
+out/main/uz-CCmlni8S.js                    3.73 kB
+out/main/es-BM2Fo-sf.js                    3.74 kB
+out/main/hi-DpdwO5rV.js                    3.74 kB
+out/main/hr-BrJkTEjq.js                    3.74 kB
+out/main/sv-BD2JTLC-.js                    3.75 kB
+out/main/es-C88kTRst.js                    3.75 kB
+out/main/lt-7Aj9SCt6.js                    3.76 kB
+out/main/bn-BkYPhr01.js                    3.76 kB
+out/main/br-BeiMPxMN.js                    3.76 kB
+out/main/it-CcI7S7tk.js                    3.76 kB
+out/main/ca-7N0ns6We.js                    3.77 kB
+out/main/am-eKR9p64O.js                    3.77 kB
+out/main/dv-TA82xoP1.js                    3.77 kB
+out/main/sk-bCRiHXha.js                    3.77 kB
+out/main/dz-BZ0c_nve.js                    3.78 kB
+out/main/it-BF8gVQ3W.js                    3.78 kB
+out/main/az-CLo-9zXF.js                    3.79 kB
+out/main/ca-Cvk9B7ma.js                    3.79 kB
+out/main/sr-CjCsHxql.js                    3.79 kB
+out/main/tr-BeWa2FhS.js                    3.79 kB
+out/main/es-B1gomTTA.js                    3.79 kB
+out/main/pl-Bsee4zBg.js                    3.79 kB
+out/main/hu-D4b3CQy5.js                    3.80 kB
+out/main/sk-CF2eT43w.js                    3.80 kB
+out/main/mn-DjxL0Y4_.js                    3.81 kB
+out/main/br-DUam0jtH.js                    3.81 kB
+out/main/cs-nFP2U7wc.js                    3.81 kB
+out/main/ko-BPHnGo-R.js                    3.81 kB
+out/main/ro-Ddgt07km.js                    3.81 kB
+out/main/uk-BMaKHOl_.js                    3.82 kB
+out/main/ru-BytlTCsL.js                    3.82 kB
+out/main/cs-EZ1llWNk.js                    3.82 kB
+out/main/lv-DkrhJkja.js                    3.82 kB
+out/main/fr-6AlkcFqt.js                    3.83 kB
+out/main/ca-CtJnHCEr.js                    3.83 kB
+out/main/shared-events-CZzWYkyV.js         3.83 kB
+out/main/tg-LZjAREPn.js                    3.84 kB
+out/main/ko-KNpOmF7M.js                    3.86 kB
+out/main/vi-MqU5j8V8.js                    3.87 kB
+out/main/pl-yyWSIpA1.js                    3.87 kB
+out/main/he-Dxeat5v2.js                    3.87 kB
+out/main/lo-CjO2PUWr.js                    3.90 kB
+out/main/si-lPGpFTmV.js                    3.92 kB
+out/main/fr-C7eR6owO.js                    3.93 kB
+out/main/ka-D60ScI1O.js                    3.93 kB
+out/main/el-DeBiADHI.js                    3.93 kB
+out/main/pl-CkTdPi3S.js                    3.93 kB
+out/main/de-qUELtTpX.js                    3.93 kB
+out/main/de-DXV_IKTP.js                    3.94 kB
+out/main/ko-iUx9aV6R.js                    3.95 kB
+out/main/hu-DTUJBTW3.js                    3.95 kB
+out/main/fr-BjFOpsC_.js                    3.96 kB
+out/main/hu-CCKR-AyS.js                    3.96 kB
+out/main/az-CuZ8nfDO.js                    3.99 kB
+out/main/hy-BMT427I0.js                    4.02 kB
+out/main/dv-DQhE_LRO.js                    4.04 kB
+out/main/bg-DaaBJCM5.js                    4.05 kB
+out/main/km-BZ8_jMei.js                    4.05 kB
+out/main/ne-Dw_yk32O.js                    4.05 kB
+out/main/vi-C6bwnwYA.js                    4.05 kB
+out/main/ar-BwT-6ejl.js                    4.06 kB
+out/main/vi-CqG-7AJ-.js                    4.07 kB
+out/main/th-DVGpiqyE.js                    4.10 kB
+out/main/mk-DcaL7-6z.js                    4.11 kB
+out/main/he-DajDbjFs.js                    4.16 kB
+out/main/hi-DBvq0BJC.js                    4.19 kB
+out/main/he-DtSiBmYh.js                    4.19 kB
+out/main/el-CwpuMbfC.js                    4.21 kB
+out/main/ne-DrbuA-P7.js                    4.21 kB
+out/main/am-CU4lCuPJ.js                    4.22 kB
+out/main/my-vai320cR.js                    4.24 kB
+out/main/bn-CyQhe3qx.js                    4.27 kB
+out/main/ja-BBAL_Mm8.js                    4.31 kB
+out/main/lo-DwwV1Ieo.js                    4.35 kB
+out/main/hi-Db-QNeTN.js                    4.37 kB
+out/main/ja-DqWTdkbo.js                    4.38 kB
+out/main/si-BuOa9EJN.js                    4.38 kB
+out/main/bn-DNYtphMA.js                    4.39 kB
+out/main/platform-DKdK9uLj.js              4.41 kB
+out/main/th-D0uY3U88.js                    4.44 kB
+out/main/fa-DwVAUxds.js                    4.44 kB
+out/main/ar-gViJ1zDK.js                    4.46 kB
+out/main/pa-D932DAKG.js                    4.48 kB
+out/main/ne-BPGph-FY.js                    4.55 kB
+out/main/km-BqMzwNzp.js                    4.55 kB
+out/main/pa-BN-6Bz2f.js                    4.60 kB
+out/main/ja-C49kzAFw.js                    4.60 kB
+out/main/ka-BsoJh3jg.js                    4.63 kB
+out/main/km-CIXncoj5.js                    4.64 kB
+out/main/dz-FdsRyAvf.js                    4.64 kB
+out/main/mn-bMVRisU_.js                    4.68 kB
+out/main/tg-ImaQhS6n.js                    4.70 kB
+out/main/hy-BBkUwV8Y.js                    4.70 kB
+out/main/my-DzU8EikK.js                    4.71 kB
+out/main/sr-DpThE4Px.js                    4.71 kB
+out/main/ur-52mhynza.js                    4.71 kB
+out/main/fa-DNQpJcjA.js                    4.71 kB
+out/main/si-BccmkCTr.js                    4.72 kB
+out/main/am-CcRUNztq.js                    4.76 kB
+out/main/am-OnhFqN-z.js                    4.77 kB
+out/main/mk-B5iLWhT9.js                    4.78 kB
+out/main/fa-BOygEe9O.js                    4.79 kB
+out/main/uk-B-CYuGWp.js                    4.83 kB
+out/main/ru-BHvh9KZ9.js                    4.85 kB
+out/main/ur-D0lqFtqv.js                    4.86 kB
+out/main/bg-DMumY0Gg.js                    4.87 kB
+out/main/pa-Bx_txUqh.js                    4.88 kB
+out/main/mn-DjYO_WAC.js                    4.89 kB
+out/main/ar-xSanhlTM.js                    4.95 kB
+out/main/ka-CnRAKuwR.js                    4.97 kB
+out/main/dz-BuvrN4AR.js                    4.98 kB
+out/main/el-DJai71sp.js                    5.03 kB
+out/main/sr-D3wKa-ZP.js                    5.06 kB
+out/main/mn-BgxbYCj4.js                    5.12 kB
+out/main/sr-CVhNys-h.js                    5.12 kB
+out/main/ur-DPDlW-Kn.js                    5.13 kB
+out/main/tg-U1uQtdvq.js                    5.14 kB
+out/main/lo-mrAHGrRH.js                    5.15 kB
+out/main/ru-ClfSWz_2.js                    5.17 kB
+out/main/uk-DP6nRnsM.js                    5.19 kB
+out/main/hy-Bh8SzRaK.js                    5.19 kB
+out/main/mk-DFPD0q6L.js                    5.32 kB
+out/main/tg-C3g3giMm.js                    5.39 kB
+out/main/uk-x-TUkppZ.js                    5.39 kB
+out/main/hy-mTOWhonV.js                    5.41 kB
+out/main/bg-CFhUujSe.js                    5.41 kB
+out/main/ru-Cf1JmCP6.js                    5.46 kB
+out/main/bg-FPZ77v6I.js                    5.46 kB
+out/main/dz-CUcLu2XB.js                    5.47 kB
+out/main/mk-D864cbkM.js                    5.48 kB
+out/main/my-DyD-tIaJ.js                    5.52 kB
+out/main/ne-7_5u0Fah.js                    5.52 kB
+out/main/th-BWeM1Dsg.js                    5.53 kB
+out/main/dv-Bmjd1mXj.js                    5.55 kB
+out/main/el-DYUaFuyf.js                    5.67 kB
+out/main/si-BDXCG9cO.js                    5.71 kB
+out/main/bn-D7V5lxe7.js                    5.75 kB
+out/main/dv-B1wH5-IZ.js                    5.80 kB
+out/main/hi-CsgsK4wP.js                    5.80 kB
+out/main/lo-CBSAA70D.js                    5.86 kB
+out/main/ka-DZ1DaHEi.js                    5.90 kB
+out/main/km-BKY1arUD.js                    5.98 kB
+out/main/dv-DKgYIb1C.js                    6.04 kB
+out/main/el-CIBfhiqW.js                    6.05 kB
+out/main/hi-CSJeW26K.js                    6.15 kB
+out/main/th-BFeGNGvi.js                    6.25 kB
+out/main/lo-BLmEbh9Q.js                    6.36 kB
+out/main/ne-Ugog8fve.js                    6.41 kB
+out/main/th-fbmF92x3.js                    6.43 kB
+out/main/ne-DEoyuXsK.js                    6.54 kB
+out/main/si-D3QLwRWJ.js                    6.54 kB
+out/main/hi-o0fsVSvC.js                    6.54 kB
+out/main/si-CgEsc-z1.js                    6.55 kB
+out/main/bn-1afzYUpd.js                    6.57 kB
+out/main/km-Crwof1ib.js                    6.62 kB
+out/main/my-CY3EddPn.js                    6.68 kB
+out/main/bn-D1jAkarn.js                    6.71 kB
+out/main/km-BghHlVHg.js                    6.87 kB
+out/main/ka-zfRubGyu.js                    7.00 kB
+out/main/ka-DGNQ7OvP.js                    7.00 kB
+out/main/my-CN_pmdPq.js                    7.26 kB
+out/main/dz-B1eCdeZs.js                    7.41 kB
+out/main/my-ClEwW0k5.js                    7.53 kB
+out/main/dz-Cl6t0ktK.js                    7.60 kB
+out/main/dz-DcKnsvTD.js                    7.83 kB
+out/main/NodeSocket-CF13L4WJ.js           10.25 kB
+out/main/NodeStream-BV2blk9q.js           10.69 kB
+out/main/main-DnTWcF69.js                 11.32 kB
+out/main/main-DnPy1p11.js                 13.00 kB
+out/main/service-TLAGzubs.js              17.47 kB
+out/main/main-B19PFh6M.js                 28.74 kB
+out/main/main-B1xufrnF.js                 29.21 kB
+out/main/main-CEBZ9rEJ.js                 29.53 kB
+out/main/main-DKDDazKK.js                 31.09 kB
+out/main/main-CHSTUv8c.js                 44.86 kB
+out/main/HttpClient-CNGYnc6V.js           51.67 kB
+out/main/session-C4fzCy4h.js              81.03 kB
+out/main/promise-DXUpiwYe.js              81.88 kB
+out/main/index.js                         97.24 kB
+out/main/main-9tpqPeqB.js                103.57 kB
+out/main/host-CzzfSUMf.js                145.55 kB
+out/main/pane-SSGTclyb.js                199.35 kB
+out/main/effect-Dj-xfPCk.js              364.09 kB
+out/main/desktop-B-HdmdE3.js             489.66 kB
+out/main/dist-DWveHAM-.js              1,984.05 kB
+out/main/Latch-oSncnOpo.js             2,726.23 kB
+
+[33m[33m[INEFFECTIVE_DYNAMIC_IMPORT] [0m../plugin/src/gui/main.ts is dynamically imported by src/main/plugin/module.ts but also statically imported by src/main/plugin/host.ts, ../gui-plugins/src/updater/main.ts, dynamic import will not move module into another chunk.
+[39m
+[32m✓ built in 1.44s[39m
+[32m
+electron main process built successfully[39m
+[90m
+-----
+[39m
+[36mvite v8.2.4 [32mbuilding ssr environment for development...[36m[39m
+transforming...
+✓ 4 modules transformed.
+rendering chunks...
+out/preload/index.cjs  1.55 kB
+
+[32m✓ built in 24ms[39m
+[32m
+electron preload scripts built successfully[39m
+[90m
+-----
+[39m
+[32mdev server running for the electron renderer process at:
+[39m
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[32m
+starting electron app...
+[39m
+
+
+DevTools listening on ws://127.0.0.1:9222/devtools/browser/ed3c8fa3-f6ff-487f-aeb0-2139a3f57f7f
+10:25:36.477 (main) > app starting {
+  version: '2.0.0-local-1794891332480',
+  packaged: false,
+  onboardingTest: false,
+  marks: {
+    entry: 1794891336019,
+    ready: 1794891336059,
+    window: 1794891336148,
+    served: 1794891336149,
+    bundle: 1794891336460,
+    onboarding: 1794891336463,
+    logging: 1794891336476
+  }
+}
+10:25:36.512 (main) > layers ready {
+  marks: {
+    entry: 1794891336019,
+    ready: 1794891336059,
+    window: 1794891336148,
+    served: 1794891336149,
+    bundle: 1794891336460,
+    onboarding: 1794891336463,
+    logging: 1794891336476,
+    storage: 1794891336505,
+    init: 1794891336507,
+    layers: 1794891336512
+  }
+}
+10:25:36.515 (main) > main window visible {
+  window: 'fdd7e450-9003-493b-9e55-00a8dae4614a',
+  shownAt: 1794891336132
+}
+10:25:36.519 (main) > starting v2 background service
+10:25:37.052 (network) > net log started {
+  path: 'C:\\Users\\Roshan\\AppData\\Roaming\\ai.opencode.desktop.dev\\logs\\20261117T045536\\network.netlog'
+}
+10:25:37.110 (crash)   > crash reporter started {
+  path: 'C:\\Users\\Roshan\\AppData\\Roaming\\ai.opencode.desktop.dev\\Crashpad'
+}
+(electron) 'console-message' arguments are deprecated and will be removed. Please use Event<WebContentsConsoleMessageEventParams> object instead.
+10:25:37.673           > [vite] connecting...
+10:25:37.680           > %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged.
+10:25:38.078           > [vite] connected.
+10:25:42.198 (main)    > v2 CLI background service starting { reason: 'missing' }
+10:25:49.265 (main)    > v2 CLI background service ready {
+  version: '2.0.0-local-1794891332480',
+  runningVersion: '2.0.0-local-1794891332480',
+  probed: false,
+  url: 'http://127.0.0.1:3084',
+  hostname: '127.0.0.1',
+  port: '3084'
+}
+10:25:52.195           > [vite] connecting...
+10:25:52.210           > [vite] connected.
+10:25:52.723           > computations created outside a `createRoot` or `render` will never be disposed Error: Console warning
+    at diagnosticStack (http://localhost:5173/assets/main.js:3415:9)
+    at console.warn (http://localhost:5173/assets/main.js:3398:17)
+    at createComputation (http://localhost:5173/assets/main.js:866:30)
+    at createRenderEffect (http://localhost:5173/assets/main.js:329:12)
+    at createSessionStore (http://localhost:5173/assets/main.js:196125:2)
+    at http://localhost:5173/assets/main.js:196716:20
+    at Array.flatMap (<anonymous>)
+    at prepare (http://localhost:5173/assets/main.js:196702:45)
+    at Promise.try (<anonymous>)
+    at run (http://localhost:5173/assets/main.js:196458:57)
+[2m10:25:52 am[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mcomputations created outside a `createRoot` or `render` will never be disposed Error: Console warning
+    at diagnosticStack (http://localhost:5173/assets/main.js:3415:9)
+    at console.warn (http://localhost:5173/assets/main.js:3398:17)
+    at createComputation (http://localhost:5173/assets/main.js:866:30)
+    at createRenderEffect (http://localhost:5173/assets/main.js:329:12)
+    at createSessionStore (http://localhost:5173/assets/main.js:196125:2)
+    at http://localhost:5173/assets/main.js:196716:20
+    at Array.flatMap (<anonymous>)
+    at prepare (http://localhost:5173/assets/main.js:196702:45)
+    at Promise.try (<anonymous>)
+    at run (http://localhost:5173/assets/main.js:196458:57)
+10:25:52.802           > %cElectron Security Warning (Insecure Content-Security-Policy) font-weight: bold; This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged.
+10:25:53.725           > computations created outside a `createRoot` or `render` will never be disposed (repeated 1 times)
+[2m10:25:54 am[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mcomputations created outside a `createRoot` or `render` will never be disposed (repeated 1 times)
+Built the pairing web UI in 76.9 s
+error: script "dev" exited with code 255
+error: script "dev:desktop" exited with code 255

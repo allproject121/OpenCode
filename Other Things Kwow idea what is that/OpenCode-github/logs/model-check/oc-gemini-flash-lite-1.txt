@@ -1,0 +1,10 @@
+[0m
+> build · gemini/gemini-3.1-flash-lite
+[0m→ [0mRead . 
+> build · gemini/gemini-3.1-flash-lite
+[0m→ [0mRead index.html 
+> build · gemini/gemini-3.1-flash-lite
+Is project folder me `index.html` file aur `model-test` naam ka folder hai.
+
+Page ka title **"Jaanch Site"** hai aur h1 heading me **"Namaste"** likha hua hai.
+exit=0 secs=34

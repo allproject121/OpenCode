@@ -1,0 +1,15 @@
+
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :     48145     37246     10900         0         0         1
+   Files :    290243    290242         1         0         0         0
+   Bytes :   6.606 g   6.606 g        82         0         0         0
+   Times :   0:58:46   0:03:43                       0:00:00   0:00:16
+
+
+   Speed :           3,16,72,933 Bytes/sec.
+   Speed :             1,812.340 MegaBytes/min.
+   Ended : 17 November 2026 22:36:07
+

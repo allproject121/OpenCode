@@ -1,0 +1,4 @@
+[0m
+> build · claude-sonnet-5-5
+[91m[1mError: [0mInsufficient balance. This request is pay-as-you-go, billed to OpenCode Models credits. Top up at https://opencode.ai/console/wrk_01KXTY8171T6GYZ7HBJXF4XWBQ/billing?credits=1. OpenCode Go covers only requests to the OpenCode Go provider.
+exit=1 secs=57

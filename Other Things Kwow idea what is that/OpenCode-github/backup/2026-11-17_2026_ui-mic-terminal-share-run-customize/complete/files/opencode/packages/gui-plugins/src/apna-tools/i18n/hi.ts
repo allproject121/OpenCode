@@ -1,0 +1,35 @@
+import type en from "./en"
+
+export default {
+  group: "Auzaar",
+  "desktop.only": "Ye sirf desktop app me chalta hai.",
+
+  "terminal.toggle": "Terminal dikhao / chhupao (Ctrl+`)",
+
+  "run.title": "Project chalao",
+  "run.idle": "Abhi nahi chal raha",
+  "run.start": "Chalao (npm run dev / web server)",
+  "run.again": "Dobara chalao",
+  "run.stop": "Roko",
+  "run.open": "{{url}} yahin kholo",
+  "run.external": "Mere browser me kholo",
+  "run.started": "Project chalu ho raha hai",
+  "run.failed": "Project nahi chal paya",
+  "run.status.installing": "Packages lag rahe hain…",
+  "run.status.starting": "Chalu ho raha hai…",
+  "run.status.running": "Chal raha hai",
+  "run.status.stopped": "Ruka hua",
+  "run.status.failed": "Nahi chala",
+
+  "share.title": "Share",
+  "share.copy": "Chat text me copy karo",
+  "share.save": "Chat file me save karo (project ke chats folder me)",
+  "share.json": "Chat export (JSON)…",
+  "share.folder": "Project ka folder dikhao",
+  "share.copied": "Chat copy ho gayi",
+  "share.saved": "Chat save ho gayi",
+  "share.failed": "Chat share nahi ho payi",
+  "share.untitled": "Chat",
+
+  "dictate.title": "Bolkar likho (mic)",
+} satisfies Record<keyof typeof en, string>

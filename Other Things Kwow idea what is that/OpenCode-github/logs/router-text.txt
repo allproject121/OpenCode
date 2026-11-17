@@ -1,0 +1,79 @@
+saved C:\Users\Roshan\Downloads\Programming\logs\07-connect-fail.png
+Session
+Back to app
+Providers
+Models
+Extensions
+Projects
+Worktrees
+Preferences
+Appearance
+Notifications
+Shortcuts
+Pairing
+Offline models
+Router
+Server
+Experimental
+About
+Router
+Ek hi jagah se saare AI providers. Router (OmniRoute) app ke saath khud chalu hota hai; ek model band ho to doosre par chala jaata hai.
+Router (OmniRoute)
+Chal raha hai
+Pata: http://127.0.0.1:20128 (sirf is PC ke liye)
+Dashboard kholo
+Dobara dekho
+Router ki apni key
+Key Windows ke OMNIROUTE_API_KEY se mil gayi hai.
+Provider jodo
+Gemini (Google AI Studio)
+Google ke models; free limit roz milti hai · Juda hua hai
+Key lo
+Jodo
+Groq
+Bahut tez jawab; free limit
+Key lo
+Jodo
+OpenRouter
+Ek key se bahut saare models; kuch free
+Key lo
+Jodo
+Cerebras
+Tez open models; free limit
+Key lo
+Jodo
+Mistral
+Mistral / Codestral; free limit
+Key lo
+Jodo
+NVIDIA NIM
+Bahut saare open models; free credits
+Key lo
+Jodo
+DeepSeek
+Sasta coding model
+Key lo
+Jodo
+OpenAI
+GPT models (paise lagte hain)
+Key lo
+Jodo
+Anthropic
+Claude models (paise lagte hain)
+Key lo
+Jodo
+xAI (Grok)
+Grok models (paise lagte hain)
+Key lo
+Jodo
+
+1. "Key lo" dabao, website khulegi. 2. Wahan key banao aur copy karo. 3. Yahan chipkao aur "Jodo" dabao.
+
+Jude hue providers
+gemini / main
+Theek · active
+Hatao
+ollama-local / ollama-local
+Theek · active
+Hatao
+Groq nahi juda: Invalid API key

@@ -1,0 +1,1058 @@
+[
+  {
+    "model": "auto/best-fast",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 6237,
+      "served": "gemini-3-flash-preview",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 3107,
+      "served": "gemini-3.1-flash-lite",
+      "content": "Python mein list ko reverse karne ke liye aap `list.reverse()` method use kar sakte hain, jo list ko modify kar deta hai.\nYa phir aap `list[::-1]` slicing ka use karke ek nayi reversed list bana sakte hain.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 2373,
+      "served": "gemini-3.1-flash-lite",
+      "content": "",
+      "tools": [
+        {
+          "id": "call_7508780695992553816",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "auto/best-reasoning",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 6738,
+      "served": "gemini-3-flash-preview",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 2690,
+      "served": "gemini-3.1-flash-lite",
+      "content": "Python mein list ko reverse karne ke liye `list.reverse()` method use karein (in-place change ke liye).\nAgar aapko original list bina badle nayi reversed list chahiye, toh `list[::-1]` slicing ka use karein.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 2915,
+      "served": "gemini-3.1-flash-lite",
+      "content": "",
+      "tools": [
+        {
+          "id": "call_7809187563685197058",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "auto/best-chat",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 5209,
+      "served": "gemini-3-flash-preview",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 4655,
+      "served": "gemini-3.1-flash-lite",
+      "content": "Python mein list ko reverse karne ke liye aap `list.reverse()` method use kar sakte hain jo list ko wahi badal deta hai.\nYa phir aap `list[::-1]` slicing ka use karke ek nayi reversed list bana sakte hain.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 2956,
+      "served": "gemini-3.1-flash-lite",
+      "content": "",
+      "tools": [
+        {
+          "id": "call_14108345209663466933",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "auto/pro-chat",
+    "math": "right",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": true,
+      "ms": 1612,
+      "served": "gemini-3-flash-preview",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2614,
+      "error": "429 {\"error\":{\"message\":\"[429]: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To m"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 950,
+      "error": "401 {\"error\":{\"message\":\"unc/turboderp/Qwen3.8-27B-exl3: auth — [401]: The public beta is closed for now. This endpoint needs an API key, and key registration is closed; check uncloseai.com for when it re"
+    }
+  },
+  {
+    "model": "auto/pro-reasoning",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 6066,
+      "served": "gemini-3-flash-preview",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 6176,
+      "served": "gemini-3.1-flash-lite",
+      "content": "Python mein list ko reverse karne ke liye `list.reverse()` method use karein, jo original list ko hi badal deta hai.\nYa phir aap `list[::-1]` slicing ka use karke ek nayi reversed list bana sakte hain.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 5922,
+      "served": "gemini-3.1-flash-lite",
+      "content": "",
+      "tools": [
+        {
+          "id": "call_11491946941317954069",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "auto/best-coding-fast",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 6724,
+      "served": "gemini-3-flash-preview",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 6379,
+      "served": "gemini-3.1-flash-lite",
+      "content": "Python me list ko reverse karne ke liye aap `list.reverse()` method use kar sakte hain, ya phir `list[::-1]` slicing ka istemal kar sakte hain.\n\n`my_list.reverse()` list ko modify karta hai, jabki `my_list[::-1]` ek nayi reversed list return karta hai.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 6392,
+      "served": "gemini-3.1-flash-lite",
+      "content": "",
+      "tools": [
+        {
+          "id": "call_2590879635672135641",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "auto/pro-fast",
+    "math": "right",
+    "hing": "right",
+    "tool": "fail",
+    "q1": {
+      "ok": true,
+      "ms": 3224,
+      "served": "gemini-3.1-flash-lite",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 2936,
+      "served": "gemini-3.1-flash-lite",
+      "content": "Python mein list ko reverse karne ke liye `list.reverse()` method ka use karein, jo original list ko hi badal deta hai.\nYa phir aap `list[::-1]` slicing ka use karke ek nayi reversed list bhi bana sakte hain.",
+      "tools": []
+    },
+    "q3": {
+      "ok": false,
+      "ms": 5035,
+      "error": "429 {\"error\":{\"message\":\"[429]: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To m"
+    }
+  },
+  {
+    "model": "auto/best-chaos",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 5027,
+      "error": "502 {\"error\":{\"message\":\"All chaos panel models failed — gemini/gemini-3.1-flash-lite: upstream 429: {\\\"error\\\":{\\\"message\\\":\\\"All credentials for model gemini-3.1-flash-lite are cooling down\\\",\\\"type\\\":\\"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 603,
+      "error": "502 {\"error\":{\"message\":\"All chaos panel models failed — gemini/gemini-3.1-flash-tts-preview: upstream 429: {\\\"error\\\":{\\\"message\\\":\\\"All credentials for model gemini-3.1-flash-tts-preview are cooling dow"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 64,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    }
+  },
+  {
+    "model": "auto/chaos",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 580,
+      "error": "502 {\"error\":{\"message\":\"All chaos panel models failed — gemini/gemini-3-flash-preview: upstream 429: {\\\"error\\\":{\\\"message\\\":\\\"All credentials for model gemini-3-flash-preview are cooling down\\\",\\\"type\\\""
+    },
+    "q2": {
+      "ok": false,
+      "ms": 747,
+      "error": "502 {\"error\":{\"message\":\"All chaos panel models failed — gemini/gemini-3.1-flash-tts-preview: upstream 400: {\\\"error\\\":{\\\"message\\\":\\\"[400]: Request contains an invalid argument.\\\",\\\"type\\\":\\\"invalid_requ"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 693,
+      "error": "502 {\"error\":{\"message\":\"All chaos panel models failed — gemini/gemini-3.1-flash-tts-preview: upstream 429: {\\\"error\\\":{\\\"message\\\":\\\"All credentials for model gemini-3.1-flash-tts-preview are cooling dow"
+    }
+  },
+  {
+    "model": "auto/chat",
+    "math": "right",
+    "hing": "right",
+    "tool": "fail",
+    "q1": {
+      "ok": true,
+      "ms": 5393,
+      "served": "gemini-3.1-flash-lite",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 10086,
+      "served": "gemini-3.1-flash-lite",
+      "content": "Python mein list ko reverse karne ke liye aap `list.reverse()` method use kar sakte hain, ya phir slicing trick `my_list[::-1]` ka istemal kar sakte hain.\n\nDono hi methods bahut aasaan hain aur list ko palat dete hain!",
+      "tools": []
+    },
+    "q3": {
+      "ok": false,
+      "ms": 605,
+      "error": "429 {\"error\":{\"message\":\"[429]: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To m"
+    }
+  },
+  {
+    "model": "auto/pro-coding",
+    "math": "right",
+    "hing": "right",
+    "tool": "fail",
+    "q1": {
+      "ok": true,
+      "ms": 7488,
+      "served": "gemini-3-flash-preview",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 22117,
+      "served": "gemini-3.1-flash-lite",
+      "content": "Python mein list ko reverse karne ke liye aap `list.reverse()` method use kar sakte hain jo list ko wahi modify karta hai.\nYa phir aap `list[::-1]` slicing ka use karke ek nayi reversed list bana sakte hain.",
+      "tools": []
+    },
+    "q3": {
+      "ok": false,
+      "ms": 602,
+      "error": "429 {\"error\":{\"message\":\"[429]: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To m"
+    }
+  },
+  {
+    "model": "auto/thrifty",
+    "math": "right",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": true,
+      "ms": 7560,
+      "served": "gemini-3.1-flash-lite",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": false,
+      "ms": 1190,
+      "error": "429 {\"error\":{\"message\":\"[429]: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To m"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 39036,
+      "error": "503 {\"error\":{\"message\":\"cfp/deepseek-ai/deepseek-v4-pro-0813: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playw"
+    }
+  },
+  {
+    "model": "auto/cheap",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 1143,
+      "error": "401 {\"error\":{\"message\":\"unc/turboderp/Qwen3.8-27B-exl3: auth — [401]: The public beta is closed for now. This endpoint needs an API key, and key registration is closed; check uncloseai.com for when it re"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 48877,
+      "error": "502 {\"error\":{\"message\":\"cfp/deepseek-ai/deepseek-r1-distill-qwen-32b: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && n"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2193,
+      "error": "503 {\"error\":{\"message\":\"cfp/deepseek-ai/deepseek-v4-flash-0731: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx pla"
+    }
+  },
+  {
+    "model": "auto/coding:free",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 40262,
+      "error": "503 {\"error\":{\"message\":\"cfp/deepseek-ai/deepseek-v4-pro-0813: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playw"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 3085,
+      "error": "502 {\"error\":{\"message\":\"cfp/deepseek-ai/deepseek-r1-distill-qwen-32b: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && n"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2154,
+      "error": "503 {\"error\":{\"message\":\"cfp/deepseek-ai/deepseek-v4-flash-0731: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx pla"
+    }
+  },
+  {
+    "model": "auto/coding:fast",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 40844,
+      "error": "503 {\"error\":{\"message\":\"cfp/deepseek-ai/deepseek-v4-pro-0813: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playw"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 3146,
+      "error": "503 {\"error\":{\"message\":\"cfp/deepseek-ai/deepseek-r1-distill-qwen-32b: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && n"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2183,
+      "error": "503 {\"error\":{\"message\":\"cfp/zai-org/glm-4.7-flash: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright insta"
+    }
+  },
+  {
+    "model": "auto/coding:reliable",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 35893,
+      "error": "503 {\"error\":{\"message\":\"cfp/deepseek-ai/deepseek-v4-pro-0813: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playw"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 3080,
+      "error": "503 {\"error\":{\"message\":\"cfp/deepseek-ai/deepseek-r1-distill-qwen-32b: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && n"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2237,
+      "error": "503 {\"error\":{\"message\":\"cfp/zai-org/glm-4.7-flash: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright insta"
+    }
+  },
+  {
+    "model": "auto/gemini",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 2211,
+      "error": "502 {\"error\":{\"message\":\"aug/gemini-3.1-pro-preview: provider — [502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path. (HTTP 502)\",\"type\":\"server_"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2310,
+      "error": "502 {\"error\":{\"message\":\"aug/gemini-3.1-pro-preview: provider — [502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path. (HTTP 502)\",\"type\":\"server_"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2234,
+      "error": "502 {\"error\":{\"message\":\"aug/gemini-3.1-pro-preview: provider — [502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path. (HTTP 502)\",\"type\":\"server_"
+    }
+  },
+  {
+    "model": "auto/glm",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 6513,
+      "error": "502 {\"error\":{\"message\":\"zc/glm-5.1: provider — [502]: spawn zcode ENOENT (HTTP 502); cfp/zai-org/glm-4.7-flash: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install "
+    },
+    "q2": {
+      "ok": false,
+      "ms": 4409,
+      "error": "502 {\"error\":{\"message\":\"zc/glm-5.3-flash: provider — [502]: spawn zcode ENOENT (HTTP 502); aug/glm-5.2: provider — [502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 4449,
+      "error": "502 {\"error\":{\"message\":\"zc/glm-5.3: provider — [502]: spawn zcode ENOENT (HTTP 502); aug/glm-5.2: provider — [502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to"
+    }
+  },
+  {
+    "model": "auto/kimi",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 2278,
+      "error": "502 {\"error\":{\"message\":\"aug/kimi-k2.6: provider — [502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path. (HTTP 502)\",\"type\":\"server_error\",\"code\""
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2284,
+      "error": "502 {\"error\":{\"message\":\"aug/kimi-k2.7: provider — [502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path. (HTTP 502)\",\"type\":\"server_error\",\"code\""
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2263,
+      "error": "502 {\"error\":{\"message\":\"aug/kimi-k2.6: provider — [502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path. (HTTP 502)\",\"type\":\"server_error\",\"code\""
+    }
+  },
+  {
+    "model": "auto/coding:pro",
+    "math": "fail",
+    "hing": "right",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 510,
+      "error": "429 {\"error\":{\"message\":\"[429]: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To m"
+    },
+    "q2": {
+      "ok": true,
+      "ms": 59613,
+      "served": "gemini-3.1-flash-lite",
+      "content": "Python mein list ko reverse karne ka sabse aasaan tarika `list.reverse()` method use karna hai (in-place modification ke liye).\n\nAgar aapko original list bina change kiye reverse chahiye, toh aap slicing ka use kar sakte hain: `my_list[::-1]`.",
+      "tools": []
+    },
+    "q3": {
+      "ok": false,
+      "ms": 1972,
+      "error": "400 {\"error\":{\"message\":\"gemini/gemini-3.1-flash-tts-preview: model — [400]: Function calling is not enabled for this model (HTTP 400); gemini/gemini-3.1-flash-tts-preview: model — [400]: Function calling"
+    }
+  },
+  {
+    "model": "auto/gpt",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 2228,
+      "error": "503 {\"error\":{\"message\":\"cxa/gpt-6-sol-high: provider — [503]: Codex app-server transport is not configured (missing url or token) (HTTP 503)\",\"type\":\"server_error\",\"code\":\"codex_app_server_unconfigured\"}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2247,
+      "error": "503 {\"error\":{\"message\":\"cxa/gpt-6-sol-medium: provider — [503]: Codex app-server transport is not configured (missing url or token) (HTTP 503)\",\"type\":\"server_error\",\"code\":\"codex_app_server_unconfigured"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2189,
+      "error": "503 {\"error\":{\"message\":\"cxa/gpt-6-sol-low: provider — [503]: Codex app-server transport is not configured (missing url or token) (HTTP 503)\",\"type\":\"server_error\",\"code\":\"codex_app_server_unconfigured\"},"
+    }
+  },
+  {
+    "model": "auto",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 2149,
+      "served": "gemini-3-flash-preview",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 9411,
+      "served": "gemini-3.1-flash-lite",
+      "content": "Python mein list ko reverse karne ke liye `list.reverse()` method use karein, jo original list ko hi badal deta hai.\nAgar nayi list chahiye, toh aap `list[::-1]` slicing ka use bhi kar sakte hain.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 7825,
+      "served": "gemini-3.1-flash-lite",
+      "content": "",
+      "tools": [
+        {
+          "id": "call_12500673178807505939",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "auto/lkgp",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 9115,
+      "served": "gemini-3.1-flash-lite",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 2417,
+      "served": "gemini-3.1-flash-lite",
+      "content": "Python mein list ko reverse karne ke liye aap `list.reverse()` method use kar sakte hain, jo original list ko hi badal deta hai.\nYa phir aap `list[::-1]` slicing ka use karke ek nayi reversed list bana sakte hain.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 2738,
+      "served": "gemini-3.1-flash-lite",
+      "content": "",
+      "tools": [
+        {
+          "id": "call_2754408148378324715",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "auto/gemma",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 3954,
+      "error": "502 {\"error\":{\"message\":\"cfp/google/gemma-4-26b-a4b-it: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright i"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 58646,
+      "error": "503 {\"error\":{\"message\":\"cfp/aisingapore/gemma-sea-lion-v4-27b-it: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx p"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2361,
+      "error": "503 {\"error\":{\"message\":\"cfp/google/gemma-4-26b-a4b-it: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright i"
+    }
+  },
+  {
+    "model": "auto/deepseek",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 48428,
+      "error": "503 {\"error\":{\"message\":\"cfp/deepseek-ai/deepseek-v4-flash-0731: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx pla"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2271,
+      "error": "503 {\"error\":{\"message\":\"cfp/deepseek-ai/deepseek-v4-flash-0731: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx pla"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2197,
+      "error": "503 {\"error\":{\"message\":\"cfp/deepseek-ai/deepseek-v4-flash-0731: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx pla"
+    }
+  },
+  {
+    "model": "auto/qwen",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 49014,
+      "error": "503 {\"error\":{\"message\":\"cfp/qwen/qwen2.5-coder-32b-instruct: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwr"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2339,
+      "error": "503 {\"error\":{\"message\":\"cfp/qwen/qwen3-30b-a3b-fp8: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright inst"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2310,
+      "error": "503 {\"error\":{\"message\":\"cfp/qwen/qwen2.5-coder-32b-instruct: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwr"
+    }
+  },
+  {
+    "model": "auto/llama",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 62192,
+      "error": "503 {\"error\":{\"message\":\"cfp/meta-llama/llama-3.3-70b-instruct-fp8-fast: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright &&"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2441,
+      "error": "503 {\"error\":{\"message\":\"cfp/meta/llama-3.1-8b-instruct-fp8: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwri"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2217,
+      "error": "503 {\"error\":{\"message\":\"cfp/meta/llama-4-scout-17b-16e-instruct: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx pl"
+    }
+  },
+  {
+    "model": "ddgw/tinfoil/gpt-oss-120b",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 234,
+      "error": "429 {\"error\":{\"message\":\"[429]: DuckDuckGo AI Chat error: ERR_RATE_LIMIT\",\"type\":\"rate_limit_error\",\"code\":\"rate_limit_exceeded\"}}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 174,
+      "error": "429 {\"error\":{\"message\":\"[429]: Failed to acquire VQD token: [REDACTED] rate limited\",\"type\":\"rate_limit_error\",\"code\":\"rate_limit_exceeded\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 170,
+      "error": "429 {\"error\":{\"message\":\"[429]: Failed to acquire VQD token: [REDACTED] rate limited\",\"type\":\"rate_limit_error\",\"code\":\"rate_limit_exceeded\"}}"
+    }
+  },
+  {
+    "model": "ddgw/mistral-small-2603",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 431,
+      "error": "429 {\"error\":{\"message\":\"[429]: DuckDuckGo AI Chat error: ERR_RATE_LIMIT\",\"type\":\"rate_limit_error\",\"code\":\"rate_limit_exceeded\"}}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 152,
+      "error": "429 {\"error\":{\"message\":\"[429]: Failed to acquire VQD token: [REDACTED] rate limited\",\"type\":\"rate_limit_error\",\"code\":\"rate_limit_exceeded\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 180,
+      "error": "429 {\"error\":{\"message\":\"[429]: Failed to acquire VQD token: [REDACTED] rate limited\",\"type\":\"rate_limit_error\",\"code\":\"rate_limit_exceeded\"}}"
+    }
+  },
+  {
+    "model": "gemini/gemini-3.8-flash",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 11,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.8-flash are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.8-flash\",\"reset_seconds\":63904,\"retry_after\":\"2026"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 12,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.8-flash are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.8-flash\",\"reset_seconds\":63904,\"retry_after\":\"2026"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 8,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.8-flash are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.8-flash\",\"reset_seconds\":63903,\"retry_after\":\"2026"
+    }
+  },
+  {
+    "model": "gemini/gemini-3.7-flash",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 8,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.7-flash are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.7-flash\",\"reset_seconds\":63903,\"retry_after\":\"2026"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 7,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.7-flash are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.7-flash\",\"reset_seconds\":63903,\"retry_after\":\"2026"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 8,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.7-flash are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.7-flash\",\"reset_seconds\":63903,\"retry_after\":\"2026"
+    }
+  },
+  {
+    "model": "ddgw/tinfoil/gemma4-31b",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 263,
+      "error": "429 {\"error\":{\"message\":\"[429]: Failed to acquire VQD token: [REDACTED] rate limited\",\"type\":\"rate_limit_error\",\"code\":\"rate_limit_exceeded\"}}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 251,
+      "error": "429 {\"error\":{\"message\":\"[429]: Failed to acquire VQD token: [REDACTED] rate limited\",\"type\":\"rate_limit_error\",\"code\":\"rate_limit_exceeded\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 166,
+      "error": "429 {\"error\":{\"message\":\"[429]: Failed to acquire VQD token: [REDACTED] rate limited\",\"type\":\"rate_limit_error\",\"code\":\"rate_limit_exceeded\"}}"
+    }
+  },
+  {
+    "model": "gemini/gemini-3-flash-preview",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 16,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3-flash-preview are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3-flash-preview\",\"reset_seconds\":63903,\"retry_"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 8,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3-flash-preview are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3-flash-preview\",\"reset_seconds\":63903,\"retry_"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 10,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3-flash-preview are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3-flash-preview\",\"reset_seconds\":63903,\"retry_"
+    }
+  },
+  {
+    "model": "gemini/gemini-2.5-pro",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 9,
+      "error": "401 {\"error\":{\"message\":\"No active credentials for provider: gemini.\",\"type\":\"authentication_error\",\"code\":\"provider_not_configured\"}}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 8,
+      "error": "401 {\"error\":{\"message\":\"No active credentials for provider: gemini.\",\"type\":\"authentication_error\",\"code\":\"provider_not_configured\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 8,
+      "error": "401 {\"error\":{\"message\":\"No active credentials for provider: gemini.\",\"type\":\"authentication_error\",\"code\":\"provider_not_configured\"}}"
+    }
+  },
+  {
+    "model": "ddgw/gpt-5.6-luna",
+    "math": "right",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": true,
+      "ms": 1306,
+      "served": "gpt-5.6-luna",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": false,
+      "ms": 162,
+      "error": "429 {\"error\":{\"message\":\"[429]: Failed to acquire VQD token: [REDACTED] rate limited\",\"type\":\"rate_limit_error\",\"code\":\"rate_limit_exceeded\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 206,
+      "error": "429 {\"error\":{\"message\":\"[429]: Failed to acquire VQD token: [REDACTED] rate limited\",\"type\":\"rate_limit_error\",\"code\":\"rate_limit_exceeded\"}}"
+    }
+  },
+  {
+    "model": "eco-heavy",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 4043,
+      "served": "gemini-3.1-flash-lite",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 7641,
+      "served": "gemini-3.1-flash-lite",
+      "content": "Python mein `list.reverse()` method use karo agar original list ko hi reverse karna hai.\nAgar nayi reversed list chahiye toh `my_list[::-1]` slicing syntax ka use karo.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 4420,
+      "served": "gemini-3.1-flash-lite",
+      "content": "",
+      "tools": [
+        {
+          "id": "call_6656473476374172257",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "apna-coding",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 2634,
+      "served": "gemini-3.1-flash-lite",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 3273,
+      "served": "gemini-3.1-flash-lite",
+      "content": "Python mein list ko reverse karne ke liye `list.reverse()` method ka use karein, jo original list ko hi badal deta hai.\nYa phir aap `list[::-1]` slicing ka use karke ek nayi reversed list bana sakte hain.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 8276,
+      "served": "gemini-3.1-flash-lite",
+      "content": "",
+      "tools": [
+        {
+          "id": "call_4110933215910749408",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "gemini/gemini-3.1-flash-lite",
+    "math": "right",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": true,
+      "ms": 14766,
+      "served": "gemini-3.1-flash-lite",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": false,
+      "ms": 588,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.1-flash-lite are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.1-flash-lite\",\"reset_seconds\":49,\"retry_after"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 10,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.1-flash-lite are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.1-flash-lite\",\"reset_seconds\":49,\"retry_after"
+    }
+  },
+  {
+    "model": "auto/reasoning",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 85215,
+      "error": "503 {\"error\":{\"message\":\"cfp/deepseek-ai/deepseek-v4-flash-0731: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx pla"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 4431,
+      "error": "502 {\"error\":{\"message\":\"cfp/deepseek-ai/deepseek-r1-distill-qwen-32b: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && n"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2170,
+      "error": "503 {\"error\":{\"message\":\"cfp/zai-org/glm-4.7-flash: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright insta"
+    }
+  },
+  {
+    "model": "auto/coding",
+    "math": "right",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": true,
+      "ms": 12479,
+      "served": "gemini-3.1-flash-lite",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": false,
+      "ms": 3590,
+      "error": "503 {\"error\":{\"message\":\"cfp/deepseek-ai/deepseek-r1-distill-qwen-32b: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && n"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2168,
+      "error": "503 {\"error\":{\"message\":\"cfp/zai-org/glm-4.7-flash: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright insta"
+    }
+  },
+  {
+    "model": "eco-light",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 2437,
+      "served": "gemini-3.1-flash-lite",
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 15479,
+      "served": "gemini-3.1-flash-lite",
+      "content": "Python mein list ko reverse karne ke liye aap `list.reverse()` method use kar sakte hain jo original list ko hi badal deta hai.\nYa phir aap `list[::-1]` slicing ka use karke ek nayi reversed list bana sakte hain.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 10692,
+      "served": "gemini-3.1-flash-lite",
+      "content": "",
+      "tools": [
+        {
+          "id": "call_7350126843921607196",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "auto/offline",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 3805,
+      "error": "503 {\"error\":{\"message\":\"cfp/zai-org/glm-4.7-flash: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright insta"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2121,
+      "error": "503 {\"error\":{\"message\":\"cfp/openai/gpt-oss-20b: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install "
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2154,
+      "error": "503 {\"error\":{\"message\":\"cfp/meta-llama/llama-3.3-70b-instruct-fp8-fast: provider — [503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright &&"
+    }
+  }
+]

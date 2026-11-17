@@ -1,0 +1,10 @@
+[0m
+> build · apna-coding
+[0m→ [0mRead . 
+> build · apna-coding
+[0m→ [0mRead index.html 
+> build · apna-coding
+Is project folder me sirf ek file hai: `index.html`.
+
+Page ka title "Jaanch Site" hai aur h1 heading me "Namaste" likha hai.
+exit=0 secs=83

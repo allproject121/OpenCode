@@ -1,0 +1,7 @@
+[0m
+> build · eco-heavy
+[0m← [0mWrite model-test/eco-heavy.js
+Created file successfully: model-test/eco-heavy.js
+> build · eco-heavy
+Nayi file `model-test/eco-heavy.js` successfully ban gayi hai. Ab aap aage kya karna chahte hain?
+exit=0 secs=15

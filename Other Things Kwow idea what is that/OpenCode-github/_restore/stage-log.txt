@@ -1,0 +1,23 @@
+﻿22:32:06  source: C:\Users\Roshan\Downloads\Programming
+22:32:06  stage:  C:\Users\Roshan\Downloads\OpenCode-github
+22:32:06  step 1: copying files (robocopy) ...
+22:36:07  robocopy exit code: 3 (below 8 = fine)
+22:36:07  step 2: finding links (junctions / symlinks) and git repos ...
+22:36:45  links found: 10894 (listed in _restore\links.tsv)
+22:36:45  git repos found: 5: vendor\agent-skills, opencode, omniroute, kilocode, config\packs\superpowers
+22:36:46    vendor\agent-skills: .git -> _git-history.tar (0.6 MB, tar exit 0)
+22:36:59    opencode: .git -> _git-history.tar (811.8 MB, tar exit 0)
+22:37:00    omniroute: .git -> _git-history.tar (156.6 MB, tar exit 0)
+22:37:10    kilocode: .git -> _git-history.tar (97.2 MB, tar exit 0)
+22:37:11    config\packs\superpowers: .git -> _git-history.tar (0.7 MB, tar exit 0)
+22:37:11  step 3: splitting files over 95 MB into 90 MB parts ...
+22:37:27    split kilocode\_git-history.tar (97 MB) into 2 parts
+22:37:28    split omniroute\_git-history.tar (157 MB) into 2 parts
+22:37:34    split opencode\_git-history.tar (812 MB) into 10 parts
+22:37:37    split opencode\node_modules\.bun\@anthropic-ai+claude-agent-sdk-win32-x64@0.3.301\node_modules\@anthropic-ai\claude-agent-sdk-win32-x64\claude.exe (259 MB) into 3 parts
+22:37:39    split opencode\node_modules\.bun\@cloudflare+workerd-windows-64@1.20261102.1\node_modules\@cloudflare\workerd-windows-64\bin\workerd.exe (101 MB) into 2 parts
+22:37:42    split opencode\node_modules\.bun\electron@44.9.1+759ce506b1ed1a42\node_modules\electron\dist\electron.exe (235 MB) into 3 parts
+22:37:45    split update-work\node_modules\.bun\@anthropic-ai+claude-agent-sdk-win32-x64@0.3.301\node_modules\@anthropic-ai\claude-agent-sdk-win32-x64\claude.exe (259 MB) into 3 parts
+22:37:47    split update-work\node_modules\.bun\@cloudflare+workerd-windows-64@1.20261102.1\node_modules\@cloudflare\workerd-windows-64\bin\workerd.exe (101 MB) into 2 parts
+22:37:51  stage ready: Files : 290273 290273 0 0 0 0 | Bytes : 8213672383 8213672383 0 0 0 0
+22:40:16  update-work\.git is a FILE (worktree pointer of opencode) -> update-work\_git-file.txt

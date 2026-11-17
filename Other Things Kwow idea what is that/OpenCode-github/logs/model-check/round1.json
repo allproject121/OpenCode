@@ -1,0 +1,1139 @@
+[
+  {
+    "model": "auto/coding",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 4532,
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 4014,
+      "content": "Python mein list ko reverse karne ke liye aap `list.reverse()` method use kar sakte hain, jo original list ko hi badal deta hai.\nYa phir aap `list[::-1]` slicing ka use kar sakte hain, jo list ka ek ulta copy bana kar deta hai.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 2691,
+      "content": "",
+      "tools": [
+        {
+          "id": "call_10586737776168674269",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "apna-coding",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 5239,
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 8122,
+      "content": "Python mein list ko reverse karne ke liye aap `list.reverse()` method use kar sakte hain jo original list ko hi badal deta hai.\nYa phir aap `list[::-1]` slicing technique ka use kar sakte hain agar aapko ek nayi reverse list chahiye.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 2737,
+      "content": "",
+      "tools": [
+        {
+          "id": "call_16863437352937834337",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "dva/claude-sonnet-5-low",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 37,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 33,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 31,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    }
+  },
+  {
+    "model": "dva/claude-opus-5-low-fast",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 32,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 31,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 35,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    }
+  },
+  {
+    "model": "auto/fast",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 6944,
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 4698,
+      "content": "Python mein list ko reverse karne ke liye aap `list.reverse()` method use kar sakte hain jo list ko wahi badal deta hai.\nYa phir aap slicing `list[::-1]` ka use karke ek nayi reversed list bana sakte hain.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 4671,
+      "content": "",
+      "tools": [
+        {
+          "id": "call_17814579215148702766",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "dva/claude-fable-5-1-low",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 33,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 54,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 60,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    }
+  },
+  {
+    "model": "dva/gpt-5-6-sol-low",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 75,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 64,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 62,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    }
+  },
+  {
+    "model": "dva/gpt-5-6-luna-low",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 65,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 62,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 66,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    }
+  },
+  {
+    "model": "dva/kimi-k3-low",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 67,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 68,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 77,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    }
+  },
+  {
+    "model": "dva/glm-5-3-flash-low",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 81,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 64,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 61,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    }
+  },
+  {
+    "model": "dva/swe-1-7-lightning",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 61,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 65,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 90,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    }
+  },
+  {
+    "model": "dva/grok-4-6-low",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 76,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 83,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 84,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    }
+  },
+  {
+    "model": "dva/deepseek-v4-flash-low",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 70,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 102,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 120,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    }
+  },
+  {
+    "model": "dva/gemini-3-7-flash-low",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 120,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 91,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 80,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    }
+  },
+  {
+    "model": "dva/nemotron-3-ultra-none",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 79,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 78,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 114,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    }
+  },
+  {
+    "model": "dva/inkling-low",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 77,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 113,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 63,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    }
+  },
+  {
+    "model": "dva/adaptive",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 72,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 70,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 48,
+      "error": "503 {\"error\":{\"message\":\"[503]: Devin agentic bridge is not configured: set DEVIN_AGENTIC_HOME to an absolute path inside the bridge sandbox (a .sandbox directory segment) and restart OmniRoute\",\"type\":\"d"
+    }
+  },
+  {
+    "model": "auto/offline",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 10372,
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 4270,
+      "content": "Python mein list ko reverse karne ke liye aap `list.reverse()` method use kar sakte hain, ya phir `my_list[::-1]` slicing ka istemal kar sakte hain.\n\nDono tarike sahi hain, bas `reverse()` original list ko badal deta hai aur slicing ek nayi list banata hai.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 3499,
+      "content": "",
+      "tools": [
+        {
+          "id": "call_13898179093488207679",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "auto/best-free",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 12998,
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 5085,
+      "content": "Python mein list ko reverse karne ke liye `list.reverse()` method use karo agar wahi list update karni hai.\nAgar nayi list chahiye, toh `my_list[::-1]` slicing ka use karo.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 3073,
+      "content": "",
+      "tools": [
+        {
+          "id": "call_13301173025637268698",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "auto/smart",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 7397,
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 2669,
+      "content": "Python mein list ko reverse karne ke liye aap `list.reverse()` method use kar sakte hain, jo original list ko hi badal deta hai.\nYa phir aap `list[::-1]` slicing ka istemal karke nayi reversed list bana sakte hain.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 3191,
+      "content": "",
+      "tools": [
+        {
+          "id": "call_11058683561009328357",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "cfp/zai-org/glm-5.2",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 2679,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2100,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2325,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    }
+  },
+  {
+    "model": "cfp/moonshotai/kimi-k2.7-code",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 2853,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2789,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2733,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    }
+  },
+  {
+    "model": "cfp/deepseek-ai/deepseek-v4-flash-0731",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 3121,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2897,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2878,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    }
+  },
+  {
+    "model": "cfp/openai/gpt-oss-120b",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 2508,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2860,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 3032,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    }
+  },
+  {
+    "model": "cfp/qwen/qwen2.5-coder-32b-instruct",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 2776,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2386,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2414,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    }
+  },
+  {
+    "model": "cfp/meta-llama/llama-3.3-70b-instruct-fp8-fast",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 2832,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2308,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2960,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    }
+  },
+  {
+    "model": "cfp/qwen/qwen3-30b-a3b-fp8",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 2119,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2586,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2492,
+      "error": "503 {\"error\":{\"message\":\"[503]: Cloudflare Playground needs Playwright and its Chromium browser. Install the browser runtime (npm i playwright && npx playwright install chromium) or use an OmniRoute brows"
+    }
+  },
+  {
+    "model": "aug/haiku4.5",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 2863,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2521,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2368,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    }
+  },
+  {
+    "model": "auto/best-coding",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 13369,
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 9040,
+      "content": "Python mein `my_list.reverse()` use karke aap list ko direct reverse kar sakte hain.\nYa phir aap `my_list[::-1]` slicing trick ka use karke bhi list ko ulta kar sakte hain.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 15079,
+      "content": "",
+      "tools": [
+        {
+          "id": "call_2826283176585908096",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "aug/sonnet5-high",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 2954,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 3066,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2233,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    }
+  },
+  {
+    "model": "aug/fable-5",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 2777,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2629,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2343,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    }
+  },
+  {
+    "model": "aug/glm-5.2",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 2356,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2972,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2450,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    }
+  },
+  {
+    "model": "aug/gpt5.4-mini",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 2734,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2731,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 3141,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    }
+  },
+  {
+    "model": "aug/kimi-k2.7",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 3126,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 3068,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2599,
+      "error": "502 {\"error\":{\"message\":\"[502]: Auggie CLI not found: auggie. Install it and run \\\"auggie login\\\", or set AUGGIE_BIN to an absolute path.\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    }
+  },
+  {
+    "model": "zc/glm-5.3-flash",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 3017,
+      "error": "502 {\"error\":{\"message\":\"[502]: spawn zcode ENOENT\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2082,
+      "error": "502 {\"error\":{\"message\":\"[502]: spawn zcode ENOENT\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2440,
+      "error": "502 {\"error\":{\"message\":\"[502]: spawn zcode ENOENT\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    }
+  },
+  {
+    "model": "zc/glm-5.3",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 2807,
+      "error": "502 {\"error\":{\"message\":\"[502]: spawn zcode ENOENT\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2512,
+      "error": "502 {\"error\":{\"message\":\"[502]: spawn zcode ENOENT\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2571,
+      "error": "502 {\"error\":{\"message\":\"[502]: spawn zcode ENOENT\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    }
+  },
+  {
+    "model": "gemini/gemini-3.8-flash",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 85,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.8-flash are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.8-flash\",\"reset_seconds\":64126,\"retry_after\":\"2026"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 51,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.8-flash are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.8-flash\",\"reset_seconds\":64126,\"retry_after\":\"2026"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 18,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.8-flash are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.8-flash\",\"reset_seconds\":64126,\"retry_after\":\"2026"
+    }
+  },
+  {
+    "model": "gemini/gemini-3.7-flash",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 13,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.7-flash are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.7-flash\",\"reset_seconds\":64125,\"retry_after\":\"2026"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 15,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.7-flash are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.7-flash\",\"reset_seconds\":64125,\"retry_after\":\"2026"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 13,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.7-flash are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.7-flash\",\"reset_seconds\":64125,\"retry_after\":\"2026"
+    }
+  },
+  {
+    "model": "gemini/gemini-3.1-flash-lite",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 862,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.1-flash-lite are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.1-flash-lite\",\"reset_seconds\":45,\"retry_after"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 18,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.1-flash-lite are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.1-flash-lite\",\"reset_seconds\":45,\"retry_after"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 10,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.1-flash-lite are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.1-flash-lite\",\"reset_seconds\":45,\"retry_after"
+    }
+  },
+  {
+    "model": "gemini/gemini-2.5-flash",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 11,
+      "error": "401 {\"error\":{\"message\":\"No active credentials for provider: gemini.\",\"type\":\"authentication_error\",\"code\":\"provider_not_configured\"}}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 11,
+      "error": "401 {\"error\":{\"message\":\"No active credentials for provider: gemini.\",\"type\":\"authentication_error\",\"code\":\"provider_not_configured\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 10,
+      "error": "401 {\"error\":{\"message\":\"No active credentials for provider: gemini.\",\"type\":\"authentication_error\",\"code\":\"provider_not_configured\"}}"
+    }
+  },
+  {
+    "model": "gemini/gemini-3.1-pro-preview",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 10,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.1-pro-preview are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.1-pro-preview\",\"reset_seconds\":64125,\"retry_"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 9,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.1-pro-preview are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.1-pro-preview\",\"reset_seconds\":64125,\"retry_"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 13,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-3.1-pro-preview are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-3.1-pro-preview\",\"reset_seconds\":64125,\"retry_"
+    }
+  },
+  {
+    "model": "gemini/gemini-4-argon",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 11,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-4-argon are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-4-argon\",\"reset_seconds\":64124,\"retry_after\":\"2026-11-"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 14,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-4-argon are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-4-argon\",\"reset_seconds\":64124,\"retry_after\":\"2026-11-"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 14,
+      "error": "429 {\"error\":{\"message\":\"All credentials for model gemini-4-argon are cooling down\",\"type\":\"rate_limit_error\",\"code\":\"model_cooldown\",\"model\":\"gemini-4-argon\",\"reset_seconds\":64124,\"retry_after\":\"2026-11-"
+    }
+  },
+  {
+    "model": "zc/glm-4.7-flash",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 2787,
+      "error": "502 {\"error\":{\"message\":\"[502]: spawn zcode ENOENT\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2393,
+      "error": "502 {\"error\":{\"message\":\"[502]: spawn zcode ENOENT\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2821,
+      "error": "502 {\"error\":{\"message\":\"[502]: spawn zcode ENOENT\",\"type\":\"server_error\",\"code\":\"bad_gateway\"}}"
+    }
+  },
+  {
+    "model": "cxa/gpt-6-sol-low",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 3013,
+      "error": "503 {\"error\":{\"message\":\"[503]: Codex app-server transport is not configured (missing url or token)\",\"type\":\"server_error\",\"code\":\"service_unavailable\"}}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2718,
+      "error": "503 {\"error\":{\"message\":\"[503]: Codex app-server transport is not configured (missing url or token)\",\"type\":\"server_error\",\"code\":\"service_unavailable\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2635,
+      "error": "503 {\"error\":{\"message\":\"[503]: Codex app-server transport is not configured (missing url or token)\",\"type\":\"server_error\",\"code\":\"service_unavailable\"}}"
+    }
+  },
+  {
+    "model": "cxa/gpt-6-luna-low",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 3019,
+      "error": "503 {\"error\":{\"message\":\"[503]: Codex app-server transport is not configured (missing url or token)\",\"type\":\"server_error\",\"code\":\"service_unavailable\"}}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 3030,
+      "error": "503 {\"error\":{\"message\":\"[503]: Codex app-server transport is not configured (missing url or token)\",\"type\":\"server_error\",\"code\":\"service_unavailable\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2486,
+      "error": "503 {\"error\":{\"message\":\"[503]: Codex app-server transport is not configured (missing url or token)\",\"type\":\"server_error\",\"code\":\"service_unavailable\"}}"
+    }
+  },
+  {
+    "model": "cxa/gpt-5.6-luna-low",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 2152,
+      "error": "503 {\"error\":{\"message\":\"[503]: Codex app-server transport is not configured (missing url or token)\",\"type\":\"server_error\",\"code\":\"service_unavailable\"}}"
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2420,
+      "error": "503 {\"error\":{\"message\":\"[503]: Codex app-server transport is not configured (missing url or token)\",\"type\":\"server_error\",\"code\":\"service_unavailable\"}}"
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2106,
+      "error": "503 {\"error\":{\"message\":\"[503]: Codex app-server transport is not configured (missing url or token)\",\"type\":\"server_error\",\"code\":\"service_unavailable\"}}"
+    }
+  },
+  {
+    "model": "unc/turboderp/Qwen3.8-27B-exl3",
+    "math": "fail",
+    "hing": "fail",
+    "tool": "fail",
+    "q1": {
+      "ok": false,
+      "ms": 1080,
+      "error": "401 {\"error\":{\"message\":\"[401]: The public beta is closed for now. This endpoint needs an API key, and key registration is closed; check uncloseai.com for when it reopens.\",\"type\":\"authentication_error\",\""
+    },
+    "q2": {
+      "ok": false,
+      "ms": 2968,
+      "error": "401 {\"error\":{\"message\":\"[401]: The public beta is closed for now. This endpoint needs an API key, and key registration is closed; check uncloseai.com for when it reopens.\",\"type\":\"authentication_error\",\""
+    },
+    "q3": {
+      "ok": false,
+      "ms": 2688,
+      "error": "401 {\"error\":{\"message\":\"[401]: The public beta is closed for now. This endpoint needs an API key, and key registration is closed; check uncloseai.com for when it reopens.\",\"type\":\"authentication_error\",\""
+    }
+  },
+  {
+    "model": "ddgw/claude-haiku-4-5",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 1459,
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 1950,
+      "content": "`my_list.reverse()` use karo — ye list ko in-place ulta kar deta hai.  \nYa `my_list[::-1]` se reversed copy milti hai.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 1293,
+      "content": "",
+      "tools": [
+        {
+          "id": "ddg-1794924681250_0",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "model": "ddgw/gpt-5.4-mini",
+    "math": "right",
+    "hing": "right",
+    "tool": "right",
+    "q1": {
+      "ok": true,
+      "ms": 2835,
+      "content": "9",
+      "tools": []
+    },
+    "q2": {
+      "ok": true,
+      "ms": 2401,
+      "content": "`my_list.reverse()` use karo, ye list ko in-place ulta kar deta hai.  \nYa `my_list[::-1]` se nayi reversed list milti hai.",
+      "tools": []
+    },
+    "q3": {
+      "ok": true,
+      "ms": 1325,
+      "content": "",
+      "tools": [
+        {
+          "id": "ddg-1794924681959_0",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"index.html\"}"
+          }
+        }
+      ]
+    }
+  }
+]

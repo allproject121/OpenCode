@@ -1,0 +1,2 @@
+[91m[1mError: [0mModel unavailable: github-copilot/gemini-3.8-flash
+exit=1 secs=16

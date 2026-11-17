@@ -1,0 +1,4 @@
+[0m
+> build · gemini/gemini-3.1-flash-lite
+Aapne project folder ka details pucha tha aur maine abhi `model-test/gemini-flash-lite.js` file banayi hai.
+exit=0 secs=15

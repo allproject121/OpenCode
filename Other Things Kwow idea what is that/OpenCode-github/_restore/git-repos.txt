@@ -1,0 +1,5 @@
+﻿vendor\agent-skills
+opencode
+omniroute
+kilocode
+config\packs\superpowers

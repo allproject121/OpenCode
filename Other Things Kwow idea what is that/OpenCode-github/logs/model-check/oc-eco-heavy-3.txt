@@ -1,0 +1,4 @@
+[0m
+> build · eco-heavy
+Aapne project ke contents aur details ke baare mein poocha tha, aur maine `model-test/eco-heavy.js` file banayi hai.
+exit=0 secs=12

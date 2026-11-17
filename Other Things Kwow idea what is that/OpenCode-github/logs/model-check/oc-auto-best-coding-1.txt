@@ -1,0 +1,10 @@
+[0m
+> build · auto/best-coding
+[0m→ [0mRead . 
+> build · auto/best-coding
+[0m→ [0mRead index.html 
+> build · auto/best-coding
+Is project folder mein `index.html` file aur `model-test` naam ka folder hai.
+
+Page ka title "Jaanch Site" hai aur h1 heading mein "Namaste" likha hua hai.
+exit=0 secs=24
