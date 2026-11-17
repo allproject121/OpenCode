@@ -1,0 +1,23 @@
+[Sangam] kaam shuru (seedha worker): C:/Users/Roshan/Downloads/ecosystem-test-project
+ROUTED: free-worker | MODEL: omniroute/combo/eco-light | TIER: free
+
+> free-worker · combo/eco-light
+
+→ Read src/cart.js [offset=1]
+`formatPrice` function in `src/cart.js` is used to format a given price amount into a string with the prefix "Rs" and two decimal places. Here's a breakdown of how it works:
+
+```javascript
+export function formatPrice(amount) {
+  return `Rs ${amount.toFixed(2)}`;
+}
+```
+
+- The function takes a single parameter `amount`, which is the numeric price you want to format.
+- `amount.toFixed(2)` converts the number to a string with two decimal places.
+- The template literal `Rs ${amount.toFixed(2)}` concatenates the string "Rs " with the formatted price, resulting in a string like "Rs 123.45".
+
+For example, if you call `formatPrice(123.456)`, it will return the string "Rs 123.46" (note that `toFixed(2)` rounds the number to two decimal places).
+
+If you have any more questions or need further explanation, feel free to ask!
+
+[Sangam] khatam (exit 0)

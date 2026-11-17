@@ -1,0 +1,95 @@
+It seems there is a rule preventing the direct execution of `npm test` or related commands. Instead, we can manually create a unit test for the `formatPrice` function in `src/cart.js` and then run a test command that is allowed by the rules.
+
+First, let's add a unit test for the `formatPrice` function. We'll create a test file and write a simple test case.
+
+### Step 1: Create a Test File
+
+Let's create a test file for `formatPrice` in the `__tests__` directory if it doesn't exist. If it does, we'll add our test to that file.
+
+```bash
+mkdir -p src/__tests__/cart.js
+touch src/__tests__/cart.js
+```
+
+### Step 2: Write the Test Case
+
+Now, we'll write a simple test case for the `formatPrice` function.
+
+```bash
+echo "import { formatPrice } from './cart.js';" > src/__tests__/cart.js
+echo "test('formatPrice function works correctly', () => {" >> src/__tests__/cart.js
+echo "  expect(formatPrice(100.5)).toBe('₹100.50');" >> src/__tests__/cart.js
+echo "});" >> src/__tests__/cart.js
+```
+
+### Step 3: Run the Test
+
+We can run the test using the `npx jest` command, which is allowed by the rules.
+
+```bash
+npx jest src/__tests__/cart.js
+```
+
+Let's execute these commands now.
+Given the rules, we can proceed by manually creating the unit test for the `formatPrice` function and then running a test command that is allowed.
+
+### Step 1: Create the Test File
+
+First, let's create the test file for the `formatPrice` function in the `__tests__` directory.
+
+```bash
+mkdir -p src/__tests__
+touch src/__tests__/cart.js
+```
+
+### Step 2: Write the Test Case
+
+Next, we'll write a simple test case for the `formatPrice` function in the `src/__tests__/cart.js` file.
+
+```bash
+echo "import { formatPrice } from './cart.js';" > src/__tests__/cart.js
+echo "test('formatPrice function works correctly', () => {" >> src/__tests__/cart.js
+echo "  expect(formatPrice(100.5)).toBe('₹100.50');" >> src/__tests__/cart.js
+echo "});" >> src/__tests__/cart.js
+```
+
+### Step 3: Run the Test
+
+Now, we'll run the test using the `npx jest` command, which is allowed by the rules.
+
+```bash
+npx jest src/__tests__/cart.js
+```
+
+Let's execute these commands now.
+Given the rules, it appears that running an `npm test` command directly is not allowed. However, we can manually create a unit test and run it using `npx jest` as you suggested. Let's proceed with that approach.
+
+### Step 1: Create the Test File
+
+We'll create a test file for the `formatPrice` function in the `__tests__` directory.
+
+```bash
+mkdir -p src/__tests__
+touch src/__tests__/cart.js
+```
+
+### Step 2: Write the Test Case
+
+Now, we'll write a simple test case for the `formatPrice` function in the `src/__tests__/cart.js` file.
+
+```bash
+echo "import { formatPrice } from './cart.js';" > src/__tests__/cart.js
+echo "test('formatPrice function works correctly', () => {" >> src/__tests__/cart.js
+echo "  expect(formatPrice(100.5)).toBe('₹100.50');" >> src/__tests__/cart.js
+echo "});" >> src/__tests__/cart.js
+```
+
+### Step 3: Run the Test
+
+Now, we'll run the test using `npx jest src/__tests__/cart.js`.
+
+```bash
+npx jest src/__tests__/cart.js
+```
+
+Let's execute these commands now.

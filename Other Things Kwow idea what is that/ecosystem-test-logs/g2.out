@@ -1,0 +1,62 @@
+[Sangam] kaam shuru (seedha worker): C:/Users/Roshan/Downloads/ecosystem-test-project
+ROUTED: smart-standard | MODEL: omniroute/combo/eco-heavy | TIER: standard
+
+> smart-standard · combo/eco-heavy
+
+✱ Glob "test/cart.test.js" 1 match
+→ Read test/cart.test.js
+
+← Edit test/cart.test.js
+Index: C:\Users\Roshan\Downloads\ecosystem-test-project\test\cart.test.js
+===================================================================
+--- C:\Users\Roshan\Downloads\ecosystem-test-project\test\cart.test.js
++++ C:\Users\Roshan\Downloads\ecosystem-test-project\test\cart.test.js
+@@ -5,7 +5,11 @@
+ test("total of two items", () => {
+   assert.equal(cartTotal([{ price: 10, qty: 2 }, { price: 5, qty: 1 }]), 25)
+ })
+ 
++test("total of empty cart", () => {
++  assert.equal(cartTotal([]), 0)
++})
++
+ test("formats a price", () => {
+   assert.equal(formatPrice(25), "Rs 25.00")
+ })
+
+
+$ npm test
+> ecosystem-test-project@1.0.0 test
+> node --test
+
+✔ total of two items (0.5489ms)
+✔ total of empty cart (0.0917ms)
+✔ formats a price (0.0905ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 73.2805
+
+Test add kar diya hai aur tests pass ho gaye hain.
+
+```javascript
+test("total of empty cart", () => {
+  assert.equal(cartTotal([]), 0)
+})
+```
+
+`npm test` ka output:
+```
+✔ total of two items (0.5489ms)
+✔ total of empty cart (0.0917ms)
+✔ formats a price (0.0905ms)
+ℹ tests 3
+...
+ℹ pass 3
+```
+
+[Sangam] khatam (exit 0)

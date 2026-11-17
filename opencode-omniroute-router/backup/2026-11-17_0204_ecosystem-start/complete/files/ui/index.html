@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sangam — saare AI models, ek jagah</title>
+<style>
+  :root {
+    --bg: #0f1218; --panel: #171b23; --panel2: #1d222c; --line: #2a303c;
+    --text: #e6e9ef; --muted: #8b93a3; --accent: #7c9cff; --ok: #3ecf8e; --warn: #f5b84b; --bad: #f2647a;
+    --free: #8fb996; --fast: #34c3b5; --standard: #6f9bff; --strong: #f59a4b; --expert: #ef5d73; --local: #b48cff;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 14px/1.5 "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--text); }
+  header { display: flex; align-items: center; gap: 16px; padding: 14px 24px; border-bottom: 1px solid var(--line); background: var(--panel); position: sticky; top: 0; z-index: 2; }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo svg { width: 34px; height: 34px; }
+  .logo b { font-size: 20px; letter-spacing: .5px; }
+  .logo small { display: block; color: var(--muted); font-size: 12px; margin-top: -2px; }
+  .pills { margin-left: auto; display: flex; gap: 8px; flex-wrap: wrap; }
+  .pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px; background: var(--panel2); border: 1px solid var(--line); font-size: 12px; white-space: nowrap; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+  .dot.ok { background: var(--ok); } .dot.warn { background: var(--warn); } .dot.bad { background: var(--bad); }
+  main { display: grid; grid-template-columns: minmax(0, 2fr) minmax(300px, 1fr); gap: 18px; padding: 18px 24px 40px; max-width: 1500px; margin: 0 auto; }
+  @media (max-width: 1000px) { main { grid-template-columns: 1fr; } }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
+  .card + .card { margin-top: 18px; }
+  .card h2 { margin: 0 0 12px; font-size: 15px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+  .card h2 .hint { margin-left: auto; font-weight: 400; color: var(--muted); font-size: 12px; }
+  label { display: block; color: var(--muted); font-size: 12px; margin-bottom: 4px; }
+  select { background: var(--panel2); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font: inherit; }
+  input, textarea { width: 100%; background: var(--panel2); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 9px 11px; font: inherit; }
+  input:focus, textarea:focus { outline: none; border-color: var(--accent); }
+  textarea { min-height: 96px; resize: vertical; }
+  .row { display: flex; gap: 8px; align-items: center; }
+  .row > input { flex: 1; }
+  button { background: var(--panel2); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 8px 14px; font: inherit; cursor: pointer; }
+  button:hover:not(:disabled) { border-color: var(--accent); }
+  button:disabled { opacity: .45; cursor: not-allowed; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #0b1020; font-weight: 600; }
+  button.danger { color: var(--bad); }
+  .spacer { height: 12px; }
+  .route { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; min-height: 34px; padding: 8px 10px; border-radius: 8px; background: var(--panel2); border: 1px dashed var(--line); color: var(--muted); }
+  .tier { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; color: #0b1020; background: var(--muted); text-transform: uppercase; letter-spacing: .4px; }
+  .tier.free { background: var(--free); } .tier.fast { background: var(--fast); } .tier.standard { background: var(--standard); }
+  .tier.strong { background: var(--strong); } .tier.expert { background: var(--expert); } .tier.local { background: var(--local); }
+  .tag { font-size: 11px; padding: 1px 7px; border-radius: 6px; border: 1px solid var(--line); color: var(--text); }
+  .tag.local { border-color: var(--local); color: var(--local); } .tag.fallback { border-color: var(--warn); color: var(--warn); } .tag.explore { border-color: var(--accent); color: var(--accent); }
+  code, pre, .mono { font-family: "Cascadia Code", Consolas, monospace; font-size: 12.5px; }
+  pre#out { margin: 0; min-height: 220px; max-height: 52vh; overflow: auto; white-space: pre-wrap; word-break: break-word; background: #0b0e13; border: 1px solid var(--line); border-radius: 8px; padding: 12px; }
+  pre#out .routeline { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 500; font-size: 12px; }
+  tr.hit td { background: rgba(124, 156, 255, .08); }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .stat { background: var(--panel2); border: 1px solid var(--line); border-radius: 8px; padding: 10px; text-align: center; }
+  .stat b { display: block; font-size: 22px; }
+  .stat span { color: var(--muted); font-size: 12px; }
+  .bar { height: 8px; border-radius: 4px; background: var(--panel2); overflow: hidden; display: flex; margin-top: 10px; }
+  .bar i { display: block; height: 100%; }
+  .legend { display: flex; gap: 12px; flex-wrap: wrap; color: var(--muted); font-size: 12px; margin-top: 6px; }
+  .legend em { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 4px; font-style: normal; }
+  ul.hist { list-style: none; margin: 0; padding: 0; max-height: 420px; overflow: auto; }
+  ul.hist li { padding: 8px 0; border-bottom: 1px solid var(--line); }
+  ul.hist .meta { display: flex; gap: 6px; align-items: center; color: var(--muted); font-size: 12px; flex-wrap: wrap; }
+  ul.hist .req { margin-top: 3px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .muted { color: var(--muted); }
+  .err { color: var(--bad); }
+  footer { text-align: center; color: var(--muted); font-size: 12px; padding: 0 0 24px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo" aria-label="Sangam">
+    <svg viewBox="0 0 40 40" aria-hidden="true">
+      <path d="M4 8 C14 8 16 20 20 20" stroke="#7c9cff" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M4 32 C14 32 16 20 20 20" stroke="#b48cff" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M4 20 H20" stroke="#34c3b5" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M20 20 H36" stroke="#e6e9ef" stroke-width="4.5" stroke-linecap="round"/>
+    </svg>
+    <div><b>Sangam</b><small>Saare AI models, ek jagah</small></div>
+  </div>
+  <div class="pills">
+    <span class="pill" id="p-gateway" title="Cloud router"><i class="dot"></i>OmniRoute</span>
+    <span class="pill" id="p-ollama" title="Local models"><i class="dot"></i>Ollama</span>
+    <span class="pill" id="p-opencode" title="Coding agent"><i class="dot"></i>OpenCode</span>
+    <button id="refresh" title="Dobara check karo">↻</button>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="card">
+      <h2>Kaam do <span class="hint">Ctrl + Enter = chalao</span></h2>
+      <label for="project">Project folder</label>
+      <div class="row">
+        <input id="project" spellcheck="false" autocomplete="off">
+        <button id="load">Kholo</button>
+      </div>
+      <div id="project-note" class="muted" style="font-size:12px;margin-top:4px"></div>
+      <div class="spacer"></div>
+      <label for="request">Kya karna hai? (English, Hinglish ya Spanish)</label>
+      <textarea id="request" placeholder="jaise: Login form valid email reject kar raha hai, bug fix karo"></textarea>
+      <div class="spacer"></div>
+      <label>Ye kaam kahan jayega</label>
+      <div class="route" id="route">Request likho — yahan dikhega kaunsa worker aur model lagega.</div>
+      <div class="spacer"></div>
+      <div class="row">
+        <button class="primary" id="run">▶ Chalao</button>
+        <button class="danger" id="stop" disabled>■ Roko</button>
+        <select id="mode" title="Kaam kaise chalega">
+          <option value="direct">Seedha worker (tez, kam token)</option>
+          <option value="orchestrator">Orchestrator se</option>
+        </select>
+        <span id="run-state" class="muted"></span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Output <span class="hint" id="out-hint"></span></h2>
+      <pre id="out" aria-live="polite"><span class="muted">Yahan OpenCode ka jawab live aayega.</span></pre>
+    </div>
+  </section>
+
+  <aside>
+    <div class="card">
+      <h2>Route map <span class="hint">tier → worker → model</span></h2>
+      <table>
+        <thead><tr><th>Tier</th><th>Worker</th><th>Model</th></tr></thead>
+        <tbody id="routes"></tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Hisaab</h2>
+      <div class="stats">
+        <div class="stat"><b id="s-cloud">0</b><span>Cloud</span></div>
+        <div class="stat"><b id="s-local">0</b><span>Local</span></div>
+        <div class="stat"><b id="s-fallback">0</b><span>Fallback</span></div>
+      </div>
+      <div class="bar" id="s-bar"></div>
+      <div class="legend">
+        <span><em style="background:var(--ok)"></em>Pakka (tests pass)</span>
+        <span><em style="background:var(--warn)"></em>Bina jaanch</span>
+        <span><em style="background:var(--bad)"></em>Adhoora</span>
+      </div>
+      <div class="muted" id="s-total" style="margin-top:6px;font-size:12px"></div>
+    </div>
+
+    <div class="card">
+      <h2>Pichhle kaam</h2>
+      <ul class="hist" id="hist"><li class="muted">Abhi koi kaam nahi hua.</li></ul>
+    </div>
+  </aside>
+</main>
+<footer>Sab kuch aapke PC pe chalta hai (127.0.0.1) — kuch bhi bahar publish nahi hota.</footer>
+
+<script>
+const BOOT = "__SANGAM_BOOT__"
+const $ = (id) => document.getElementById(id)
+const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n }
+
+async function api(path, options = {}) {
+  const res = await fetch(path, { ...options, headers: { "Content-Type": "application/json", "x-sangam-token": BOOT.token, ...(options.headers || {}) } })
+  const body = await res.json().catch(() => ({}))
+  if (!res.ok) throw new Error(body.error || `HTTP ${res.status}`)
+  return body
+}
+
+function setPill(id, state, text) {
+  const pill = $(id)
+  pill.querySelector(".dot").className = "dot " + state
+  pill.title = text
+}
+
+async function refreshStatus() {
+  try {
+    const s = await api("/api/status")
+    const gw = s.gateway
+    setPill("p-gateway", gw.ok ? "ok" : gw.up ? "warn" : "bad",
+      gw.ok ? `OmniRoute chal raha hai (${gw.models} models)` : gw.up ? `OmniRoute chal raha hai par key nahi maani (HTTP ${gw.status})` : "OmniRoute band hai — kaam local model pe jayega")
+    const ol = s.ollama
+    setPill("p-ollama", ol.up && ol.models.length ? "ok" : ol.up ? "warn" : "bad",
+      ol.up ? `Ollama: ${ol.models.join(", ") || "koi model nahi"}` : "Ollama band hai")
+    setPill("p-opencode", s.opencode.installed ? "ok" : "bad", s.opencode.installed ? `OpenCode ${s.opencode.version}` : "OpenCode nahi mila")
+  } catch (e) {
+    for (const id of ["p-gateway", "p-ollama", "p-opencode"]) setPill(id, "bad", "Sangam server se baat nahi ho pa rahi")
+  }
+}
+
+let routes = []
+async function loadProject() {
+  const note = $("project-note")
+  try {
+    const p = await api("/api/project?path=" + encodeURIComponent($("project").value))
+    $("project").value = p.path
+    note.className = "muted"
+    note.textContent = p.configured
+      ? `Router laga hua hai (default agent: ${p.defaultAgent || "—"})`
+      : "Is folder me router abhi nahi laga — terminal me chalao: opencode-omniroute-router init --local ollama/qwen2.5:7b"
+    routes = p.routes
+    renderRoutes()
+    classify()
+  } catch (e) {
+    note.className = "err"
+    note.textContent = e.message
+  }
+}
+
+function renderRoutes(activeWorker) {
+  const body = $("routes")
+  body.replaceChildren()
+  for (const r of routes) {
+    const tr = el("tr", r.worker === activeWorker ? "hit" : "")
+    const t = el("td"); t.append(el("span", "tier " + r.tier, r.tier))
+    tr.append(t, el("td", "mono", r.worker), el("td", "mono", r.model || "—"))
+    body.append(tr)
+  }
+}
+
+let classifyTimer
+function classify() {
+  clearTimeout(classifyTimer)
+  classifyTimer = setTimeout(async () => {
+    const box = $("route")
+    const request = $("request").value.trim()
+    if (!request) { box.textContent = "Request likho — yahan dikhega kaunsa worker aur model lagega."; renderRoutes(); return }
+    try {
+      const d = await api("/api/classify", { method: "POST", body: JSON.stringify({ request, project: $("project").value }) })
+      box.replaceChildren()
+      const shownTier = d.local ? "local" : d.tier
+      box.append(el("span", "tier " + shownTier, shownTier === "local" ? "local · " + d.tier : d.tier), " → ", el("b", "mono", d.worker), " → ", el("span", "mono", d.model || "?"))
+      if (d.local && !d.fallback) box.append(el("span", "tag local", "aapne offline/local bola"))
+      if (d.fallback) box.append(el("span", "tag fallback", "OmniRoute band → local"))
+      if (d.explore) box.append(el("span", "tag explore", "pehle code dhoondhega"))
+      const r = d.reason || {}
+      box.append(el("span", "muted", ` ${r.taskType} · ${r.scope} · ${r.risk} risk`))
+      renderRoutes(d.worker)
+    } catch (e) {
+      box.replaceChildren(el("span", "err", e.message))
+    }
+  }, 300)
+}
+
+let running = false
+async function run() {
+  const request = $("request").value.trim()
+  if (!request || running) return
+  running = true
+  $("run").disabled = true; $("stop").disabled = false
+  $("run-state").textContent = "chal raha hai…"
+  const out = $("out")
+  out.replaceChildren()
+  const started = Date.now()
+  const timer = setInterval(() => { $("out-hint").textContent = Math.round((Date.now() - started) / 1000) + " sec" }, 1000)
+  try {
+    const res = await fetch("/api/run", { method: "POST", headers: { "Content-Type": "application/json", "x-sangam-token": BOOT.token }, body: JSON.stringify({ request, project: $("project").value, mode: $("mode").value }) })
+    if (!res.ok) { const b = await res.json().catch(() => ({})); throw new Error(b.error || `HTTP ${res.status}`) }
+    const reader = res.body.getReader()
+    const decoder = new TextDecoder()
+    let pending = ""
+    for (;;) {
+      const { value, done } = await reader.read()
+      if (done) break
+      pending += decoder.decode(value, { stream: true })
+      const lines = pending.split("\n")
+      pending = lines.pop()
+      for (const line of lines) appendLine(out, line)
+    }
+    if (pending) appendLine(out, pending)
+  } catch (e) {
+    out.append(el("span", "err", "\n" + e.message + "\n"))
+  } finally {
+    clearInterval(timer)
+    running = false
+    $("run").disabled = false; $("stop").disabled = true
+    $("run-state").textContent = ""
+    refreshHistory()
+  }
+}
+
+function appendLine(out, line) {
+  const isRoute = /^(ROUTE|ROUTED|MODEL|REASON):/.test(line)
+  out.append(isRoute ? el("span", "routeline", line + "\n") : document.createTextNode(line + "\n"))
+  out.scrollTop = out.scrollHeight
+}
+
+async function stop() {
+  try { await api("/api/stop", { method: "POST", body: "{}" }) } catch {}
+}
+
+async function refreshHistory() {
+  try {
+    const h = await api("/api/history?limit=60")
+    const r = h.stats.routing || { cloud: 0, local: 0, fallback: 0 }
+    $("s-cloud").textContent = r.cloud; $("s-local").textContent = r.local; $("s-fallback").textContent = r.fallback
+    const o = h.stats.overall
+    const bar = $("s-bar"); bar.replaceChildren()
+    for (const [n, color] of [[o.success, "var(--ok)"], [o.uncertain, "var(--warn)"], [o.unresolved, "var(--bad)"]]) {
+      if (!o.total || !n) continue
+      const i = el("i"); i.style.width = (100 * n / o.total) + "%"; i.style.background = color; bar.append(i)
+    }
+    $("s-total").textContent = `Kul ${o.total} kaam · ${o.success} pakka · ${o.uncertain} bina jaanch · ${o.unresolved} adhoora`
+
+    // Pair each dispatch with the next outcome of the same session.
+    const chrono = [...h.recent].reverse()
+    const items = []
+    const open = new Map()
+    for (const e of chrono) {
+      if (e.type === "dispatch") { const it = { d: e, o: null }; items.push(it); open.set(e.sessionId, it) }
+      else if (e.type === "outcome" && open.has(e.sessionId) && !open.get(e.sessionId).o) open.get(e.sessionId).o = e
+    }
+    const list = $("hist"); list.replaceChildren()
+    if (!items.length) list.append(el("li", "muted", "Abhi koi kaam nahi hua."))
+    for (const { d, o } of items.reverse()) {
+      const li = el("li")
+      const meta = el("div", "meta")
+      meta.append(el("span", "tier " + (d.local ? "local" : d.tier || ""), d.local ? "local" : d.tier || "?"))
+      meta.append(el("span", "mono", d.selectedWorker || ""))
+      if (d.fallback) meta.append(el("span", "tag fallback", "fallback"))
+      const status = !o ? ["adhoora", "var(--bad)"] : o.verificationEvidence ? ["pakka", "var(--ok)"] : ["bina jaanch", "var(--warn)"]
+      const s = el("span", null, "● " + status[0]); s.style.color = status[1]; meta.append(s)
+      meta.append(el("span", null, new Date(d.timestamp).toLocaleString()))
+      li.append(meta, el("div", "req", d.request || ""))
+      li.title = d.request || ""
+      list.append(li)
+    }
+  } catch {}
+}
+
+$("project").value = BOOT.project
+$("load").onclick = loadProject
+$("project").addEventListener("keydown", (e) => { if (e.key === "Enter") loadProject() })
+$("request").addEventListener("input", classify)
+$("request").addEventListener("keydown", (e) => { if (e.key === "Enter" && e.ctrlKey) run() })
+$("run").onclick = run
+$("stop").onclick = stop
+$("refresh").onclick = () => { refreshStatus(); refreshHistory(); loadProject() }
+
+refreshStatus(); loadProject(); refreshHistory()
+setInterval(refreshStatus, 15000)
+setInterval(() => { if (!running) refreshHistory() }, 15000)
+</script>
+</body>
+</html>

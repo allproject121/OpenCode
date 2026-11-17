@@ -1,0 +1,34 @@
+timestamp=2026-11-16T21:12:10.614Z level=INFO run=030f0e05 message="creating instance" directory="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project"
+timestamp=2026-11-16T21:12:10.616Z level=INFO run=030f0e05 message=fromDirectory directory="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project"
+timestamp=2026-11-16T21:12:10.817Z level=INFO run=030f0e05 message=bootstrapping directory="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project"
+timestamp=2026-11-16T21:12:10.822Z level=INFO run=030f0e05 message=loading path="C:\\Users\\Roshan\\.config\\opencode\\config.json"
+timestamp=2026-11-16T21:12:10.823Z level=INFO run=030f0e05 message=loading path="C:\\Users\\Roshan\\.config\\opencode\\opencode.json"
+timestamp=2026-11-16T21:12:10.827Z level=INFO run=030f0e05 message=loading path="C:\\Users\\Roshan\\.config\\opencode\\opencode.jsonc"
+timestamp=2026-11-16T21:12:10.839Z level=INFO run=030f0e05 message=loading path="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project\\.opencode\\opencode.json"
+timestamp=2026-11-16T21:12:10.842Z level=INFO run=030f0e05 message=loading path="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project\\.opencode\\opencode.jsonc"
+timestamp=2026-11-16T21:12:10.936Z level=ERROR run=030f0e05 message="failed to load plugin" path=file:///C:/Users/Roshan/Downloads/opencode-omniroute-router/src/plugin.mjs error="Plugin export is not a function"
+timestamp=2026-11-16T21:12:10.938Z level=INFO run=030f0e05 message="all LSPs are disabled"
+timestamp=2026-11-16T21:12:10.938Z level=INFO run=030f0e05 message="all formatters are disabled"
+timestamp=2026-11-16T21:12:10.938Z level=INFO run=030f0e05 message=init
+timestamp=2026-11-16T21:12:11.073Z level=INFO run=030f0e05 message=created id=ses_e19cbfbbfffeinrzUq6B4OQHq0 slug=neon-sailor version=1.19.5 projectID=f68992875df0fe2f6ce8121e0032ec9f1bfe07e8 directory="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project" path="" workspaceID=undefined parentID=undefined title="New session - 2026-11-16T21:12:11.073Z" agent=undefined model=undefined metadata=undefined permission="[{\"permission\":\"question\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_enter\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_exit\",\"pattern\":\"*\",\"action\":\"deny\"}]" cost=0 tokens.input=0 tokens.output=0 tokens.reasoning=0 tokens.cache.read=0 tokens.cache.write=0 time.created=1794863531073 time.updated=1794863531073
+timestamp=2026-11-16T21:12:11.087Z level=INFO run=030f0e05 message="event connected"
+timestamp=2026-11-16T21:12:11.161Z level=INFO run=030f0e05 message=loop session.id=ses_e19cbfbbfffeinrzUq6B4OQHq0 step=0
+timestamp=2026-11-16T21:12:11.569Z level=INFO run=030f0e05 message=stream providerID=omniroute modelID=combo/eco-light session.id=ses_e19cbfbbfffeinrzUq6B4OQHq0 small=true agent=title mode=primary
+timestamp=2026-11-16T21:12:11.577Z level=INFO run=030f0e05 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=omniroute llm.model=combo/eco-light
+[0m
+> smart-orchestrator · combo/eco-light
+[0m
+timestamp=2026-11-16T21:12:12.232Z level=INFO run=030f0e05 message=initialized
+timestamp=2026-11-16T21:12:12.631Z level=INFO run=030f0e05 message=tracking hash=2ee36d870ce0f538774dbb7a7a97ff014e1e03fb cwd="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project" git="C:\\Users\\Roshan\\.local\\share\\opencode\\snapshot\\f68992875df0fe2f6ce8121e0032ec9f1bfe07e8\\fab6dcdb654f384fd186d6bc7af3503d8c72049a"
+timestamp=2026-11-16T21:12:12.641Z level=INFO run=030f0e05 message="shell tool using shell" shell="C:\\Program Files\\Git\\usr\\bin\\bash.exe"
+timestamp=2026-11-16T21:12:13.906Z level=INFO run=030f0e05 message="watcher backend" directory="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project" platform=win32 backend=windows
+timestamp=2026-11-16T21:12:13.916Z level=INFO run=030f0e05 message="project copy refresh started" projectID=f68992875df0fe2f6ce8121e0032ec9f1bfe07e8
+timestamp=2026-11-16T21:12:14.502Z level=INFO run=030f0e05 message="project copy refresh done" projectID=f68992875df0fe2f6ce8121e0032ec9f1bfe07e8 updated=[] removed=[]
+timestamp=2026-11-16T21:12:14.580Z level=INFO run=030f0e05 message="booting location services" directory="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project" workspaceID=undefined
+timestamp=2026-11-16T21:12:14.591Z level=INFO run=030f0e05 message=process session.id=ses_e19cbfbbfffeinrzUq6B4OQHq0 messageID=msg_1e634062c0014TMx1K1p9eGf2X
+timestamp=2026-11-16T21:12:14.595Z level=INFO run=030f0e05 message=stream providerID=omniroute modelID=combo/eco-light session.id=ses_e19cbfbbfffeinrzUq6B4OQHq0 small=false agent=smart-orchestrator mode=primary
+timestamp=2026-11-16T21:12:14.601Z level=INFO run=030f0e05 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=omniroute llm.model=combo/eco-light
+timestamp=2026-11-16T21:12:20.731Z level=INFO run=030f0e05 message=tracking hash=2ee36d870ce0f538774dbb7a7a97ff014e1e03fb cwd="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project" git="C:\\Users\\Roshan\\.local\\share\\opencode\\snapshot\\f68992875df0fe2f6ce8121e0032ec9f1bfe07e8\\fab6dcdb654f384fd186d6bc7af3503d8c72049a"
+timestamp=2026-11-16T21:12:20.921Z level=INFO run=030f0e05 message=loop session.id=ses_e19cbfbbfffeinrzUq6B4OQHq0 step=1
+timestamp=2026-11-16T21:12:20.922Z level=INFO run=030f0e05 message="exiting loop" session.id=ses_e19cbfbbfffeinrzUq6B4OQHq0
+timestamp=2026-11-16T21:12:20.939Z level=INFO run=030f0e05 message="disposing instance" directory="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project"

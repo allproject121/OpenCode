@@ -1,0 +1,8 @@
+[Sangam] kaam shuru (seedha worker): C:/Users/Roshan/Downloads/ecosystem-test-project
+ROUTED: expert | MODEL: omniroute/combo/eco-heavy | TIER: expert
+
+> expert · combo/eco-heavy
+
+✱ Glob "src/cart.js" 1 match
+→ Read src/cart.js
+✱ Grep "cart.js" 1 match

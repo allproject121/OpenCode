@@ -1,0 +1,99 @@
+timestamp=2026-11-16T21:38:38.371Z level=INFO run=1d3aedba message="creating instance" directory="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project"
+timestamp=2026-11-16T21:38:38.372Z level=INFO run=1d3aedba message=fromDirectory directory="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project"
+timestamp=2026-11-16T21:38:38.583Z level=INFO run=1d3aedba message=bootstrapping directory="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project"
+timestamp=2026-11-16T21:38:38.587Z level=INFO run=1d3aedba message=loading path="C:\\Users\\Roshan\\.config\\opencode\\config.json"
+timestamp=2026-11-16T21:38:38.587Z level=INFO run=1d3aedba message=loading path="C:\\Users\\Roshan\\.config\\opencode\\opencode.json"
+timestamp=2026-11-16T21:38:38.592Z level=INFO run=1d3aedba message=loading path="C:\\Users\\Roshan\\.config\\opencode\\opencode.jsonc"
+timestamp=2026-11-16T21:38:38.602Z level=DEBUG run=1d3aedba message="loading config from C:\\Users\\Roshan\\Downloads\\ecosystem-test-project\\.opencode\\opencode.json"
+timestamp=2026-11-16T21:38:38.602Z level=INFO run=1d3aedba message=loading path="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project\\.opencode\\opencode.json"
+timestamp=2026-11-16T21:38:38.605Z level=DEBUG run=1d3aedba message="loading config from C:\\Users\\Roshan\\Downloads\\ecosystem-test-project\\.opencode\\opencode.jsonc"
+timestamp=2026-11-16T21:38:38.605Z level=INFO run=1d3aedba message=loading path="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project\\.opencode\\opencode.jsonc"
+timestamp=2026-11-16T21:38:38.803Z level=INFO run=1d3aedba message="deterministic task routing plugin initialized" workers="[\"free-worker\",\"smart-fast\",\"smart-standard\",\"smart-strong\",\"expert\",\"local-worker\"]" localFallback=true
+timestamp=2026-11-16T21:38:38.804Z level=INFO run=1d3aedba message="all LSPs are disabled"
+timestamp=2026-11-16T21:38:38.805Z level=INFO run=1d3aedba message="all formatters are disabled"
+timestamp=2026-11-16T21:38:38.805Z level=INFO run=1d3aedba message=init
+timestamp=2026-11-16T21:38:38.833Z level=INFO run=1d3aedba message=created id=ses_e19b3c18effe6VI0HQqOeVNKem slug=hidden-knight version=1.19.5 projectID=f68992875df0fe2f6ce8121e0032ec9f1bfe07e8 directory="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project" path="" workspaceID=undefined parentID=undefined title="New session - 2026-11-16T21:38:38.833Z" agent=undefined model=undefined metadata=undefined permission="[{\"permission\":\"question\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_enter\",\"pattern\":\"*\",\"action\":\"deny\"},{\"permission\":\"plan_exit\",\"pattern\":\"*\",\"action\":\"deny\"}]" cost=0 tokens.input=0 tokens.output=0 tokens.reasoning=0 tokens.cache.read=0 tokens.cache.write=0 time.created=1794865118833 time.updated=1794865118833
+timestamp=2026-11-16T21:38:38.898Z level=INFO run=1d3aedba message="event connected"
+timestamp=2026-11-16T21:38:38.920Z level=INFO run=1d3aedba message=loop session.id=ses_e19b3c18effe6VI0HQqOeVNKem step=0
+timestamp=2026-11-16T21:38:39.389Z level=INFO run=1d3aedba message=stream providerID=ollama modelID=qwen2.5:7b session.id=ses_e19b3c18effe6VI0HQqOeVNKem small=true agent=title mode=primary
+timestamp=2026-11-16T21:38:39.394Z level=INFO run=1d3aedba message="llm runtime selected" llm.runtime=ai-sdk llm.provider=ollama llm.model=qwen2.5:7b
+[0m
+> local-worker · qwen2.5:7b
+[0m
+timestamp=2026-11-16T21:38:39.675Z level=INFO run=1d3aedba message=tracking hash=52af182fe8765ae2858b0a3cc75986e764aec524 cwd="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project" git="C:\\Users\\Roshan\\.local\\share\\opencode\\snapshot\\f68992875df0fe2f6ce8121e0032ec9f1bfe07e8\\fab6dcdb654f384fd186d6bc7af3503d8c72049a"
+timestamp=2026-11-16T21:38:39.688Z level=INFO run=1d3aedba message="shell tool using shell" shell="C:\\Program Files\\Git\\usr\\bin\\bash.exe"
+timestamp=2026-11-16T21:38:40.001Z level=INFO run=1d3aedba message="watcher backend" directory="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project" platform=win32 backend=windows
+timestamp=2026-11-16T21:38:40.013Z level=INFO run=1d3aedba message="project copy refresh started" projectID=f68992875df0fe2f6ce8121e0032ec9f1bfe07e8
+timestamp=2026-11-16T21:38:41.023Z level=INFO run=1d3aedba message="project copy refresh done" projectID=f68992875df0fe2f6ce8121e0032ec9f1bfe07e8 updated=[] removed=[]
+timestamp=2026-11-16T21:38:41.197Z level=INFO run=1d3aedba message="booting location services" directory="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project" workspaceID=undefined
+timestamp=2026-11-16T21:38:41.201Z level=INFO run=1d3aedba message=process session.id=ses_e19b3c18effe6VI0HQqOeVNKem messageID=msg_1e64c40920012iZam2hPPrqGQN
+timestamp=2026-11-16T21:38:41.202Z level=INFO run=1d3aedba message=stream providerID=ollama modelID=qwen2.5:7b session.id=ses_e19b3c18effe6VI0HQqOeVNKem small=false agent=local-worker mode=all
+timestamp=2026-11-16T21:38:41.205Z level=INFO run=1d3aedba message="llm runtime selected" llm.runtime=ai-sdk llm.provider=ollama llm.model=qwen2.5:7b
+timestamp=2026-11-16T21:38:45.421Z level=INFO run=1d3aedba message=evaluated permission=glob pattern=src/cart.js action.permission=glob action.action=allow action.pattern=*
+[0m✱ [0mGlob "src/cart.js"[90m 1 match[0m
+timestamp=2026-11-16T21:38:47.606Z level=INFO run=1d3aedba message=evaluated permission=glob pattern=test/cart.test.js action.permission=glob action.action=allow action.pattern=*
+[0m✱ [0mGlob "test/cart.test.js"[90m 1 match[0m
+timestamp=2026-11-16T21:38:49.876Z level=INFO run=1d3aedba message=evaluated permission=read pattern="src\\cart.js" action.permission=read action.action=allow action.pattern=*
+timestamp=2026-11-16T21:38:49.914Z level=INFO run=1d3aedba message="touching file" file="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project\\src\\cart.js"
+[0m→ [0mRead src/cart.js
+timestamp=2026-11-16T21:38:52.384Z level=INFO run=1d3aedba message=evaluated permission=read pattern="test\\cart.test.js" action.permission=read action.action=allow action.pattern=*
+timestamp=2026-11-16T21:38:52.400Z level=INFO run=1d3aedba message="touching file" file="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project\\test\\cart.test.js"
+[0m→ [0mRead test/cart.test.js
+timestamp=2026-11-16T21:38:52.750Z level=INFO run=1d3aedba message=tracking hash=52af182fe8765ae2858b0a3cc75986e764aec524 cwd="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project" git="C:\\Users\\Roshan\\.local\\share\\opencode\\snapshot\\f68992875df0fe2f6ce8121e0032ec9f1bfe07e8\\fab6dcdb654f384fd186d6bc7af3503d8c72049a"
+timestamp=2026-11-16T21:38:52.901Z level=INFO run=1d3aedba message=loop session.id=ses_e19b3c18effe6VI0HQqOeVNKem step=1
+timestamp=2026-11-16T21:38:53.054Z level=INFO run=1d3aedba message=tracking hash=52af182fe8765ae2858b0a3cc75986e764aec524 cwd="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project" git="C:\\Users\\Roshan\\.local\\share\\opencode\\snapshot\\f68992875df0fe2f6ce8121e0032ec9f1bfe07e8\\fab6dcdb654f384fd186d6bc7af3503d8c72049a"
+timestamp=2026-11-16T21:38:53.067Z level=INFO run=1d3aedba message=process session.id=ses_e19b3c18effe6VI0HQqOeVNKem messageID=msg_1e64c75660014HcZ5Z07dUmEcy
+timestamp=2026-11-16T21:38:53.068Z level=INFO run=1d3aedba message=stream providerID=ollama modelID=qwen2.5:7b session.id=ses_e19b3c18effe6VI0HQqOeVNKem small=false agent=local-worker mode=all
+timestamp=2026-11-16T21:38:53.069Z level=INFO run=1d3aedba message="llm runtime selected" llm.runtime=ai-sdk llm.provider=ollama llm.model=qwen2.5:7b
+[0m✗ [0mEdit test/cart.test.js failed
+[91m[1mError: [0moldString cannot be empty when editing an existing file. Provide the exact text to replace, or use write for an intentional full-file replacement.
+timestamp=2026-11-16T21:39:39.289Z level=INFO run=1d3aedba message=cleanup prune=7.days
+timestamp=2026-11-16T21:39:40.562Z level=INFO run=1d3aedba message=evaluated permission=bash pattern="npm test" action.permission=bash action.pattern="npm test*" action.action=allow
+[0m
+[0m$ [0mnpm test
+> ecosystem-test-project@1.0.0 test
+> node --test
+
+✔ total of two items (0.6933ms)
+✔ formats a price (0.1359ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 80.5033
+[0m
+timestamp=2026-11-16T21:39:41.636Z level=INFO run=1d3aedba message=tracking hash=52af182fe8765ae2858b0a3cc75986e764aec524 cwd="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project" git="C:\\Users\\Roshan\\.local\\share\\opencode\\snapshot\\f68992875df0fe2f6ce8121e0032ec9f1bfe07e8\\fab6dcdb654f384fd186d6bc7af3503d8c72049a"
+timestamp=2026-11-16T21:39:41.796Z level=INFO run=1d3aedba message=loop session.id=ses_e19b3c18effe6VI0HQqOeVNKem step=2
+timestamp=2026-11-16T21:39:41.932Z level=INFO run=1d3aedba message=tracking hash=52af182fe8765ae2858b0a3cc75986e764aec524 cwd="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project" git="C:\\Users\\Roshan\\.local\\share\\opencode\\snapshot\\f68992875df0fe2f6ce8121e0032ec9f1bfe07e8\\fab6dcdb654f384fd186d6bc7af3503d8c72049a"
+timestamp=2026-11-16T21:39:41.940Z level=INFO run=1d3aedba message=process session.id=ses_e19b3c18effe6VI0HQqOeVNKem messageID=msg_1e64d3465001aA704fyUGfCWl8
+timestamp=2026-11-16T21:39:41.941Z level=INFO run=1d3aedba message=stream providerID=ollama modelID=qwen2.5:7b session.id=ses_e19b3c18effe6VI0HQqOeVNKem small=false agent=local-worker mode=all
+timestamp=2026-11-16T21:39:41.941Z level=INFO run=1d3aedba message="llm runtime selected" llm.runtime=ai-sdk llm.provider=ollama llm.model=qwen2.5:7b
+timestamp=2026-11-16T21:39:54.511Z level=INFO run=1d3aedba message=evaluated permission=bash pattern="npm test" action.permission=bash action.pattern="npm test*" action.action=allow
+[0m$ [0mnpm test
+> ecosystem-test-project@1.0.0 test
+> node --test
+
+✔ total of two items (1.0762ms)
+✔ formats a price (0.2261ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 174.4343
+[0m
+timestamp=2026-11-16T21:39:56.975Z level=INFO run=1d3aedba message=tracking hash=52af182fe8765ae2858b0a3cc75986e764aec524 cwd="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project" git="C:\\Users\\Roshan\\.local\\share\\opencode\\snapshot\\f68992875df0fe2f6ce8121e0032ec9f1bfe07e8\\fab6dcdb654f384fd186d6bc7af3503d8c72049a"
+timestamp=2026-11-16T21:39:57.256Z level=INFO run=1d3aedba message=loop session.id=ses_e19b3c18effe6VI0HQqOeVNKem step=3
+timestamp=2026-11-16T21:39:57.601Z level=INFO run=1d3aedba message=tracking hash=52af182fe8765ae2858b0a3cc75986e764aec524 cwd="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project" git="C:\\Users\\Roshan\\.local\\share\\opencode\\snapshot\\f68992875df0fe2f6ce8121e0032ec9f1bfe07e8\\fab6dcdb654f384fd186d6bc7af3503d8c72049a"
+timestamp=2026-11-16T21:39:57.618Z level=INFO run=1d3aedba message=process session.id=ses_e19b3c18effe6VI0HQqOeVNKem messageID=msg_1e64d70cb0019lcXIKMAxz09QG
+timestamp=2026-11-16T21:39:57.619Z level=INFO run=1d3aedba message=stream providerID=ollama modelID=qwen2.5:7b session.id=ses_e19b3c18effe6VI0HQqOeVNKem small=false agent=local-worker mode=all
+timestamp=2026-11-16T21:39:57.622Z level=INFO run=1d3aedba message="llm runtime selected" llm.runtime=ai-sdk llm.provider=ollama llm.model=qwen2.5:7b
+timestamp=2026-11-16T21:40:15.758Z level=INFO run=1d3aedba message=tracking hash=52af182fe8765ae2858b0a3cc75986e764aec524 cwd="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project" git="C:\\Users\\Roshan\\.local\\share\\opencode\\snapshot\\f68992875df0fe2f6ce8121e0032ec9f1bfe07e8\\fab6dcdb654f384fd186d6bc7af3503d8c72049a"
+timestamp=2026-11-16T21:40:15.917Z level=INFO run=1d3aedba message=loop session.id=ses_e19b3c18effe6VI0HQqOeVNKem step=4
+timestamp=2026-11-16T21:40:15.918Z level=INFO run=1d3aedba message="exiting loop" session.id=ses_e19b3c18effe6VI0HQqOeVNKem
+timestamp=2026-11-16T21:40:15.926Z level=INFO run=1d3aedba message="disposing instance" directory="C:\\Users\\Roshan\\Downloads\\ecosystem-test-project"

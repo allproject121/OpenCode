@@ -1,0 +1,3 @@
+ROUTE: free-worker
+MODEL: omniroute/combo/eco-light
+REASON: analysis | bounded | low-risk | low-ambiguity | deterministic-verification

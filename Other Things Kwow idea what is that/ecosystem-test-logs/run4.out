@@ -1,0 +1,59 @@
+[Sangam] kaam shuru (seedha worker): C:/Users/Roshan/Downloads/ecosystem-test-project
+ROUTED: smart-standard | MODEL: omniroute/combo/eco-heavy | TIER: standard
+
+> smart-standard · combo/eco-heavy
+
+→ Read src/cart.js
+
+← Edit src/cart.js
+Index: C:\Users\Roshan\Downloads\ecosystem-test-project\src\cart.js
+===================================================================
+--- C:\Users\Roshan\Downloads\ecosystem-test-project\src\cart.js
++++ C:\Users\Roshan\Downloads\ecosystem-test-project\src\cart.js
+@@ -1,9 +1,9 @@
+ // Cart helpers used by the checkout page.
+ 
+ export function cartTotal(items) {
+   // BUG: crashes on an empty cart because reduce has no initial value.
+-  return items.map((item) => item.price * item.qty).reduce((sum, value) => sum + value)
++  return items.length ? items.map((item) => item.price * item.qty).reduce((sum, value) => sum + value, 0) : 0
+ }
+ 
+ export function formatPrice(amount) {
+   return `Rs ${amount.toFixed(2)}`
+
+
+$ npm test
+> ecosystem-test-project@1.0.0 test
+> node --test
+
+✔ total of two items (0.523ms)
+✔ formats a price (0.0929ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 83.7824
+
+The bug in `src/cart.js` has been fixed, and the tests have passed successfully. The `cartTotal` function now correctly handles an empty cart by providing an initial value of `0` to the `reduce` function.
+
+Here is the updated code in `src/cart.js`:
+
+```javascript
+// Cart helpers used by the checkout page.
+export function cartTotal(items) {
+  // BUG: crashes on an empty cart because reduce has no initial value.
+  return items.length ? items.map((item) => item.price * item.qty).reduce((sum, value) => sum + value, 0) : 0
+}
+
+export function formatPrice(amount) {
+  return `Rs ${amount.toFixed(2)}`
+}
+```
+
+You can now proceed with your next steps. If you need further assistance, feel free to ask!
+
+[Sangam] khatam (exit 0)

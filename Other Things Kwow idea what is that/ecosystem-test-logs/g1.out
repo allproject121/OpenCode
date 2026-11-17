@@ -1,0 +1,22 @@
+[Sangam] kaam shuru (orchestrator): C:/Users/Roshan/Downloads/ecosystem-test-project
+
+> smart-orchestrator · combo/eco-light
+
+• Explain formatPrice function in src/cart.js Free-Worker Agent
+✓ Explain formatPrice function in src/cart.js Free-Worker Agent
+ROUTE: free-worker
+MODEL: omniroute/combo/eco-light
+REASON: analysis | bounded | low-risk | low-ambiguity | deterministic
+
+`src/cart.js` mein `formatPrice` function kaafi simple hai. Yeh function kisi bhi price (number) ko standard currency format mein convert karta hai.
+
+Yeh function aise kaam karta hai:
+
+1.  **Input:** Yeh `amount` naam ka ek parameter leta hai (jo ki ek number hona chahiye).
+2.  **toFixed(2):** Yeh `amount.toFixed(2)` use karta hai, jiska matlab hai ki price hamesha decimal ke baad 2 digits tak dikhayi degi (jaise `10` ban jayega `10.00` aur `10.5` ban jayega `10.50`).
+3.  **Currency Prefix:** Yeh result ke aage `"Rs "` jod deta hai.
+
+**Example:**
+Agar aap `formatPrice(500)` call karoge, toh yeh return karega: `"Rs 500.00"`.
+
+[Sangam] khatam (exit 0)
