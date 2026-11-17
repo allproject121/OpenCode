@@ -611,8 +611,10 @@ Poora samjhao: `tools\auto-update\README.md`. Code: `tools\auto-update\update.ps
   Poora haal: `tools\installer\README.md`. Purana test data: `%APPDATA%\ai.apna.opencode.test1-*`.
 - DOWNLOAD LINK (user ne kaha "normal link, release baad me"): branch `download` (alag, sirf exe LFS + README,
   `%TEMP%\apna-download-branch` se push) -> https://github.com/allproject121/OpenCode/raw/download/Apna-OpenCode-Setup-2.3.0-apna.2.exe
-  (jaancha: 200, 287887045 bytes = local). Code badlav abhi PUSH NAHI (koi aur session main par "Other Things
-  part x/6" force push kar raha tha; mera commit wapas liya, files working tree me).
+  (jaancha: 200, 287887045 bytes = local). Code badlav PUSH HUE (05:2x): origin/main f65bd238 (24 files,
+  alag temp index se, normal push). Session roshan-72 "Other Things" ke baaki 29 hisse (~250 MB) ab isi ke upar
+  normal push se daalega (user: "pehle kaam ki cheezein, phir usko karne dena"). node_modules / build (~15.5 GB)
+  user ne kaha "rahne do" — GitHub par NAHI. Shared .git/index me roshan-72 ki ~294k staged files hain, mat chhedo.
 - RELEASE BANA (gh login user ne kiya): https://github.com/allproject121/OpenCode/releases/tag/v2.3.0-apna.2 (asset 287887045, jaancha). Purani line: `gh release create v2.3.0-apna.2
   dist-installer/Apna-OpenCode-Setup-2.3.0-apna.2.exe --repo allproject121/OpenCode` -> code commit + push ->
   backup `complete\` + README. User se pucha: `config\service-local.json` GitHub history se hatana hai?
