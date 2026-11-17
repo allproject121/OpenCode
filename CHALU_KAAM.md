@@ -592,6 +592,31 @@ Poora samjhao: `tools\auto-update\README.md`. Code: `tools\auto-update\update.ps
 - Agla kadam: roshan-d0 ROKO.txt hataye -> app band karke launcher se kholo -> `logs\auto-update.log` me "Update v2.3.0 laga" -> app chala ke
   dekho (mic, sidebar, plugins sab waise hi). Kuch toote to `tools\auto-update\Wapas-Lo.cmd`.
 
+### GitHub + Installer (2026-11-18 raat, Claude; user: "app banao, install karo, GitHub pe download link ke sath")
+- Poora `Programming` folder ab khud ek git repo hai -> `https://github.com/allproject121/OpenCode` (branch main,
+  4 commit, node_modules jaise ignored folder nahi gaye). Andar ke upstream `.git` folder (opencode, kilocode,
+  omniroute...) 23:38 par kisi aur ne hataye — isliye auto-update ka upstream link + `apna-opencode` history nahi hai.
+- **Dhyan**: `config\service-local.json` (local server password) GitHub par chala gaya — user ko bataya.
+- Installer (Phase 6b) — HALF DONE. Backup: `backup\2026-11-18_installer\before\` (4 files).
+  Badlav: `desktop/src/main/constants.ts` (naam "Apna OpenCode", id `ai.apna.opencode`),
+  `desktop/src/main/lifecycle/configure.ts` (`useBundledSettings`: packaged me server channel local + pehli baar
+  `resources\apna-config` -> `<userData>\config`, `__APNA_CONFIG__` badalta hai), `desktop/electron-builder.config.ts`
+  (`apnaConfig()` jab OPENCODE_CHANNEL=local), `gui-plugins/src/updater/main.ts` (official updater band).
+  Script: `bun tools/installer/build.ts` -> `dist-installer\Apna-OpenCode-Setup-2.3.0-apna.1.exe`, log `logs\installer-build.log`.
+- apna.1 bana (04:24) + is PC par install (`%LOCALAPPDATA%\Programs\ai.apna.opencode`, data `%APPDATA%\ai.apna.opencode`,
+  settings copy `...\config`). Pehli baar: "Location plugins did not finish activating" (server ka 5 s wait,
+  `server/src/location.ts`) -> 60 s kiya (backup me). Doosri baar app sahi khula (`logs\93-installed-app-screen.png`),
+  plugins `config\plugins\*` se load (log `~\.local\share\opencode\log\opencode-local.log`).
+- apna.2 bana (04:51) + data hata ke install -> pehli baar seedha chat (`logs\94-apna2-first-start.png`). JAANCHA.
+  Poora haal: `tools\installer\README.md`. Purana test data: `%APPDATA%\ai.apna.opencode.test1-*`.
+- DOWNLOAD LINK (user ne kaha "normal link, release baad me"): branch `download` (alag, sirf exe LFS + README,
+  `%TEMP%\apna-download-branch` se push) -> https://github.com/allproject121/OpenCode/raw/download/Apna-OpenCode-Setup-2.3.0-apna.2.exe
+  (jaancha: 200, 287887045 bytes = local). Code badlav abhi PUSH NAHI (koi aur session main par "Other Things
+  part x/6" force push kar raha tha; mera commit wapas liya, files working tree me).
+- RELEASE BANA (gh login user ne kiya): https://github.com/allproject121/OpenCode/releases/tag/v2.3.0-apna.2 (asset 287887045, jaancha). Purani line: `gh release create v2.3.0-apna.2
+  dist-installer/Apna-OpenCode-Setup-2.3.0-apna.2.exe --repo allproject121/OpenCode` -> code commit + push ->
+  backup `complete\` + README. User se pucha: `config\service-local.json` GitHub history se hatana hai?
+
 ### Agla kadam
 1. User se pucho: aage kya pehle — (a) `/banao` ka poora test, (b) Kilo jaise agents, (c) installer (.exe).
 2. Phase 4b: `Programming\test-projects\` me naya khaali folder -> app me kholo -> `/banao ek chhoti todo website`

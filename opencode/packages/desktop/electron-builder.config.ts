@@ -208,7 +208,30 @@ const getBase = (appId: string): Configuration => {
   }
 }
 
+// apna-opencode: tools\installer builds with OPENCODE_CHANNEL=local. Own id and name (never the official app's
+// install folder or data), the settings bundle from tools\installer, and no official update feed (the
+// updater is off in gui-plugins/src/updater/main.ts; this feed only fills app-update.yml).
+function apnaConfig(): Configuration {
+  const appId = "ai.apna.opencode"
+  const base = getBase(appId)
+
+  return {
+    ...base,
+    appId,
+    productName: "Apna OpenCode",
+    extraResources: [...(base.extraResources as object[]), { from: "apna-config/", to: "apna-config" }],
+    protocols: { name: "Apna OpenCode", schemes: ["apna-opencode"] },
+    nsis: { ...base.nsis, shortcutName: "Apna OpenCode" },
+    publish: {
+      provider: "generic",
+      url: "https://github.com/allproject121/OpenCode/releases/latest/download/",
+      channel: "latest",
+    },
+  }
+}
+
 export function getConfig() {
+  if (process.env.OPENCODE_CHANNEL === "local") return apnaConfig()
   const channel = resolveChannel()
   const appId = APP_IDS[channel]
   const base = getBase(appId)

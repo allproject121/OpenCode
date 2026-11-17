@@ -38,7 +38,8 @@ export function locationErrors<A, E, R>(effect: Effect.Effect<A, E, R>) {
 // list or use providers wait. Remove once a plugin batch becomes visible only when it ends.
 export const awaitPlugins = Plugin.awaitActivation.pipe(
   Effect.timeoutOrElse({
-    duration: "5 seconds",
+    // apna-opencode: the first start of the installed app loads the bundled plugins cold and took longer than 5 s.
+    duration: "60 seconds",
     orElse: () =>
       Effect.fail(
         new ServiceUnavailableError({

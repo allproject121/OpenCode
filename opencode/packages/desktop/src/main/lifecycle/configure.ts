@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto"
-import { mkdirSync, rmSync } from "node:fs"
+import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs"
 import { enableCompileCache } from "node:module"
 import { homedir, tmpdir } from "node:os"
 import path from "node:path"
@@ -54,6 +54,28 @@ export function configureApplication() {
 
   // V8 bytecode for the main bundle survives between launches, like the renderer's code cache.
   enableCompileCache(path.join(app.getPath("userData"), "compile-cache"))
+
+  if (app.isPackaged) useBundledSettings()
+}
+
+// apna-opencode: the installer carries the settings, skills and plugins (resources\apna-config). The first
+// start copies them to <userData>\config, which then stays the user's own; the server runs on the "local"
+// channel like the dev launcher (opencode-local.db, service-local.json).
+function useBundledSettings() {
+  process.env.OPENCODE_DESKTOP_SERVER_CHANNEL = "local"
+
+  if (process.env.OPENCODE_CONFIG_DIR) return
+  const config = path.join(app.getPath("userData"), "config")
+  const bundled = path.join(process.resourcesPath, "apna-config")
+
+  if (!existsSync(config) && existsSync(bundled)) {
+    cpSync(bundled, config, { recursive: true })
+    const file = path.join(config, "opencode.jsonc")
+    const text = readFileSync(file, "utf8")
+    writeFileSync(file, text.replaceAll("__APNA_CONFIG__", JSON.stringify(config).slice(1, -1)))
+  }
+
+  process.env.OPENCODE_CONFIG_DIR = config
 }
 
 export function acquireApplicationLock() {

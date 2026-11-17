@@ -8,20 +8,10 @@ export const CHANNEL: Channel = raw === "local" || raw === "dev" || raw === "bet
 
 export const VERSION = app.isPackaged ? app.getVersion() : (process.env.OPENCODE_VERSION ?? app.getVersion())
 
-const appNames: Record<string, string> = {
-  dev: "OpenCode Dev",
-  beta: "OpenCode Beta",
-  prod: "OpenCode",
-}
-
-const appIDs: Record<string, string> = {
-  dev: "ai.opencode.desktop.dev",
-  beta: "ai.opencode.desktop.beta",
-  prod: "ai.opencode.desktop",
-}
-
 // Local renderer/server mode keeps the dev application identity.
 // apna-opencode: this build runs from source under its own name.
-export const APP_NAME = app.isPackaged ? appNames[CHANNEL] : "Apna OpenCode"
+// The installed build (installer from tools\installer) has its own name and id, so it never shares
+// data or an install folder with the official OpenCode apps.
+export const APP_NAME = "Apna OpenCode"
 
-export const APP_ID = app.isPackaged ? appIDs[CHANNEL] : "ai.opencode.desktop.dev"
+export const APP_ID = app.isPackaged ? "ai.apna.opencode" : "ai.opencode.desktop.dev"

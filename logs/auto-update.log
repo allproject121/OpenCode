@@ -363,3 +363,6 @@ error: script "typecheck" exited with code 1
 [2026-11-17 23:07:02] Update v2.3.0 taiyaar hai par ROKO.txt hai, isliye nahi lagaya: roshan-5b (Claude session) About > Updates + "koi bhi GitHub tool jodo" bana raha hai (2026-11-17 raat; gui-plugins/src/apna-update, app/src/settings/about, settings-pages, search-index, plugin registries). Kaam + live test ke baad roshan-5b ye line hata dega.
 [2026-11-17 23:27:58] === Update v2.3.0 asli folder me laga rahe hain ===
 [2026-11-17 23:27:58]   > git status --porcelain  (in C:\Users\Roshan\Downloads\Programming\opencode) -> 0
+[2026-11-18 04:08:57]   > git ls-remote --tags origin  (in C:\Users\Roshan\Downloads\Programming\opencode) -> 0
+[2026-11-18 04:09:21] GitHub tak nahi pahunche (net?). Agli baar.
+[2026-11-18 04:33:49]   > cmd.exe /c npm view omniroute version  (in C:\Users\Roshan\Downloads\Programming) -> 0
