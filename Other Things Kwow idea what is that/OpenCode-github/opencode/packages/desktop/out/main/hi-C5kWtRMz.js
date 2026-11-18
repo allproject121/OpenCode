@@ -1,0 +1,38 @@
+//#region ../gui-plugins/src/apna-images/i18n/hi.ts
+var hi_default = {
+	title: "Images",
+	"command.title": "Images kholo",
+	unavailable: "Ye panna sirf desktop app me chalta hai.",
+	"tab.trending": "Trending",
+	"tab.templates": "Templates",
+	"tab.mine": "Meri tasveerein",
+	"templates.hint": "Ek style chuno, phir likho kya banana hai, ya + se apni photo do aur use is style me badlo.",
+	"mine.empty": "Aapki banayi tasveerein yahan dikhengi",
+	"mine.emptyHelp": "Neeche likho kaisi tasveer chahiye, ya Trending se shuru karo.",
+	"composer.placeholder": "Nayi tasveer ke baare me likho",
+	model: "Model",
+	aspect: "Aakaar (aspect ratio)",
+	mic: "Bolkar likho",
+	make: "Tasveer banao",
+	making: "Ban rahi hai… {{seconds}} s",
+	made: "Tasveer taiyaar",
+	failed: "Tasveer nahi ban payi",
+	folder: "{{folder}} me save hoti hain",
+	"photo.add": "Badalne ke liye photo jodo",
+	"photo.pick": "Photo chuno",
+	"photo.chip": "Aapki photo",
+	"photo.failed": "Ye photo use nahi ho payi",
+	"style.chip": "Style: {{name}}",
+	preview: "Tasveer",
+	prompt: "Prompt",
+	remix: "Remix (yahi prompt lo)",
+	edit: "Is tasveer ko badlo",
+	open: "Kholo",
+	showFolder: "Folder me dikhao",
+	remove: "Hatao",
+	previous: "Pichhli tasveer",
+	next: "Agli tasveer",
+	close: "Band karo"
+};
+//#endregion
+export { hi_default as default };

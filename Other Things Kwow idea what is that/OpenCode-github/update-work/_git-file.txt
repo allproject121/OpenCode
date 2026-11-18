@@ -1,0 +1,1 @@
+gitdir: C:/Users/Roshan/Downloads/Programming/opencode/.git/worktrees/update-work
