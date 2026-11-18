@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@opencode/plugin-workflow",
+  "version": "2.3.0",
+  "private": true,
+  "description": "apna-opencode: works out what is being built and works in stages (define, plan, build, verify, review + security, ship)",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.ts",
+    "./server": "./index.ts"
+  },
+  "files": [
+    "index.ts",
+    "detect.ts",
+    "prompts.ts",
+    "skills"
+  ],
+  "scripts": {
+    "typecheck": "bun check --no-script",
+    "test": "bun test"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": "^2.0.27 || ^0.0.0-dev"
+  },
+  "devDependencies": {
+    "@tsconfig/bun": "1.0.9",
+    "@types/bun": "1.4.3",
+    "@typescript/native": "npm:typescript@7.1.0-beta"
+  }
+}
