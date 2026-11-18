@@ -1,0 +1,46 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "smart-orchestrator",
+  "plugin": [
+    [
+      "file:///C:/Users/Roshan/Downloads/opencode-omniroute-router/src/plugin.mjs",
+      {
+        "models": {
+          "free-worker": "omniroute/combo/eco-light",
+          "smart-fast": "omniroute/combo/eco-light",
+          "smart-standard": "omniroute/combo/eco-heavy",
+          "smart-strong": "omniroute/combo/eco-heavy",
+          "expert": "omniroute/combo/eco-heavy",
+          "local-worker": "ollama/qwen2.5:7b"
+        },
+        "workers": {
+          "free": "free-worker",
+          "fast": "smart-fast",
+          "standard": "smart-standard",
+          "strong": "smart-strong",
+          "expert": "expert",
+          "local": "local-worker"
+        }
+      }
+    ]
+  ],
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (local)",
+      "options": {
+        "baseURL": "http://localhost:11434/v1"
+      },
+      "models": {
+        "qwen2.5:7b": {
+          "name": "qwen2.5:7b (local)",
+          "tool_call": true,
+          "limit": {
+            "context": 16384,
+            "output": 4096
+          }
+        }
+      }
+    }
+  }
+}
