@@ -1,0 +1,1 @@
+import{c as e}from"./index-B-IK6nYY.js";export{e as Rpc};
